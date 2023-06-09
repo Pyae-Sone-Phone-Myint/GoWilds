@@ -8,11 +8,16 @@ import {
   FaPinterest,
   FaRegUserCircle,
 } from "react-icons/fa";
-import { BsPersonPlusFill ,BsPerson, BsFillPersonPlusFill } from "react-icons/bs";
+import {
+  BsPersonPlusFill,
+  BsPerson,
+  BsFillPersonPlusFill,
+} from "react-icons/bs";
 import { LuShoppingCart, LuSearch } from "react-icons/lu";
 import "./navbar.css";
 import { Link, NavLink } from "react-router-dom";
 import MobileMenuSidebar from "./MobileMenuSiderbar";
+import logo from "../../assets/images/logo.png";
 const Navbar = () => {
   const [isTop, setIsTop] = useState(true);
   const [isSearchBoxVisible, setIsSearchBoxVisible] = useState(false);
@@ -93,11 +98,7 @@ const Navbar = () => {
           <nav className=" flex items-center">
             <div className="mx-3">
               <Link>
-                <img
-                  src="src\assets\images\logo.png"
-                  className="w-[150px] mx-3"
-                  alt=""
-                />
+                <img src={logo} className="w-[150px] mx-3" alt="" />
               </Link>
             </div>
             <div className="flex justify-end w-full items-center  mr-5">
@@ -174,8 +175,12 @@ const Navbar = () => {
                       <div className="profile-box">
                         <div className="profile-box-pointer"></div>
                         <div className=" py-5 px-4 flex flex-col gap-3 w-[220px] rounded text-[#82828A] text-base">
-                          <span  className=" profile-text    "><BsPerson/> Login</span>
-                          <span  className="profile-text   "><BsFillPersonPlusFill/> Register</span>
+                          <span className=" profile-text    ">
+                            <BsPerson /> Login
+                          </span>
+                          <span className="profile-text   ">
+                            <BsFillPersonPlusFill /> Register
+                          </span>
                         </div>
                       </div>
                     )}
