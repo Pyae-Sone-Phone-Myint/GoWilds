@@ -6,10 +6,10 @@ import {
   FaFacebook,
   FaInstagram,
   FaTwitter,
-  FaPinterest,
   FaPhone,
   FaTelegramPlane,
 } from "react-icons/fa";
+import {IoLogoLinkedin} from 'react-icons/io5'
 import { MdLocationOn, MdMail } from "react-icons/md";
 import { HiArrowUpRight, HiPhone } from "react-icons/hi2";
 import { Link } from "react-router-dom";
@@ -80,7 +80,7 @@ const Footer = () => {
                   <FaInstagram />
                 </span>
                 <span className=" footer-social-icon">
-                  <FaPinterest />
+                  <IoLogoLinkedin />
                 </span>
               </div>
             </div>
