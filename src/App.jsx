@@ -6,7 +6,9 @@ import Footer from "./components/Footer/Footer";
 const App = () => {
   return (
     <>
-      <Navbar />
+      <div className="sticky top-0 z-10">
+        <Navbar />
+      </div>
       <Path />
       <Footer />
     </>
