@@ -1,6 +1,7 @@
 import React from "react";
 import Path from "./routes/Path";
 import Navbar from "./components/Navbar/Navbar";
+import "./App.css"
 
 const App = () => {
   return (

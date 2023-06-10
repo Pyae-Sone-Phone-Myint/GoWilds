@@ -14,7 +14,6 @@ import "./navbar.css";
 import { Link, NavLink } from "react-router-dom";
 import MobileMenuSidebar from "./MobileMenuSiderbar";
 const Navbar = () => {
-  const [isTop, setIsTop] = useState(true);
   const [isSearchBoxVisible, setIsSearchBoxVisible] = useState(false);
   const [isProfileOpen, setIsProfileOpen] = useState(false);
   // ...
@@ -25,7 +24,7 @@ const Navbar = () => {
   useEffect(() => {
     const handleScroll = () => {
       const scrollY = window.scrollY || document.documentElement.scrollTop;
-      setIsTop(scrollY === 0);
+      // setIsTop(scrollY === 0);
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -36,8 +35,7 @@ const Navbar = () => {
   }, []);
   return (
     <>
-      {isTop && (
-        <div className=" bg-primary text-white navbar leading-7">
+        <div className=" bg-primary text-white navbar leading-7 relative z-10">
           <div className="2xl:w-[68%] xl:w-[97%] w-[100%]  xl:mx-auto upper-nav">
             <div className=" flex lg:justify-between justify-end">
               <div className="lg:flex gap-5 px-4 w-1/2  hidden">
@@ -87,7 +85,6 @@ const Navbar = () => {
             </div>
           </div>
         </div>
-      )}
       <div className=" bg-white   lower-nav leading-7">
         <div className="2xl:w-[68%] xl:w-[97%] w-[100%]  xl:mx-auto">
           <nav className=" flex items-center">
