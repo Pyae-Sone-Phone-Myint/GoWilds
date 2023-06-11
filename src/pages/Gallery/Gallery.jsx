@@ -1,20 +1,22 @@
 import React, { useState } from "react";
+import "./gallery.css";
+import Hero_section from "../../components/Hero_section/Hero_section";
+import tours from "../../components/Adventure/adventure.json";
+import gallery_images from "./gallery.json";
 import { BsPlus } from "react-icons/bs";
-import Splides from "../Slider/Splides";
-import { SplideSlide } from "@splidejs/react-splide";
-import "./adventure_gallery.css";
-import tours from "./adventure.json";
-import Lazy_loader from "../Slider/lazyLoader/lazy_loader";
+import Lazy_loader from "../../components/Slider/lazyLoader/lazy_loader";
 import { ImCross } from "react-icons/im";
+import Explore_more from "../../components/Explore_more/Explore_more";
 
-const Adventure_gallery = () => {
+const Gallery = () => {
   const [displayCheck, setDisplayCheck] = useState(false);
   const clickHandler = () => {
     setDisplayCheck(true);
   };
-  const tour = tours.map((item) => {
+
+  const tour = gallery_images.map((item) => {
     return (
-      <SplideSlide key={item.id} onClick={clickHandler}>
+      <div key={item.id} onClick={clickHandler} className=" flex-[25%]">
         <div className=" rounded-md overflow-hidden relative">
           <img src={item.image} alt="" />
           <div className="tour_card_content w-full absolute top-[50%] translate-y-[-50%] left-[50%] translate-x-[-50%] flex flex-col items-center justify-center gap-3 cursor-pointer">
@@ -30,28 +32,29 @@ const Adventure_gallery = () => {
             </div>
           </div>
         </div>
-      </SplideSlide>
+      </div>
     );
   });
-
   return (
     <>
-      <div className="flex relative bg-white">
-        <div
-          className="absolute px-5 -top-48 z-50"
-        >
-          <Splides brand={tour} view={5} />
-        </div>
+      <Hero_section about={"Gallery"} />
+      <div className=" px-10 min-h-screen py-32">
+        <div className="flex flex-wrap gap-14">{tour}</div>
       </div>
-
       <div className={`lazy-loader ${displayCheck ? "" : "hidden"}`}>
-        <div className=" w-fit absolute right-48 p-5 top-10 cursor-pointer z-20" onClick={() => setDisplayCheck(false)}>
+        <div
+          className=" w-fit absolute right-48 top-10 cursor-pointer z-20"
+          onClick={() => setDisplayCheck(false)}
+        >
           <ImCross className="cursor-pointer" />
         </div>
-        <Lazy_loader detailImage={tours}/>
+        <Lazy_loader detailImage={gallery_images} />
       </div>
+
+      {/* Explore More */}
+      <Explore_more />
     </>
   );
 };
 
-export default Adventure_gallery;
+export default Gallery;

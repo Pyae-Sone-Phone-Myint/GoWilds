@@ -3,7 +3,7 @@ import React from "react";
 import "@splidejs/react-splide/css";
 import "./splides.css";
 
-const Splides = ({ brand, view, controller = true }) => {
+const Splides = ({ brand, view  = 1, controller = true }) => {
   const screen = window.innerWidth < 796;
   return (
     <>

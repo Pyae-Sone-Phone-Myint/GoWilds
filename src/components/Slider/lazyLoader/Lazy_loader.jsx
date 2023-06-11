@@ -1,12 +1,11 @@
-import React, { useState } from "react";
+import React from "react";
 import "./lazy_loader.css";
-import adventrue_img from "../../Adventure/adventure.json";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
-import { ImCross } from "react-icons/im";
 
-const Lazy_loader = () => {
+const Lazy_loader = ({detailImage}) => {
+  // Give what you want to loop
  
-  const tour = adventrue_img.map((item) => {
+  const tour = detailImage.map((item) => {
     return (
       <SplideSlide key={item.id} className=" h-screen cursor-grab">
         <div className=" rounded-md relative flex justify-center h-screen p-20 object-cover w-full">

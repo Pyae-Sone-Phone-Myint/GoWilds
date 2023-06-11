@@ -3,6 +3,8 @@ import { Route, Routes } from "react-router-dom";
 import Home from "../pages/Home";
 import About from "../pages/About/About";
 import Team from "../pages/Team/Team";
+import Gallery from "../pages/Gallery/Gallery";
+import Team_carousel from "../pages/Team_carousel/Team_carousel";
 
 const Path = () => {
   return (
@@ -10,7 +12,9 @@ const Path = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
-        <Route path={"/team"} element={<Team />} />
+        <Route path="/team" element={<Team />} />
+        <Route path="/gallery" element={<Gallery />} />
+        <Route path="/team-carousel" element={<Team_carousel />} />
       </Routes>
     </>
   );

@@ -112,13 +112,16 @@ const Navbar = () => {
                   <span className=" nav-link-text">Destinations</span>
                 </NavLink>
                 <div className="nav-dropdown relative">
-                  <span className="nav-link-text pr-3">Pages</span>
+                  <span className="nav-link-text pr-3 cursor-pointer">Pages</span>
                   <div className="nav-dropdown-content">
                     <NavLink to={"/about"}>
                       <span className="nav-link-text ">About</span>
                     </NavLink>
                     <NavLink to={"/team"}>
-                      <span className="nav-link-text ">Team</span>
+                      <span className="nav-link-text ">Team Grid</span>
+                    </NavLink>
+                    <NavLink to={"/team-carousel"}>
+                      <span className="nav-link-text ">Team Carousel</span>
                     </NavLink>
                     <NavLink to={"/gallery"}>
                       <span className="nav-link-text ">Gallery</span>
