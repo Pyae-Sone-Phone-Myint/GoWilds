@@ -1,6 +1,14 @@
 import React, { useEffect, useState } from "react";
 import "./about.css";
-import { FaPlay } from "react-icons/fa";
+import "swiper/swiper-bundle.min.css";
+import {
+  FaFacebookF,
+  FaInstagram,
+  FaPinterest,
+  FaPlay,
+  FaShareAlt,
+  FaTwitter,
+} from "react-icons/fa";
 import Slider from "../../components/Slider/Slider";
 import {
   GiCampingTent,
@@ -12,6 +20,13 @@ import {
 import { BiPhoneCall } from "react-icons/bi";
 import { BsPatchCheckFill } from "react-icons/bs";
 import { FaCoins, FaVest } from "react-icons/fa";
+import { TfiQuoteRight } from "react-icons/tfi";
+import { AiFillStar } from "react-icons/ai";
+import slides from "../../components/Slider/team.json";
+import { SwiperSlide } from "swiper/react";
+import Adventure_gallery from "../../components/Adventure/Adventure_gallery";
+import Splides from "../../components/Slider/Splides";
+import { SplideSlide } from "@splidejs/react-splide";
 
 const About = () => {
   const [isFirstPhoto, setIsFirstPhoto] = useState(true);
@@ -37,6 +52,102 @@ const About = () => {
       };
     }
   }, [isFirstPhoto]);
+
+  const slide = slides.map((item) => {
+    return (
+      <SwiperSlide
+        key={item.name}
+        className=" team-card text-center relative z-30"
+      >
+        <div className="team-img relative overflow-hidden rounded-lg mx-4">
+          <img src={item.image} className="" alt={item.name} />
+          <div className="team-social absolute bottom-0 right-0 text-white ">
+            <div className="team-social-link flex flex-col items-center p-3 bg-primary gap-4">
+              <a href="#">
+                <FaFacebookF />
+              </a>
+              <a href="#">
+                <FaTwitter />
+              </a>
+              <a href="#">
+                <FaInstagram />
+              </a>
+              <a href="#">
+                <FaPinterest />
+              </a>
+            </div>
+            <div className="p-3 bg-primary">
+              <FaShareAlt />
+            </div>
+          </div>
+        </div>
+        <div className="team-content w-full relative py-8 rounded-md">
+          <h3 className=" text-2xl font-bold text-black">{item.name}</h3>
+          <p className=" text-[#82828a]">{item.job}</p>
+        </div>
+      </SwiperSlide>
+    );
+  });
+
+  const services = [
+    { name: "Kevin Smith", role: "Customer" },
+    { name: "Jessica Brown", role: "Founder & CEO" },
+    { name: "Christine Eve", role: "Founder & CEO" },
+  ];
+
+  const brands = [
+    { id: 1, image: "src/assets/images/brand.png" },
+    { id: 2, image: "src/assets/images/brand.png" },
+    { id: 3, image: "src/assets/images/brand.png" },
+    { id: 4, image: "src/assets/images/brand.png" },
+    { id: 5, image: "src/assets/images/brand.png" },
+    { id: 6, image: "src/assets/images/brand.png" },
+  ];
+
+  const service = services.map((item) => {
+    return (
+      <SwiperSlide className=" w-fit">
+        <div className=" flex items-center gap-5">
+          <TfiQuoteRight size={"5rem"} className=" text-primary" />
+          <div className=" flex flex-col gap-3">
+            <h3 className=" text-xl font-bold">Quality Service</h3>
+            <div className=" flex gap-1 text-secondary">
+              <AiFillStar />
+              <AiFillStar />
+              <AiFillStar />
+              <AiFillStar />
+              <AiFillStar />
+            </div>
+          </div>
+        </div>
+        <p className=" text-[#82828a] leading-7 text-xl py-5">
+          To take trivial example which of ever undertakes laborious physical
+          exercise, except to obtain some advantage from but who has any right
+          to find fault with man who chooses to enjoy.
+        </p>
+        <hr />
+        <div className=" flex py-5 items-center gap-8">
+          <div className=" w-20 overflow-hidden rounded-full">
+            <img src="src/assets/images/testimonial.jpg" alt="" />
+          </div>
+          <div className="">
+            <h4 className=" text-xl font-bold">{item.name}</h4>
+            <p className=" text-[#82828a] ">{item.role}</p>
+          </div>
+        </div>
+      </SwiperSlide>
+    );
+  });
+
+  const brand = brands.map((item) => {
+    return (
+      <SplideSlide key={item.id}>
+        <div className="px-10 py-5 brand-holder">
+          <img src={item.image} alt="" />
+        </div>
+      </SplideSlide>
+    );
+  });
 
   return (
     <>
@@ -340,7 +451,7 @@ const About = () => {
           </h2>
         </div>
         <div className=" md:px-20 px-5 py-10 overflow-hidden">
-          <Slider />
+          <Slider slide={slide} dSize={3} nav_icon={true} space={"60"} />
         </div>
       </div>
 
@@ -445,21 +556,43 @@ const About = () => {
 
       {/* Play */}
       <div className="flex flex-col md:flex-row md:items-center items-start justify-between md:min-h-[340px] min-h-[200px] relative  overflow-hidden z-50 md:px-28 px-5 py-10">
-        <div
-          className={`bg-fixed-photo-for-music`}
-        ></div>
+        <div className={`bg-fixed-photo-for-music md:hidden`}></div>
         <div className=" text-white ">
           <h1 className=" text-[30px] md:text-[52px] font-[700]">
             Ready to travel with real <br /> adventure and enjoy natural
           </h1>
         </div>
         <a
-          href="https://www.youtube.com/watch?v=-UbYukTFmFU"
+          href="https://www.youtube.com/watch?v=JA0g4KYMf_k"
           className="music-btn music-btn-2 hover:scale-95 duration-150 transition relative p-10 bg-white rounded-full "
         >
           <FaPlay className=" text-black" size={"2rem"} />
         </a>
       </div>
+
+      {/* Services */}
+      <div className=" bg-white items-start justify-between min-h-screen relative  overflow-hidden z-50 md:px-28 px-5 md:py-40">
+        <div className="absolute left-0 h-screen bg-transparent w-full overflow-hidden">
+          <div className="bg-shape-05"></div>
+        </div>
+        <div className="flex flex-col md:flex-row md:items-center items-start justify-between relative  overflow-hidden z-50 pb-16">
+          <div className=" md:flex-[50%] flex-1">
+            <div className="">
+              <img src="src/assets/images/icon-testimonial.png" alt="" />
+            </div>
+          </div>
+          <div className="md:flex-[50%] flex-1 overflow-hidden w-full">
+            <Slider slide={service} />
+          </div>
+        </div>
+        <hr />
+        <div className=" py-10 pb-40 overflow-hidden">
+          <Splides brand={brand} view={5} controller={false}/>
+        </div>
+      </div>
+      <Adventure_gallery />
+
+      <div className="h-[500px] relative bg-black"></div>
     </>
   );
 };

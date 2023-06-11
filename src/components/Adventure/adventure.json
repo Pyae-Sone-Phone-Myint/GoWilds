@@ -1,0 +1,32 @@
+[
+  {
+    "id" : 1,
+    "name": "tour-2",
+    "image": "src/assets/images/tour-2.jpg"
+  },
+  {
+    "id" : 2,
+    "name": "tour-5",
+    "image": "src/assets/images/tour-5.jpg"
+  },
+  {
+    "id" : 3,
+    "name": "tour-11",
+    "image": "src/assets/images/tour-11.jpg"
+  },
+  {
+    "id": 4,
+    "name": "tour-3",
+    "image": "src/assets/images/tour-3.jpg"
+  },
+  {
+    "id" : 5,
+    "name": "tour-7",
+    "image": "src/assets/images/tour-7.jpg"
+  },
+  {
+    "id" :6,
+    "name": "tour-10",
+    "image": "src/assets/images/tour-10.jpg"
+  }
+]

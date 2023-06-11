@@ -1,5 +1,5 @@
 .swiper {
-  overflow: visible;
+  overflow: hidden;
 }
 
 .swiper-button-prev::after,
@@ -59,4 +59,8 @@
 .team-card:hover .team-social-link {
   transform: translateY(-1%);
   opacity: 1;
+}
+
+.center {
+  opacity: .5;
 }
