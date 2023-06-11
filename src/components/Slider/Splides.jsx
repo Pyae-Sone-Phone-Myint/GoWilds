@@ -5,7 +5,6 @@ import "./splides.css";
 
 const Splides = ({ brand, view, controller = true }) => {
   const screen = window.innerWidth < 796;
-  console.log(view);
   return (
     <>
       <Splide

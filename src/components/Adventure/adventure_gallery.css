@@ -13,3 +13,7 @@
     opacity: 1;
 }
 
+.splide__arrows button {
+    background-color: currentColor;
+}
+

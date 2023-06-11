@@ -75,7 +75,7 @@
   background-color: rgb(99, 171, 69);
 }
 .nav-dropdown-content {
-  display: none;
+  /* display: none; */
   position: absolute;
   top: -10px; /* Move the content offscreen initially */
   left: 0;
@@ -84,12 +84,15 @@
   z-index: 1;
   opacity: 0;
   max-height: 0;
-  transition: all 0.3s; /* Include 'top' in the transition property */
+  box-shadow: 0 0 20px 0 rgba(62, 28, 131, 0.1);
+  transform: rotateX(90deg);
+  transition: all 0.3s ease-in; /* Include 'top' in the transition property */
 }
 .nav-dropdown:hover .nav-dropdown-content {
-  display: block;
+  /* display: block; */
+  transform: translateX(0);
   opacity: 1;
-  top: 150%;
+  top: 200%;
   max-height: 200px;
 }
 

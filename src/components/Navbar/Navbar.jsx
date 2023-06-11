@@ -85,7 +85,7 @@ const Navbar = () => {
             </div>
           </div>
         </div>
-      <div className=" bg-white   lower-nav leading-7">
+      <div className=" bg-white   lower-nav leading-7 shadow-lg">
         <div className="2xl:w-[68%] xl:w-[97%] w-[100%]  xl:mx-auto">
           <nav className=" flex items-center">
             <div className="mx-3">
@@ -111,7 +111,7 @@ const Navbar = () => {
                 <NavLink to={"/destination"}>
                   <span className=" nav-link-text">Destinations</span>
                 </NavLink>
-                <div className="nav-dropdown">
+                <div className="nav-dropdown relative">
                   <span className="nav-link-text pr-3">Pages</span>
                   <div className="nav-dropdown-content">
                     <NavLink to={"/about"}>

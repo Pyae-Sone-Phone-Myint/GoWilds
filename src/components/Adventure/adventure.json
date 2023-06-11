@@ -1,32 +1,38 @@
 [
   {
-    "id" : 1,
+    "id": 1,
     "name": "tour-2",
-    "image": "src/assets/images/tour-2.jpg"
+    "image": "src/assets/images/Tour/tour-2s.jpg",
+    "imageDetail": "src/assets/images/Tour/tour-2.jpg"
   },
   {
-    "id" : 2,
+    "id": 2,
     "name": "tour-5",
-    "image": "src/assets/images/tour-5.jpg"
+    "image": "src/assets/images/Tour/tour-5s.jpg",
+    "imageDetail": "src/assets/images/Tour/tour-5.jpg"
   },
   {
-    "id" : 3,
+    "id": 3,
     "name": "tour-11",
-    "image": "src/assets/images/tour-11.jpg"
+    "image": "src/assets/images/Tour/tour-11s.jpg",
+    "imageDetail": "src/assets/images/Tour/tour-11.jpg"
   },
   {
     "id": 4,
     "name": "tour-3",
-    "image": "src/assets/images/tour-3.jpg"
+    "image": "src/assets/images/Tour/tour-3s.jpg",
+    "imageDetail": "src/assets/images/Tour/tour-3.jpg"
   },
   {
-    "id" : 5,
+    "id": 5,
     "name": "tour-7",
-    "image": "src/assets/images/tour-7.jpg"
+    "image": "src/assets/images/Tour/tour-7s.jpg",
+    "imageDetail": "src/assets/images/Tour/tour-7.jpg"
   },
   {
-    "id" :6,
+    "id": 6,
     "name": "tour-10",
-    "image": "src/assets/images/tour-10.jpg"
+    "image": "src/assets/images/Tour/tour-10s.jpg",
+    "imageDetail": "src/assets/images/Tour/tour-10.jpg"
   }
 ]

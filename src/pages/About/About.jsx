@@ -586,13 +586,13 @@ const About = () => {
           </div>
         </div>
         <hr />
-        <div className=" py-10 pb-40 overflow-hidden">
-          <Splides brand={brand} view={5} controller={false}/>
+        <div className=" py-16 pb-40 overflow-hidden">
+          <Splides brand={brand} view={5} controller={false} />
         </div>
       </div>
       <Adventure_gallery />
-
       <div className="h-[500px] relative bg-black"></div>
+
     </>
   );
 };

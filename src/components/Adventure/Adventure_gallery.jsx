@@ -1,14 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 import { BsPlus } from "react-icons/bs";
 import Splides from "../Slider/Splides";
 import { SplideSlide } from "@splidejs/react-splide";
 import "./adventure_gallery.css";
 import tours from "./adventure.json";
+import Lazy_loader from "../Slider/lazyLoader/lazy_loader";
+import { ImCross } from "react-icons/im";
 
 const Adventure_gallery = () => {
+  const [displayCheck, setDisplayCheck] = useState(false);
+  const clickHandler = () => {
+    setDisplayCheck(true);
+  };
   const tour = tours.map((item) => {
     return (
-      <SplideSlide key={item.id}>
+      <SplideSlide key={item.id} onClick={clickHandler}>
         <div className=" rounded-md overflow-hidden relative">
           <img src={item.image} alt="" />
           <div className="tour_card_content w-full absolute top-[50%] translate-y-[-50%] left-[50%] translate-x-[-50%] flex flex-col items-center justify-center gap-3 cursor-pointer">
@@ -29,11 +35,22 @@ const Adventure_gallery = () => {
   });
 
   return (
-    <div className="flex relative bg-white">
-      <div className="absolute px-5 -top-48 z-50">
-        <Splides brand={tour} view={5}/>
+    <>
+      <div className="flex relative bg-white">
+        <div
+          className="absolute px-5 -top-48 z-50"
+        >
+          <Splides brand={tour} view={5} />
+        </div>
       </div>
-    </div>
+
+      <div className={`lazy-loader ${displayCheck ? "" : "hidden"}`}>
+        <div className=" w-fit absolute right-48 top-10 cursor-pointer z-20" onClick={() => setDisplayCheck(false)}>
+          <ImCross className="cursor-pointer" />
+        </div>
+        <Lazy_loader />
+      </div>
+    </>
   );
 };
 

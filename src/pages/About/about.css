@@ -5,6 +5,7 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+  z-index: -4;
 }
 
 /* Hero Section */
@@ -315,6 +316,10 @@ progress {
 
 .splide__slide.is-active .brand-holder {
   background-color: #f3f8f6;
+}
+
+.splide__slide.is-active .brand-holder img {
+  animation: 1.5s floating-img-animation infinite;
 }
 
 .brand-holder:hover img {
