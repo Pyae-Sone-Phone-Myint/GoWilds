@@ -61,13 +61,16 @@ const MobileMenuSidebar = () => {
                 }`}
               >
                 <span>
-                  <a href="#">About</a>
+                  <a href="/about">About</a>
                 </span>
                 <span>
-                  <a href="#">Team</a>
+                  <a href="/team">Team Grid</a>
                 </span>
                 <span>
-                  <a href="#">Gallery</a>
+                  <a href="/team-carousel">Team Carousel</a>
+                </span>
+                <span>
+                  <a href="/gallery">Gallery</a>
                 </span>
               </ul>
             )}
