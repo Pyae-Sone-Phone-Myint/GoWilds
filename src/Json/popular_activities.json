@@ -1,0 +1,27 @@
+[
+    {
+        "id" : 1,
+        "image" : "src/assets/images/Popular_Activities/image-01.jpg",
+        "title" : "Tent camping services"
+    },
+    {
+        "id" : 2,
+        "image" : "src/assets/images/Popular_Activities/image-02.jpg",
+        "title" : "Trailers and rv spots"
+    },
+    {
+        "id" : 3,
+        "image" : "src/assets/images/Popular_Activities/image-03.jpg",
+        "title" : "Adventure and climbing"
+    },
+    {
+        "id" : 4,
+        "image" : "src/assets/images/Popular_Activities/image-04.jpg",
+        "title" : "Couple camping or cabin"
+    },
+    {
+        "id" : 5,
+        "image" : "src/assets/images/Popular_Activities/tour-2.jpg",
+        "title" : "Mountain climbing"
+    }
+]

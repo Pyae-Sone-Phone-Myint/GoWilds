@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Jessica Brown",
+    "job" : "Consultant",
+    "image" : "src/assets/images/Team/team-1.jpg"
+  },
+  {
+    "name": "Yoni Albert",
+    "job" : "Consultant",
+    "image" : "src/assets/images/Team/team-2.jpg"
+  },
+  {
+    "name": "Christine Eve",
+    "job" : "Consultant",
+    "image" : "src/assets/images/Team/team-3.jpg"
+  },
+  {
+    "name": "David Hardson",
+    "job" : "Consultant",
+    "image" : "src/assets/images/Team/team-4.jpg"
+  },
+  {
+    "name": "Fred Andrew",
+    "job" : "Consultant",
+    "image" : "src/assets/images/Team/team-5.jpg"
+  },
+  {
+    "name": "Sarah Rose",
+    "job" : "Consultant",
+    "image" : "src/assets/images/Team/team-6.jpg"
+  }
+]

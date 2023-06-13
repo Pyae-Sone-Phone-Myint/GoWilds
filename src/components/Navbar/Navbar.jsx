@@ -19,7 +19,6 @@ import { Link, NavLink } from "react-router-dom";
 import MobileMenuSidebar from "./MobileMenuSiderbar";
 import logo from "../../assets/images/logo.png";
 const Navbar = () => {
-  const [isTop, setIsTop] = useState(true);
   const [isSearchBoxVisible, setIsSearchBoxVisible] = useState(false);
   const [isProfileOpen, setIsProfileOpen] = useState(false);
   // ...
@@ -30,7 +29,7 @@ const Navbar = () => {
   useEffect(() => {
     const handleScroll = () => {
       const scrollY = window.scrollY || document.documentElement.scrollTop;
-      setIsTop(scrollY === 0);
+      // setIsTop(scrollY === 0);
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -40,9 +39,14 @@ const Navbar = () => {
     };
   }, []);
   return (
+
     <div className=" shadow-md ">
       {isTop && (
         <div className=" bg-primary text-white navbar leading-7">
+
+    <>
+        <div className=" bg-primary text-white navbar leading-7 relative z-10">
+
           <div className="2xl:w-[68%] xl:w-[97%] w-[100%]  xl:mx-auto upper-nav">
             <div className=" flex lg:justify-between justify-end">
               <div className="lg:flex gap-5 px-4 w-1/2  hidden">
@@ -94,6 +98,8 @@ const Navbar = () => {
         </div>
       )}
       <div className=" bg-white   lower-nav leading-7"> 
+
+      <div className=" bg-white   lower-nav leading-7 shadow-lg">
         <div className="2xl:w-[68%] xl:w-[97%] w-[100%]  xl:mx-auto">
           <nav className=" flex items-center">
             <div className="mx-3">
@@ -115,14 +121,17 @@ const Navbar = () => {
                 <NavLink to={"/destination"}>
                   <span className=" nav-link-text">Destinations</span>
                 </NavLink>
-                <div className="nav-dropdown">
-                  <span className="nav-link-text pr-3">Pages</span>
+                <div className="nav-dropdown relative">
+                  <span className="nav-link-text pr-3 cursor-pointer">Pages</span>
                   <div className="nav-dropdown-content">
                     <NavLink to={"/about"}>
                       <span className="nav-link-text ">About</span>
                     </NavLink>
                     <NavLink to={"/team"}>
-                      <span className="nav-link-text ">Team</span>
+                      <span className="nav-link-text ">Team Grid</span>
+                    </NavLink>
+                    <NavLink to={"/team-carousel"}>
+                      <span className="nav-link-text ">Team Carousel</span>
                     </NavLink>
                     <NavLink to={"/gallery"}>
                       <span className="nav-link-text ">Gallery</span>
