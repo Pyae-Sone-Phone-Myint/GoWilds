@@ -1,8 +1,10 @@
-/** @type {import('tailwindcss').Config} */
-export default {
-  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+const withMT = require("@material-tailwind/react/utils/withMT");
+
+module.exports = withMT({
+  content: ["./index.html", "./src/**/*.{vue,js,ts,jsx,tsx}"],
   theme: {
-    extend: {
+
+   extend: {
       colors: {
         primary: '#63AB45',
         secondary: '#F7921E',
@@ -11,4 +13,4 @@ export default {
     },
   },
   plugins: [],
-};
+});
