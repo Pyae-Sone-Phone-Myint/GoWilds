@@ -1,11 +1,7 @@
 import React from "react";
 import "./about.css";
 import "swiper/swiper-bundle.min.css";
-import {
-
-  FaPlay,
-
-} from "react-icons/fa";
+import { FaPlay } from "react-icons/fa";
 import {
   GiCampingTent,
   GiMountainRoad,
@@ -18,7 +14,6 @@ import { BsPatchCheckFill } from "react-icons/bs";
 import { FaCoins, FaVest } from "react-icons/fa";
 import { TfiQuoteRight } from "react-icons/tfi";
 import { AiFillStar } from "react-icons/ai";
-import { SwiperSlide } from "swiper/react";
 import Adventure_gallery from "../../components/Adventure/Adventure_gallery";
 import Splides from "../../components/Slider/Splides";
 import { SplideSlide } from "@splidejs/react-splide";
@@ -50,11 +45,9 @@ const About = () => {
           <div className=" flex flex-col gap-3">
             <h3 className=" text-xl font-bold">Quality Service</h3>
             <div className=" flex gap-1 text-secondary">
-              <AiFillStar />
-              <AiFillStar />
-              <AiFillStar />
-              <AiFillStar />
-              <AiFillStar />
+              {[...Array(5)].map((_, index) => (
+                <AiFillStar key={index} />
+              ))}
             </div>
           </div>
         </div>
@@ -89,7 +82,7 @@ const About = () => {
 
   return (
     <>
-      <img src="src/assets/images/bg-01.jpg" className="fixed-bg" alt="" />
+      <img src="src/assets/images/Bg_shape/bg-01.jpg" className="fixed-bg" alt="" />
       {/*About Page Hero Section */}
       <Hero_section about={"About"} />
 
@@ -267,7 +260,7 @@ const About = () => {
             </span>
           </h2>
         </div>
-        <Team_slider />
+          <Team_slider />
       </div>
 
       {/* Who we are */}
@@ -397,7 +390,7 @@ const About = () => {
             </div>
           </div>
           <div className="md:flex-[50%] flex-1 overflow-hidden w-full">
-            <Splides brand={service} controller={false}/>
+            <Splides brand={service} controller={false} />
           </div>
         </div>
         <hr />

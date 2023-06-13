@@ -3,7 +3,7 @@ import { BsPlus } from "react-icons/bs";
 import Splides from "../Slider/Splides";
 import { SplideSlide } from "@splidejs/react-splide";
 import "./adventure_gallery.css";
-import tours from "./adventure.json";
+import tours from "../../Json/adventure.json";
 import Lazy_loader from "../Slider/lazyLoader/lazy_loader";
 import { ImCross } from "react-icons/im";
 

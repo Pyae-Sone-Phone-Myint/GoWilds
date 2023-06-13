@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./gallery.css";
 import Hero_section from "../../components/Hero_section/Hero_section";
-import tours from "../../components/Adventure/adventure.json";
+import tours from "../../Json/adventure.json";
 import gallery_images from "./gallery.json";
 import { BsPlus } from "react-icons/bs";
 import Lazy_loader from "../../components/Slider/lazyLoader/lazy_loader";

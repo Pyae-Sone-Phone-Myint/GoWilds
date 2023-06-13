@@ -85,7 +85,7 @@ const Team = () => {
                 tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
               </div>
               <div className=" flex items-center gap-5">
-                <div className=" p-3 rounded-full overflow-hidden border-2 w-fit border-primary">
+                <div className=" p-3 rounded-full overflow-hidden border-4 w-fit border-primary">
                   <img
                     src={"src/assets/images/avatar.jpg"}
                     className=" rounded-full w-12"

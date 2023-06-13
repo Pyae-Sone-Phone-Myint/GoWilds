@@ -1,10 +1,10 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
-import Home from "../pages/Home";
 import About from "../pages/About/About";
 import Team from "../pages/Team/Team";
 import Gallery from "../pages/Gallery/Gallery";
 import Team_carousel from "../pages/Team_carousel/Team_carousel";
+import Home from "../pages/Home/Home";
 
 const Path = () => {
   return (

@@ -47,7 +47,7 @@
 
 .bg-shape-04 {
   position: absolute;
-  background-image: url("../../assets/images/bg-shape-04.png");
+  background-image: url("../../assets/images/Bg_shape/bg-shape-04.png");
   background-size: cover;
   background-position: top;
   width: 100%;
@@ -149,17 +149,19 @@ progress {
 
 .bg-shape-10 {
   position: absolute;
-  background-image: url("../../assets/images/bg-shape-10.png");
+  background-image: url("../../assets/images/Bg_shape/bg-shape-10.png");
   background-size: contain;
-  background-position: top;
+  background-position: center;
   width: 100%;
   height: 100%;
   transform: scale(1);
+  background-color: #f3f8f6;
+  z-index: -1;
 }
 
 .bg-shape-05 {
   position: absolute;
-  background-image: url("../../assets/images/bg-shape-05.png");
+  background-image: url("../../assets/images/Bg_shape/bg-shape-05.png");
   background-size: contain;
   background-position: top;
   width: 100%;
@@ -214,7 +216,7 @@ progress {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url("src/assets/images/bg-01.jpg");
+    background-image: url("src/assets/images/Bg_shape/bg-01.jpg");
     background-position: center;
     background-size: cover;
   }

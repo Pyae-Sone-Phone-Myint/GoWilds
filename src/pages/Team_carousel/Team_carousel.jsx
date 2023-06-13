@@ -21,7 +21,7 @@ const Team_carousel = () => {
   const brand = brands.map((item) => {
     return (
       <SplideSlide key={item.id}>
-        <div className="px-10 py-5 brand-holder">
+        <div className=" px-20 py-5 brand-holder">
           <img src={item.image} alt="" />
         </div>
       </SplideSlide>

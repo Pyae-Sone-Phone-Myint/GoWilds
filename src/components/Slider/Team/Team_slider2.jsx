@@ -8,7 +8,6 @@ import {
   FaPlus,
   FaTwitter,
 } from "react-icons/fa";
-import { BsPlus } from "react-icons/bs";
 import slides from '../team.json'
 import Splides from "../Splides";
 
@@ -17,7 +16,7 @@ const Team_slider2 = () => {
     return (
       <SplideSlide
         key={item.name}
-        className=" slider2-team-card team-card text-center relative z-30  border-4 flex flex-col justify-center items-center rounded-md p-8"
+        className=" slider2-team-card team-card text-center relative z-30  border-4 flex flex-col justify-center items-center rounded-md p-8 cursor-pointer"
       >
         <div className="slider2-team-img relative mx-4 ">
           <img src={item.image} className=" rounded-full " alt={item.name} />
