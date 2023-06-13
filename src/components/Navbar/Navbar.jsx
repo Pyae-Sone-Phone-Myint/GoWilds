@@ -8,11 +8,16 @@ import {
   FaPinterest,
   FaRegUserCircle,
 } from "react-icons/fa";
-import { BsPersonPlusFill ,BsPerson, BsFillPersonPlusFill } from "react-icons/bs";
+import {
+  BsPersonPlusFill,
+  BsPerson,
+  BsFillPersonPlusFill,
+} from "react-icons/bs";
 import { LuShoppingCart, LuSearch } from "react-icons/lu";
 import "./navbar.css";
 import { Link, NavLink } from "react-router-dom";
 import MobileMenuSidebar from "./MobileMenuSiderbar";
+import logo from "../../assets/images/logo.png";
 const Navbar = () => {
   const [isSearchBoxVisible, setIsSearchBoxVisible] = useState(false);
   const [isProfileOpen, setIsProfileOpen] = useState(false);
@@ -34,8 +39,14 @@ const Navbar = () => {
     };
   }, []);
   return (
+
+    <div className=" shadow-md ">
+      {isTop && (
+        <div className=" bg-primary text-white navbar leading-7">
+
     <>
         <div className=" bg-primary text-white navbar leading-7 relative z-10">
+
           <div className="2xl:w-[68%] xl:w-[97%] w-[100%]  xl:mx-auto upper-nav">
             <div className=" flex lg:justify-between justify-end">
               <div className="lg:flex gap-5 px-4 w-1/2  hidden">
@@ -85,16 +96,15 @@ const Navbar = () => {
             </div>
           </div>
         </div>
+      )}
+      <div className=" bg-white   lower-nav leading-7"> 
+
       <div className=" bg-white   lower-nav leading-7 shadow-lg">
         <div className="2xl:w-[68%] xl:w-[97%] w-[100%]  xl:mx-auto">
           <nav className=" flex items-center">
             <div className="mx-3">
               <Link>
-                <img
-                  src="src\assets\images\logo.png"
-                  className="w-[150px] mx-3"
-                  alt=""
-                />
+                <img src={logo} className="w-[150px] mx-3" alt="" />
               </Link>
             </div>
             <div className="flex justify-end w-full items-center  mr-5">
@@ -174,8 +184,12 @@ const Navbar = () => {
                       <div className="profile-box">
                         <div className="profile-box-pointer"></div>
                         <div className=" py-5 px-4 flex flex-col gap-3 w-[220px] rounded text-[#82828A] text-base">
-                          <span  className=" profile-text    "><BsPerson/> Login</span>
-                          <span  className="profile-text   "><BsFillPersonPlusFill/> Register</span>
+                          <span className=" profile-text    ">
+                            <BsPerson /> Login
+                          </span>
+                          <span className="profile-text   ">
+                            <BsFillPersonPlusFill /> Register
+                          </span>
                         </div>
                       </div>
                     )}
@@ -186,7 +200,7 @@ const Navbar = () => {
           </nav>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
