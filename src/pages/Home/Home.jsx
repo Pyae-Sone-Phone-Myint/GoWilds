@@ -233,24 +233,28 @@ const Home = () => {
         className="fixed-bg"
         alt=""
       />
-      <div className="relative h-screen">
+      <div className="relative md:h-screen">
         <img
           src="https://gaviaspreview.com/wp/gowilds/wp-content/uploads/2023/02/slider-1.jpg"
-          className=" h-full w-full absolute"
+          className=" h-full w-full absolute object-cover"
           alt=""
         />
-        <div className=" relative z-10 flex flex-col justify-center items-start h-full">
-          <div className=" py-10 px-20">
-            <h1 className=" text-[74px] font-semibold leading-[79px] text-white mb-5">
-              Tour Travel & <br /> Adventure Camping
-            </h1>
-            <p className=" text-white mb-12 text-lg leading-7">
-              Phasellus condimentum Laoreet turpis sodales <br /> in.Integer leo
-              arcu mollis anmet tempor.
-            </p>
+        <div className=" relative z-10 flex flex-col justify-center items-start h-full overflow-hidden">
+          <div className=" py-10 lg:px-20 px-5">
+            <div className="swipe">
+              <h1 className="swipe-title md:text-[4.625rem] text-[31px] font-semibold lg:leading-[79px] text-white mb-5">
+                Tour Travel & <br /> Adventure Camping
+              </h1>
+            </div>
+            <div className="swipe swipe--delay">
+              <p className="swipe-para  text-white mb-12 md:text-lg text-sm lg:leading-7">
+                Phasellus condimentum Laoreet turpis sodales <br /> in.Integer
+                leo arcu mollis anmet tempor.
+              </p>
+            </div>
             <a
               href="/tour"
-              className=" bg-primary text-white rounded-md text-base font-bold leading-6 px-12 py-6 cursor-pointer z-10"
+              className=" title-btn bg-primary text-white rounded-md md:text-base text-sm font-bold leading-6 md:px-10 px-6 md:py-4 py-2 cursor-pointer z-10"
             >
               Let's get started
             </a>
@@ -280,7 +284,7 @@ const Home = () => {
       <div className=" relative min-h-screen md:px-20 px-5 py-10 overflow-hidden bg-white">
         <div className="bg-shape-02"></div>
         <div className="flex flex-col lg:flex-row justify-center md:justify-between min-h-screen relative z-50 md:py-24 gap-y-10 ">
-          <div className=" flex-[50%] flex flex-col items-end gap-8 md:pr-10 ">
+          <div className=" flex-[50%] flex flex-col px-5 gap-8 md:pr-10 lg:mb-0 mb-5">
             <div className="relative w-fit">
               <div className=" absolute p-4 bg-primary rounded-lg logo-floating -top-5 z-50">
                 <img
@@ -292,28 +296,28 @@ const Home = () => {
                 <img src="src/assets/images/shape-dot.png" alt="bg-shape-dot" />
               </div>
 
-              <div className=" rounded-tr-[50px] overflow-hidden w-fit">
+              <div className=" rounded-tr-[50px] h-[90%] overflow-hidden w-fit">
                 <a href="/about">
                   <img
-                    src="src/assets/images/image-20.jpg"
-                    className=" hover:scale-150 transition duration-[5.5s] ease-in"
+                    src="https://gaviaspreview.com/wp/gowilds/wp-content/uploads/2023/02/image-20.jpg"
+                    className=" hover:scale-150 transition duration-[5.5s] ease-in h-full"
                     alt=""
                   />
                 </a>
               </div>
               <div
-                className=" absolute -bottom-10 -left-20 bg-white p-3 rounded-3xl shadow w-60
+                className=" absolute overflow-hidden -bottom-5 lg:bottom-7 -left-20 bg-white p-3 rounded-3xl shadow w-60
               "
               >
                 <a href="/about">
                   <img
-                    src="src/assets/images/image-21.jpg"
+                    src="https://gaviaspreview.com/wp/gowilds/wp-content/uploads/2023/02/image-21.jpg"
                     className=" rounded-3xl hover:scale-150 transition duration-[5.5s] ease-in"
                     alt=""
                   />
                 </a>
               </div>
-              <div className=" absolute -bottom-20 -right-5 bg-white p-2 rounded-lg shadow">
+              <div className=" absolute -bottom-5  lg:bottom-7 -right-10 bg-white p-2 rounded-lg shadow">
                 <div className="flex items-center p-6 border-secondary border-2 rounded-lg">
                   <h1 className=" text-[60px] font-bold leading-7 text-primary mr-3">
                     28
@@ -326,17 +330,17 @@ const Home = () => {
             </div>
           </div>
           <div className=" flex-[40%] flex flex-col md:pl-5">
-            <div className="mb-10">
+            <div className="mb-5">
               <span className=" px-5 py-4 bg-[#64ab4513] text-primary rounded-lg font-semibold">
                 About Company
               </span>
             </div>
-            <h2 className=" mb-10">
+            <h2 className=" mb-5">
               <span className=" md:text-[48px] text-[36px] font-bold leading-tight">
                 Great Opportunity For Adventure & Travels
               </span>
             </h2>
-            <div className="parent gap-14 flex flex-col">
+            <div className="parent gap-8 flex flex-col">
               <div className="child flex items-center md:gap-14 gap-8">
                 <div className=" icon-parent flex items-center md:gap-8 gap-3 ">
                   <BsPatchCheckFill
@@ -350,7 +354,7 @@ const Home = () => {
                     />
                   </div>
                 </div>
-                <div className="flex flex-col md:gap-3 gap-1">
+                <div className="flex flex-col  gap-1">
                   <h4 className=" text-xl font-semibold">
                     Safety First Always
                   </h4>
@@ -373,7 +377,7 @@ const Home = () => {
                     />
                   </div>
                 </div>
-                <div className="flex flex-col md:gap-3 gap-1">
+                <div className="flex flex-col  gap-1">
                   <h4 className=" text-xl font-semibold">
                     Low Price & Friendly
                   </h4>
@@ -396,7 +400,7 @@ const Home = () => {
                     />
                   </div>
                 </div>
-                <div className="flex flex-col md:gap-3 gap-1">
+                <div className="flex flex-col gap-1">
                   <h4 className=" text-xl font-semibold">
                     Trusted Travel Guide
                   </h4>
@@ -845,18 +849,18 @@ const Home = () => {
         </div>
       </div>
       {/* Achievements */}
-      <div className="relative bg-white pt-32 px-32">
+      <div className="relative bg-white pt-32 lg:px-5 text-center">
         <div className=" w-fit text-center mx-auto relative">
           <span className=" absolute -left-14 -top-5 text-white text-lg font-medium bg-secondary px-5 py-2 -rotate-[20deg]">
             Company Fact
           </span>
-          <h1 className=" uppercase md:text-[86px] text-[68px] font-bold leading-[94.6px]">
-            Achievements
+          <h1 className=" uppercase md:text-[5.375rem] text-[36px] font-bold leading-[94.6px] w-full">
+            <span>Achievements</span>
           </h1>
         </div>
 
-        <div className=" flex items-start justify-between gap-10 relative -bottom-16 z-10">
-          <div className=" achievement-card flex flex-col justify-center flex-[20%] items-center shadow-lg py-10 rounded-xl">
+        <div className=" flex flex-wrap items-start justify-center gap-10 relative -bottom-16 z-10">
+          <div className=" achievement-card flex flex-col  justify-center px-20 items-center shadow-lg py-10 rounded-xl">
             <div className=" achievement-icon p-10 bg-[rgba(100,171,69,0.12)] rounded-full">
               <FaHiking
                 size={"5rem"}
@@ -871,7 +875,7 @@ const Home = () => {
               Happy Traveler
             </div>
           </div>
-          <div className=" achievement-card flex flex-col justify-center flex-[20%] items-center shadow-lg py-10 rounded-xl">
+          <div className=" achievement-card flex flex-col justify-center px-20 items-center shadow-lg py-10 rounded-xl">
             <div className=" achievement-icon p-10 bg-[rgba(100,171,69,0.12)] rounded-full">
               <GiCampingTent
                 size={"5rem"}
@@ -886,7 +890,7 @@ const Home = () => {
               Tours success
             </div>
           </div>
-          <div className=" achievement-card flex flex-col justify-center flex-[20%] items-center shadow-lg py-10 rounded-xl">
+          <div className=" achievement-card flex flex-col justify-center px-20 items-center shadow-lg py-10 rounded-xl">
             <div className=" achievement-icon p-12 bg-[rgba(100,171,69,0.12)] rounded-full">
               <BsFillChatLeftTextFill
                 size={"4rem"}
@@ -901,7 +905,7 @@ const Home = () => {
               Positive Reviews
             </div>
           </div>
-          <div className=" achievement-card flex flex-col justify-center flex-[20%] items-center shadow-lg py-10 rounded-xl">
+          <div className=" achievement-card flex flex-col justify-center px-20 items-center shadow-lg py-10 rounded-xl">
             <div className=" achievement-icon p-10 bg-[rgba(100,171,69,0.12)] rounded-full">
               <FaAward
                 size={"5rem"}
