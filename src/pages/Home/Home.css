@@ -40,7 +40,7 @@
   animation: fadeIn 1s ease-out 3.5s forwards;
 }
 
-.travel{
+.travel {
   opacity: 0;
   transition: 1s;
   transform: translateY(100%);
@@ -90,9 +90,13 @@
 }
 
 @keyframes fade {
-  from { opacity: 0; }
-  to { opacity: 1; }
- }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 
 .bg-world-photo {
   /* background-image: url("https://gaviaspreview.com/wp/gowilds/wp-content/uploads/2022/12/bg-shape-01.png"); */
@@ -195,7 +199,7 @@
 /* Popular Activity */
 
 .bg-photo {
-  background-image: url("src/assets/images/Bg_shape/bg-02.jpg");
+  background-image: url("https://gaviaspreview.com/wp/gowilds/wp-content/uploads/2023/02/bg-02.jpg");
   background-position: top;
   background-size: cover;
   position: absolute;

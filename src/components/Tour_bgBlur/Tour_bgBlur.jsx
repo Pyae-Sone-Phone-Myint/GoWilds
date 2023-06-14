@@ -4,8 +4,8 @@ import { FaPlay } from "react-icons/fa";
 
 const Tour_bgBlur = ({check}) => {
   return (
-    <div className="min-h-[calc(100vh-100px)] relative bg-blur" style={{backgroundColor:"url("+""+")"}}>
-      <div className="flex flex-col md:flex-row md:items-center min-h-[calc(100vh-100px)] md:mx-28 mx-10 md:py-32 py-16">
+    <div className=" min-h-[calc(100vh-100px)] relative bg-blur" style={{backgroundColor:"url("+""+")"}}>
+      <div className="2xl:w-[68%]  w-[100%]  xl:mx-auto flex flex-col md:flex-row md:items-center min-h-[calc(100vh-100px)] md:mx-28 mx-10 md:py-32 py-16">
         <div className="flex flex-col items-start md:flex-[55%] text-white">
           <a
             href="https://www.youtube.com/watch?v=-UbYukTFmFU"

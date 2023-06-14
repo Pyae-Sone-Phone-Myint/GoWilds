@@ -38,12 +38,15 @@ const Adventure_gallery = () => {
     <>
       <div className="flex relative bg-white">
         <div
-          className="absolute px-5 -top-48 z-50"
+          className="   relative  px-5  z-50  -bottom-20    "
         >
           <Splides brand={tour} view={5} />
+          
         </div>
+       
       </div>
-
+      <div className="w-[100%] h-24 bg-dark">
+      </div>
       <div className={`lazy-loader ${displayCheck ? "" : "hidden"}`}>
         <div className=" w-fit absolute right-48 p-5 top-10 cursor-pointer z-20" onClick={() => setDisplayCheck(false)}>
           <ImCross className="cursor-pointer" />

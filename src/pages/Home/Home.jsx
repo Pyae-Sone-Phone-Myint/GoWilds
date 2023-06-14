@@ -40,6 +40,7 @@ import { ImCross } from "react-icons/im";
 import Lazy_loader from "../../components/Slider/lazyLoader/lazy_loader";
 import tours from "../../Json/adventure.json";
 import { TfiQuoteRight } from "react-icons/tfi";
+import DropDown from "../../components/tourPageDropDown/DropDown";
 
 const Home = () => {
   const [displayCheck, setDisplayCheck] = useState(false);
@@ -231,7 +232,7 @@ const Home = () => {
   return (
     <>
       <img
-        src="src/assets/images/Bg_shape/bg-01.jpg"
+        src="https://gaviaspreview.com/wp/gowilds/wp-content/uploads/2023/02/bg-01.jpg"
         className="fixed-bg"
         alt=""
       />
@@ -242,8 +243,8 @@ const Home = () => {
           className=" h-full w-full absolute object-cover"
           alt=""
         />
-        <div className=" relative z-10 flex flex-col justify-center items-start h-full overflow-hidden">
-          <div className=" py-10 lg:px-20 px-5">
+        <div className=" 2xl:w-[68%]  w-[100%]  xl:mx-auto relative z-10 flex flex-col justify-center items-start h-full overflow-hidden">
+          <div className=" py-10  px-5">
             <div className="swipe">
               <h1 className="swipe-title md:text-[4.625rem] text-[31px] font-semibold lg:leading-[79px] text-white mb-5">
                 Tour Travel & <br /> Adventure Camping
@@ -266,6 +267,11 @@ const Home = () => {
 
 
       </div>
+      <div className=" 2xl:w-[68%]  w-[100%]  xl:mx-auto  ">
+        <div className="  px-8 gap-5 items-center shadow-xl rounded-lg lg:bottom-[0px]  flex flex-col lg:flex-row bg-white py-4">
+          <DropDown sort={false} />
+        </div>
+      </div>
       {/* Popular Activities */}
       <div className=" min-h-screen relative bg-white">
         <div className="bg-world-photo"></div>
@@ -281,14 +287,14 @@ const Home = () => {
             </span>
           </h2>
         </div>
-        <div className=" px-5 pb-10">
+        <div className=" 2xl:w-[78%]  w-[100%]  xl:mx-auto pb-10">
           <Splides brand={slide} view={4} center="" />
         </div>
       </div>
       {/* About Company */}
-      <div className=" relative min-h-screen md:px-20 px-5 py-10 overflow-hidden bg-white">
+      <div className="  relative min-h-screen md:px-20 px-5 py-10 overflow-hidden bg-white">
         <div className="bg-shape-02"></div>
-        <div className="flex flex-col lg:flex-row justify-center md:justify-between min-h-screen relative z-50 md:py-24 gap-y-10 ">
+        <div className="2xl:w-[68%]  w-[100%]  xl:mx-auto flex flex-col lg:flex-row justify-center md:justify-between min-h-screen relative z-50 md:py-24 gap-y-10 ">
           <div className=" flex-[50%] flex flex-col px-5 gap-8 md:pr-10 lg:mb-0 mb-5">
             <div className="relative w-fit">
               <div className=" absolute p-4 bg-primary rounded-lg logo-floating -top-5 z-50">
@@ -425,7 +431,7 @@ const Home = () => {
       <div className=" relative bg-white z-10">
         <div className=" mx-5 relative overflow-hidden bg-[#00000035] rounded-3xl">
           <div className="bg-photo"></div>
-          <div className=" relative z-10 md:mx-20 mx-3">
+          <div className=" 2xl:w-[68%]  w-[100%]  xl:mx-auto relative z-10 md:mx-20 mx-3">
             <div className=" text-center pb-10 md:pt-32 pt-24">
               <div className=" mb-10">
                 <span className=" px-5 py-4 bg-[#64ab4513] text-secondary rounded-lg font-semibold">
@@ -563,12 +569,12 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <div className=" rounded-xl overflow-hidden absolute md:-bottom-20 -bottom-36  left-0 right-0 md:mx-20 ">
+        <div className="2xl:w-[68%]  w-[100%]  xl:mx-auto  rounded-xl overflow-hidden absolute md:-bottom-20 -bottom-36  left-0 right-0 md:mx-20 ">
           <Explore_more />
         </div>
       </div>
       {/* Feature Tours */}
-      <div className="relative px-5 py-10 bg-white min-h-screen">
+      <div className=" relative px-5 py-10 bg-white min-h-screen">
         <div className=" text-center pb-10 md:pt-32 pt-24">
           <div className=" mb-10">
             <span className=" px-5 py-4 bg-[#64ab4513] text-primary rounded-lg font-semibold">
@@ -582,11 +588,11 @@ const Home = () => {
           </h2>
         </div>
 
-        <div className=" relative bg-white z-10">
+        <div className=" 2xl:w-[68%]  w-[100%]  xl:mx-auto relative bg-white z-10">
           <Splides brand={feature} view={4} center="" />
         </div>
         {/* Card Row */}
-        <div className=" flex justify-between gap-10 flex-wrap mt-10 mb-20">
+        <div className="2xl:w-[68%]  w-[100%]  xl:mx-auto flex justify-between gap-10 flex-wrap mt-10 mb-20">
           <div className="card-column md:flex-[30%] shadow-md rounded-lg cursor-pointer relative ">
             <div className="flex items-center gap-10 py-5 px-7 relative z-10">
               <div className=" card-icon">
@@ -685,7 +691,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <Tour_bgBlur check={"check availability"} />
+      <Tour_bgBlur  check={"check availability"} />
       {/* Destination */}
       <div className="relative bg-white min-h-screen px-5">
         <div className=" text-center pb-10 md:pt-32 pt-24">
@@ -701,7 +707,7 @@ const Home = () => {
           </h2>
         </div>
         {/* Destination Row */}
-        <div className="flex flex-wrap md:flex-row flex-col gap-y-5 md:gap-y-0">
+        <div className="2xl:w-[68%]  w-[100%]  xl:mx-auto flex flex-wrap md:flex-row flex-col gap-y-5 md:gap-y-0">
           <div className=" md:w-3/12 w-full md:p-5 destination-container relative">
             <div className=" uppercase text-xs font-bold px-7 py-3 bg-secondary absolute z-10 text-white rounded-lg right-10 top-10">
               3 tours
@@ -863,7 +869,7 @@ const Home = () => {
       </div>
       {/* Achievements */}
       <div className="relative bg-white pt-32 lg:px-5 text-center">
-        <div className=" w-fit text-center mx-auto relative">
+        <div className="  w-fit text-center mx-auto relative">
           <span className=" absolute -left-14 -top-5 text-white text-lg font-medium bg-secondary px-5 py-2 -rotate-[20deg]">
             Company Fact
           </span>
@@ -872,15 +878,15 @@ const Home = () => {
           </h1>
         </div>
 
-        <div className=" flex flex-wrap items-start justify-center gap-10 relative -bottom-16 z-10">
-          <div className=" achievement-card flex flex-col  justify-center px-20 items-center shadow-lg py-10 rounded-xl">
+        <div className="2xl:w-[68%]  w-[100%]  xl:mx-auto flex flex-wrap items-start justify-center gap-4 relative -bottom-16 z-10">
+          <div className=" achievement-card flex flex-col  justify-center  md:flex-[22%] items-center shadow-lg py-10 px-5 md:px-0   rounded-xl">
             <div className=" achievement-icon p-10 bg-[rgba(100,171,69,0.12)] rounded-full">
               <FaHiking
-                size={"5rem"}
-                className=" text-primary  ac-icon relative z-10"
+               
+                className=" text-primary  ac-icon relative z-10 text-4xl md:text-6xl"
               />
             </div>
-            <div className=" text-[45px] font-bold leading-7 mt-10 mb-5">
+            <div className=" md:text-[45px] text-3xl font-bold leading-7 mt-10 mb-5">
               <span>3500</span>
               <span>+</span>
             </div>
@@ -888,14 +894,14 @@ const Home = () => {
               Happy Traveler
             </div>
           </div>
-          <div className=" achievement-card flex flex-col justify-center px-20 items-center shadow-lg py-10 rounded-xl">
+          <div className=" achievement-card flex flex-col justify-center  md:flex-[22%]  items-center shadow-lg py-10  px-5 md:px-0  rounded-xl">
             <div className=" achievement-icon p-10 bg-[rgba(100,171,69,0.12)] rounded-full">
               <GiCampingTent
-                size={"5rem"}
-                className=" text-primary ac-icon relative z-10"
+            
+                className=" text-primary ac-icon relative z-10 text-4xl md:text-6xl"
               />
             </div>
-            <div className=" text-[45px] font-bold leading-7 mt-10 mb-5">
+            <div className=" md:text-[45px] text-3xl font-bold leading-7 mt-10 mb-5">
               <span>1650</span>
               <span>+</span>
             </div>
@@ -903,14 +909,14 @@ const Home = () => {
               Tours success
             </div>
           </div>
-          <div className=" achievement-card flex flex-col justify-center px-20 items-center shadow-lg py-10 rounded-xl">
+          <div className=" achievement-card flex flex-col justify-center  md:flex-[22%]  items-center shadow-lg py-10  px-5 md:px-0  rounded-xl">
             <div className=" achievement-icon p-12 bg-[rgba(100,171,69,0.12)] rounded-full">
               <BsFillChatLeftTextFill
-                size={"4rem"}
-                className=" text-primary ac-icon relative z-10"
+            
+                className=" text-primary ac-icon relative z-10 text-xl md:text-6xl"
               />
             </div>
-            <div className=" text-[45px] font-bold leading-7 mt-10 mb-5">
+            <div className="  md:text-[45px] text-3xl font-bold leading-7 mt-10 mb-5">
               <span>99.5</span>
               <span>%</span>
             </div>
@@ -918,14 +924,14 @@ const Home = () => {
               Positive Reviews
             </div>
           </div>
-          <div className=" achievement-card flex flex-col justify-center px-20 items-center shadow-lg py-10 rounded-xl">
+          <div className=" achievement-card flex flex-col justify-center  md:flex-[22%]  items-center shadow-lg py-10  px-5 md:px-0  rounded-xl">
             <div className=" achievement-icon p-10 bg-[rgba(100,171,69,0.12)] rounded-full">
               <FaAward
-                size={"5rem"}
-                className=" text-primary ac-icon relative z-10"
+            
+                className=" text-primary ac-icon relative z-10 text-4xl md:text-6xl"
               />
             </div>
-            <div className=" text-[45px] font-bold leading-7 mt-10 mb-5">
+            <div className="  md:text-[45px] text-3xl font-bold leading-7 mt-10 mb-5">
               <span>62k</span>
               <span>+</span>
             </div>
@@ -937,11 +943,11 @@ const Home = () => {
       </div>
       {/* Testimonials */}
       <div className="relative min-h-screen overflow-hidden">
-        <div className="absolute h-full bg-transparent w-full overflow-hidden">
+        <div className=" absolute h-full bg-transparent w-full overflow-hidden">
           <div className="bg-shape-10"></div>
         </div>
-        <div className=" md:px-10 px-5 flex flex-col md:flex-row md:items-center items-start justify-between relative  overflow-hidden z-50 pb-16 py-20">
-          <div className=" md:flex-[50%] flex-1 pb-56">
+        <div className="2xl:w-[68%]  w-[100%]  xl:mx-auto md:px-10 px-5 flex flex-col md:flex-row md:items-center items-start justify-between relative  overflow-hidden z-50 pb-16 py-20">
+          <div className=" md:flex-[50%] flex-1 md:pb-56">
             <div className=" py-32">
               <div className=" mb-10">
                 <span className=" px-5 py-4 bg-[#64ab4513] text-primary rounded-lg font-semibold">
@@ -971,7 +977,9 @@ const Home = () => {
         </div>
       </div>
       {/* Adventure Gallery */}
-      <Adventure_gallery />
+      <Adventure_gallery  />
+
+      
       {/* Lazy Loader */}
       <div className={`lazy-loader ${displayCheck ? "" : "hidden"}`}>
         <div
