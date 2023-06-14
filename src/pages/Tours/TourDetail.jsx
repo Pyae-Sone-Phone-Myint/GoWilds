@@ -13,15 +13,6 @@ import { Navigation, Pagination } from "swiper";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import BestPrice from "../../assets/images/best-price.png";
-import Clock from "../../assets/images/clock.png";
-import Travel from "../../assets/images/travel.png";
-import CarParking from "../../assets/images/parking.png";
-import Laundry from "../../assets/images/washing-machine.png";
-import Reception from "../../assets/images/reception.png";
-import Restaurant from "../../assets/images/restaurant.png";
-import CreditCard from "../../assets/images/credit-card.png";
-import Smoking from "../../assets/images/smoking.png";
 import User from "../../assets/images/user.png";
 import { BiUserCircle } from "react-icons/bi";
 import {
@@ -40,9 +31,10 @@ import {
   BsAirplaneEnginesFill,
   BsFillStarFill,
   BsArrowDown,
+  BsFillCreditCard2FrontFill,
 } from "react-icons/bs";
 import { TfiWorld } from "react-icons/tfi";
-import { FaCheck } from "react-icons/fa";
+import { FaCheck, FaSmoking, FaUserCircle } from "react-icons/fa";
 import { ImCross } from "react-icons/im";
 import { FiHeart } from "react-icons/fi";
 import { LuClock3 } from "react-icons/lu";
@@ -50,9 +42,16 @@ import {
   MdLocationOn,
   MdOutlineKeyboardArrowDown,
   MdOutlineKeyboardArrowUp,
+  MdOutlineLocalLaundryService,
+  MdOutlineRestaurantMenu,
+  MdOutlineRoomService,
+  MdOutlineTravelExplore,
   MdPeopleOutline,
 } from "react-icons/md";
 import { Progress } from "@material-tailwind/react";
+import { IoPricetag } from "react-icons/io5";
+import { GiDuration } from "react-icons/gi";
+import { RiParkingBoxLine } from "react-icons/ri";
 
 const TourDetail = ({ name }) => {
   const [open, setOpen] = useState(false);
@@ -154,7 +153,9 @@ const TourDetail = ({ name }) => {
         </div>
         <div className=" flex justify-between gap-5 lg:gap-0 flex-col lg:flex-row lg:px-5 pt-10 lg:pt-16">
           <div className="px-3 lg:px-0">
-            <h1 className=" text-[25px] font-bold">{name}</h1>
+            <h1 className=" text-[25px] p-0 mb-3 font-bold text-black">
+              {name}
+            </h1>
             <p className="  text-md text-gray-700 flex items-center gap-2">
               <HiOutlineLocationMarker
                 size={"1.4rem"}
@@ -167,7 +168,7 @@ const TourDetail = ({ name }) => {
           <hr className=" border-gray-300" />
           <div className="px-2 lg:px-0 flex-wrap flex lg:gap-8 gap-4">
             <div className=" flex items-center gap-2">
-              <img src={`${BestPrice}`} className=" w-12 lg:w-14" />
+              <IoPricetag size={"2rem"} className=" text-[#71b356]" />
               <div>
                 <h2 className=" text-gray-600 text-sm">From</h2>
                 <div className=" font-semibold text-sm flex gap-3">
@@ -177,14 +178,17 @@ const TourDetail = ({ name }) => {
               </div>
             </div>
             <div className=" flex items-center gap-2">
-              <img src={`${Clock}`} className=" w-8 lg:w-10" />
+              <GiDuration size={"2rem"} className=" text-[#71b356]" />
               <div className=" text-sm">
                 <h2 className=" text-gray-600">Duration</h2>
                 <div className=" font-bold flex gap-3">3 days</div>
               </div>
             </div>
             <div className=" flex items-center gap-2">
-              <img src={`${Travel}`} className=" w-9 lg:w-11" />
+              <MdOutlineTravelExplore
+                size={"2rem"}
+                className=" text-[#71b356]"
+              />
               <div className=" text-sm">
                 <h2 className=" text-gray-600">Tour Type</h2>
                 <div className=" font-bold flex gap-3">Adventure</div>
@@ -218,7 +222,7 @@ const TourDetail = ({ name }) => {
       </div>
       <div className=" w-full mb-20 flex flex-col lg:flex-row gap-10 lg:gap-0">
         <div className="w-full lg:w-[65%] h-full ps-4">
-          <h1 className=" text-[20px] lg:text-[26px] font-bold mb-4">
+          <h1 className=" text-[20px] lg:text-[26px] font-bold mb-4 text-black p-0">
             Explore Tours
           </h1>
           <p className=" text-[14px] text-gray-600 leading-6 tracking-wide">
@@ -229,7 +233,7 @@ const TourDetail = ({ name }) => {
             aspernatur aut odit.
           </p>
           <div className=" flex mt-4 mb-10 flex-col lg:flex-row-reverse">
-            <div className="w-full lg:w-[55%]">
+            <div className="w-full lg:w-[60%]">
               <img
                 src="https://gaviaspreview.com/wp/gowilds/wp-content/uploads/2023/02/tour-details.jpg"
                 alt=""
@@ -237,14 +241,18 @@ const TourDetail = ({ name }) => {
             </div>
             <div className=" w-full lg:w-[45%] pe-10 flex gap-4 flex-col mt-7">
               <div>
-                <h1 className=" text-xl mb-3 font-bold">Advance Facilities</h1>
+                <h1 className=" text-xl mb-3 font-bold text-black p-0">
+                  Advance Facilities
+                </h1>
                 <p className=" text-[14px] text-gray-500 tracking-wide leading-6">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                   do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 </p>
               </div>
               <div>
-                <h1 className=" text-xl mb-3 font-bold">Challenge</h1>
+                <h1 className=" text-xl mb-3 font-bold text-black p-0">
+                  Challenge
+                </h1>
                 <p className=" text-[14px] text-gray-500 tracking-wide leading-6">
                   Sed ut perspiciatis unde omnis iste natus error sit voluptatem
                   accusantium laudantium, totam rem aperiam, eaque ipsa quae ab
@@ -294,30 +302,44 @@ const TourDetail = ({ name }) => {
             </div>
           </div>
           <div>
-            <h1 className=" text-[25px] my-5 font-bold">Tour Amenities</h1>
+            <h1 className=" text-[25px] my-5 font-bold text-black p-0">
+              Tour Amenities
+            </h1>
             <div className=" flex flex-wrap gap-0 lg:gap-4 mb-10">
               <div className=" flex items-center gap-3 text-[14px] text-gray-600 w-[50%] lg:w-[30%]">
-                <img src={`${CreditCard}`} className=" w-11" alt="" />
+                <BsFillCreditCard2FrontFill
+                  size={"2rem"}
+                  className=" text-[#71b356]"
+                />
                 Accepts Credit Cards
               </div>
               <div className=" flex items-center gap-3 text-[14px] text-gray-600 w-[50%] lg:w-[30%]">
-                <img src={`${CarParking}`} className=" w-11" alt="" />
+                <RiParkingBoxLine size={"2rem"} className=" text-[#71b356]" />
                 Car Parking
               </div>
               <div className=" flex items-center gap-3 text-[14px] text-gray-600 w-[50%] lg:w-[30%]">
-                <img src={`${Laundry}`} className=" w-11" alt="" />
+                <MdOutlineLocalLaundryService
+                  size={"2rem"}
+                  className=" text-[#71b356]"
+                />
                 Laundry Service
               </div>
               <div className=" flex items-center gap-3 text-[14px] text-gray-600 w-[50%] lg:w-[30%]">
-                <img src={`${Reception}`} className=" w-11" alt="" />
+                <MdOutlineRoomService
+                  size={"2rem"}
+                  className=" text-[#71b356]"
+                />
                 Reservations
               </div>
               <div className=" flex items-center gap-3 text-[14px] text-gray-600 w-[50%] lg:w-[30%]">
-                <img src={`${Restaurant}`} className=" w-11" alt="" />
+                <MdOutlineRestaurantMenu
+                  size={"2rem"}
+                  className=" text-[#71b356]"
+                />
                 Restaurant
               </div>
               <div className=" flex items-center gap-3 text-[14px] text-gray-600 w-[50%] lg:w-[30%]">
-                <img src={`${Smoking}`} className=" w-11" alt="" />
+                <FaSmoking size={"2rem"} className=" text-[#71b356]" />
                 Smoking Allowed
               </div>
             </div>
@@ -365,13 +387,9 @@ const TourDetail = ({ name }) => {
             </div>
           </div>
           <div>
-            <h1 className=" text-[20px] font-bold mt-10 mb-5">
-              Calendar & Price
+            <h1 className=" text-2xl font-bold mb-4 text-black p-0 mt-10">
+              Related Tours
             </h1>
-            {/* <Calendar/> */}
-          </div>
-          <div>
-            <h1 className=" text-2xl font-bold mb-4">Related Tours</h1>
             <div className="w-full hidden lg:flex">
               <Swiper
                 style={{
@@ -1032,7 +1050,7 @@ const TourDetail = ({ name }) => {
             </div>
           </div>
           <div className="mb-8 ">
-            <h1 className="text-xl lg:text-2xl font-bold mb-2">
+            <h1 className="text-xl lg:text-2xl font-bold mb-2 text-black p-0 ">
               3 thoughts on “Walking the Amalfi Coast”
             </h1>
             <hr className=" w-[60px] border-[#71b356] border-[1.5px]" />
@@ -1040,22 +1058,20 @@ const TourDetail = ({ name }) => {
           <div>
             <div className="my-8 flex gap-5 pb-5 lg:pb-0 border-b-[1.5px]">
               <div className=" w-[30%] lg:w-[10%]">
-                <img
-                  src={`${User}`}
-                  className=" w-[60px] lg:w-[70px] "
-                  alt=""
-                />
+                <FaUserCircle size={"3rem"} className=" text-gray-500" />
               </div>
               <div>
                 <div className=" flex flex-col relative">
-                  <h1 className=" text-lg font-bold">admin</h1>
+                  <h1 className=" text-lg font-bold text-black p-0">admin</h1>
                   <div className=" flex items-center gap-3 text-gray-500 mb-5">
                     <hr className=" w-[20px] border-[#71b356] border-[1.5px]" />
                     February 8, 2023
                   </div>
                   <ul className=" text-gray-500 flex gap-6 flex-wrap mb-5">
                     <li>
-                      <h1 className=" mb-1 font-bold">Quality</h1>
+                      <h4 className=" mb-2 font-bold text-gray-500 p-0  ">
+                        Quality
+                      </h4>
                       <div className=" flex gap-1 text-[#F7921E]">
                         <BsStarFill />
                         <BsStarFill />
@@ -1065,7 +1081,9 @@ const TourDetail = ({ name }) => {
                       </div>
                     </li>
                     <li>
-                      <h1 className=" mb-1 font-bold">Location</h1>
+                      <h4 className=" mb-2 font-bold text-gray-500 p-0 ">
+                        Location
+                      </h4>
                       <div className=" flex gap-1 text-[#F7921E]">
                         <BsStarFill />
                         <BsStarFill />
@@ -1075,7 +1093,9 @@ const TourDetail = ({ name }) => {
                       </div>
                     </li>
                     <li>
-                      <h1 className=" mb-1 font-bold">Amenities</h1>
+                      <h4 className=" mb-2 font-bold text-gray-500 p-0 ">
+                        Amenities
+                      </h4>
                       <div className=" flex gap-1 text-[#F7921E]">
                         <BsStarFill />
                         <BsStarFill />
@@ -1085,7 +1105,9 @@ const TourDetail = ({ name }) => {
                       </div>
                     </li>
                     <li>
-                      <h1 className=" mb-1 font-bold">Services</h1>
+                      <h4 className=" mb-2 font-bold text-gray-500 p-0 ">
+                        Services
+                      </h4>
                       <div className=" flex gap-1 text-[#F7921E]">
                         <BsStarFill />
                         <BsStarFill />
@@ -1095,7 +1117,9 @@ const TourDetail = ({ name }) => {
                       </div>
                     </li>
                     <li>
-                      <h1 className=" mb-1 font-bold">Price</h1>
+                      <h4 className=" mb-2 font-bold text-gray-500 p-0 ">
+                        Price
+                      </h4>
                       <div className=" flex gap-1 text-[#F7921E]">
                         <BsStarFill />
                         <BsStarFill />
@@ -1122,22 +1146,18 @@ const TourDetail = ({ name }) => {
             </div>
             <div className="my-8 flex gap-5 pb-5 lg:pb-0 border-b-[1.5px]">
               <div className=" w-[30%] lg:w-[10%]">
-                <img
-                  src={`${User}`}
-                  className=" w-[60px] lg:w-[70px] "
-                  alt=""
-                />
+                <FaUserCircle size={"3rem"} className=" text-gray-500" />
               </div>
               <div>
                 <div className=" flex flex-col relative">
-                  <h1 className=" text-lg font-bold">admin</h1>
+                  <h1 className=" text-lg font-bold text-black p-0">admin</h1>
                   <div className=" flex items-center gap-3 text-gray-500 mb-5">
                     <hr className=" w-[20px] border-[#71b356] border-[1.5px]" />
                     February 8, 2023
                   </div>
                   <ul className=" text-gray-500 flex gap-6 flex-wrap mb-5">
                     <li>
-                      <h1 className=" mb-1 font-bold">Quality</h1>
+                      <h4 className=" mb-2 text-gray-500 font-bold">Quality</h4>
                       <div className=" flex gap-1 text-[#F7921E]">
                         <BsStarFill />
                         <BsStarFill />
@@ -1147,7 +1167,9 @@ const TourDetail = ({ name }) => {
                       </div>
                     </li>
                     <li>
-                      <h1 className=" mb-1 font-bold">Location</h1>
+                      <h4 className=" mb-2 text-gray-500 font-bold">
+                        Location
+                      </h4>
                       <div className=" flex gap-1 text-[#F7921E]">
                         <BsStarFill />
                         <BsStarFill />
@@ -1157,7 +1179,9 @@ const TourDetail = ({ name }) => {
                       </div>
                     </li>
                     <li>
-                      <h1 className=" mb-1 font-bold">Amenities</h1>
+                      <h4 className=" mb-2 text-gray-500 font-bold">
+                        Amenities
+                      </h4>
                       <div className=" flex gap-1 text-[#F7921E]">
                         <BsStarFill />
                         <BsStarFill />
@@ -1167,7 +1191,9 @@ const TourDetail = ({ name }) => {
                       </div>
                     </li>
                     <li>
-                      <h1 className=" mb-1 font-bold">Services</h1>
+                      <h4 className=" mb-2 text-gray-500 font-bold">
+                        Services
+                      </h4>
                       <div className=" flex gap-1 text-[#F7921E]">
                         <BsStarFill />
                         <BsStarFill />
@@ -1177,7 +1203,7 @@ const TourDetail = ({ name }) => {
                       </div>
                     </li>
                     <li>
-                      <h1 className=" mb-1 font-bold">Price</h1>
+                      <h4 className=" mb-2 text-gray-500 font-bold">Price</h4>
                       <div className=" flex gap-1 text-[#F7921E]">
                         <BsStarFill />
                         <BsStarFill />
@@ -1204,22 +1230,18 @@ const TourDetail = ({ name }) => {
             </div>
             <div className="my-8 flex gap-5 pb-5 lg:pb-0 border-b-[1.5px]">
               <div className=" w-[30%] lg:w-[10%]">
-                <img
-                  src={`${User}`}
-                  className=" w-[60px] lg:w-[70px] "
-                  alt=""
-                />
+                <FaUserCircle size={"3rem"} className=" text-gray-500" />
               </div>
               <div>
                 <div className=" flex flex-col relative">
-                  <h1 className=" text-lg font-bold">admin</h1>
+                  <h1 className=" text-lg font-bold text-black p-0">admin</h1>
                   <div className=" flex items-center gap-3 text-gray-500 mb-5">
                     <hr className=" w-[20px] border-[#71b356] border-[1.5px]" />
                     February 8, 2023
                   </div>
                   <ul className=" text-gray-500 flex gap-6 flex-wrap mb-5">
                     <li>
-                      <h1 className=" mb-1 font-bold">Quality</h1>
+                      <h4 className=" mb-2 text-gray-500 font-bold">Quality</h4>
                       <div className=" flex gap-1 text-[#F7921E]">
                         <BsStarFill />
                         <BsStarFill />
@@ -1229,7 +1251,9 @@ const TourDetail = ({ name }) => {
                       </div>
                     </li>
                     <li>
-                      <h1 className=" mb-1 font-bold">Location</h1>
+                      <h4 className=" mb-2 text-gray-500 font-bold">
+                        Location
+                      </h4>
                       <div className=" flex gap-1 text-[#F7921E]">
                         <BsStarFill />
                         <BsStarFill />
@@ -1239,7 +1263,9 @@ const TourDetail = ({ name }) => {
                       </div>
                     </li>
                     <li>
-                      <h1 className=" mb-1 font-bold">Amenities</h1>
+                      <h4 className=" mb-2 text-gray-500 font-bold">
+                        Amenities
+                      </h4>
                       <div className=" flex gap-1 text-[#F7921E]">
                         <BsStarFill />
                         <BsStarFill />
@@ -1249,7 +1275,9 @@ const TourDetail = ({ name }) => {
                       </div>
                     </li>
                     <li>
-                      <h1 className=" mb-1 font-bold">Services</h1>
+                      <h4 className=" mb-2 text-gray-500 font-bold">
+                        Services
+                      </h4>
                       <div className=" flex gap-1 text-[#F7921E]">
                         <BsStarFill />
                         <BsStarFill />
@@ -1259,7 +1287,7 @@ const TourDetail = ({ name }) => {
                       </div>
                     </li>
                     <li>
-                      <h1 className=" mb-1 font-bold">Price</h1>
+                      <h4 className=" mb-2 text-gray-500 font-bold">Price</h4>
                       <div className=" flex gap-1 text-[#F7921E]">
                         <BsStarFill />
                         <BsStarFill />
@@ -1286,7 +1314,7 @@ const TourDetail = ({ name }) => {
             </div>
           </div>
           <div className="mb-8 ">
-            <h1 className="text-xl lg:text-2xl font-bold mb-2">
+            <h1 className="text-xl lg:text-2xl font-bold mb-2 text-black p-0">
               Add a Comment
             </h1>
             <hr className=" w-[60px] border-[#71b356] border-[1.5px]" />
@@ -1298,7 +1326,9 @@ const TourDetail = ({ name }) => {
             <div className=" flex w-full my-8 gap-10">
               <ul className=" w-[50%] lg:w-[60%] text-gray-500 flex gap-10 flex-wrap mb-5">
                 <li>
-                  <h1 className=" mb-1 font-bold">Quality</h1>
+                  <h4 className=" mb-2 font-bold text-gray-500 p-0 ">
+                    Quality
+                  </h4>
                   <div className=" flex gap-1 text-[#F7921E]">
                     <BsStarFill />
                     <BsStarFill />
@@ -1308,7 +1338,9 @@ const TourDetail = ({ name }) => {
                   </div>
                 </li>
                 <li>
-                  <h1 className=" mb-1 font-bold">Location</h1>
+                  <h4 className=" mb-2 font-bold text-gray-500 p-0 ">
+                    Location
+                  </h4>
                   <div className=" flex gap-1 text-[#F7921E]">
                     <BsStarFill />
                     <BsStarFill />
@@ -1318,7 +1350,9 @@ const TourDetail = ({ name }) => {
                   </div>
                 </li>
                 <li>
-                  <h1 className=" mb-1 font-bold">Amenities</h1>
+                  <h4 className=" mb-2 font-bold text-gray-500 p-0 ">
+                    Amenities
+                  </h4>
                   <div className=" flex gap-1 text-[#F7921E]">
                     <BsStarFill />
                     <BsStarFill />
@@ -1328,7 +1362,9 @@ const TourDetail = ({ name }) => {
                   </div>
                 </li>
                 <li>
-                  <h1 className=" mb-1 font-bold">Services</h1>
+                  <h4 className=" mb-2 font-bold text-gray-500 p-0 ">
+                    Services
+                  </h4>
                   <div className=" flex gap-1 text-[#F7921E]">
                     <BsStarFill />
                     <BsStarFill />
@@ -1338,7 +1374,7 @@ const TourDetail = ({ name }) => {
                   </div>
                 </li>
                 <li>
-                  <h1 className=" mb-1 font-bold">Price</h1>
+                  <h4 className=" mb-2 font-bold text-gray-500 p-0 ">Price</h4>
                   <div className=" flex gap-1 text-[#F7921E]">
                     <BsStarFill />
                     <BsStarFill />
@@ -1422,7 +1458,9 @@ const TourDetail = ({ name }) => {
               </div>
             </div>
             <div className="  py-3  border-b">
-              <h1 className=" text-xl font-bold py-2">Add Extra</h1>
+              <h1 className=" text-xl font-bold py-2 text-black p-0">
+                Add Extra
+              </h1>
               <div className="flex justify-between items-center">
                 <div className=" text-md flex items-center gap-2">
                   <input type="checkbox" name="" id="" />
@@ -1448,14 +1486,16 @@ const TourDetail = ({ name }) => {
               </div>
             </div>
             <div className=" py-3">
-              <h1 className=" text-2xl py-2">Total:</h1>
+              <h1 className=" text-2xl py-2 text-black p-0">Total:</h1>
               <button className=" w-full p-3 rounded-lg text-white shadow-lg text-lg font-bold bg-[#71b356]">
                 Book Now
               </button>
             </div>
           </div>
           <div className=" w-full p-5 rounded-lg border">
-            <h1 className=" text-xl font-bold">Tour Information</h1>
+            <h1 className=" text-xl font-bold text-black p-0">
+              Tour Information
+            </h1>
             <div className=" flex items-center gap-4 py-4">
               <BsFillPeopleFill size={"2rem"} className=" text-[#71b356]" />
               <div>
@@ -1486,7 +1526,9 @@ const TourDetail = ({ name }) => {
             </div>
           </div>
           <div className="w-full p-5 rounded-lg border">
-            <h1 className=" text-xl mb-5 font-bold">Last Minute Deals</h1>
+            <h1 className=" text-xl mb-5 font-bold text-black p-0">
+              Last Minute Deals
+            </h1>
             <div className="flex gap-5 border-b pb-7">
               <img
                 className=" w-24 rounded-lg"
@@ -1501,7 +1543,9 @@ const TourDetail = ({ name }) => {
                   <BsFillStarFill />
                   <BsFillStarFill />
                 </div>
-                <h1 className=" font-bold">Discovery Island Kayak Tour </h1>
+                <h1 className=" font-bold text-black p-0 py-2">
+                  Discovery Island Kayak Tour{" "}
+                </h1>
                 <div className=" text-gray-500">
                   From <span className=" text-[#71b356]">$129.00</span>
                 </div>
@@ -1521,7 +1565,9 @@ const TourDetail = ({ name }) => {
                   <BsFillStarFill />
                   <BsFillStarFill />
                 </div>
-                <h1 className=" font-bold">Discovery Island Kayak Tour </h1>
+                <h1 className=" font-bold text-black p-0 py-2">
+                  Discovery Island Kayak Tour{" "}
+                </h1>
                 <div className=" text-gray-500">
                   From <span className=" text-[#71b356]">$129.00</span>
                 </div>
@@ -1541,7 +1587,9 @@ const TourDetail = ({ name }) => {
                   <BsFillStarFill />
                   <BsFillStarFill />
                 </div>
-                <h1 className=" font-bold">Discovery Island Kayak Tour </h1>
+                <h1 className=" font-bold text-black p-0 py-2">
+                  Discovery Island Kayak Tour{" "}
+                </h1>
                 <div className=" text-gray-500">
                   From <span className=" text-[#71b356]">$129.00</span>
                 </div>

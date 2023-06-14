@@ -12,7 +12,7 @@ const Destination = () => {
         className="fixed-bg"
         alt=""
       />
-      <div className=" md:min-h-[250px] bg-white min-h-[200px]  relative flex items-center justify-center overflow-hidden z-50">
+      <div className=" md:min-h-[250px]  bg-white min-h-[200px]  relative flex items-center justify-center overflow-hidden z-50">
         <div className="landing-img"></div>
         <div className=" text-white absolute bottom-0 left-4">
           <h1 className=" text-[40px] md:text-[70px] font-[700] capitalize">
@@ -20,8 +20,8 @@ const Destination = () => {
           </h1>
         </div>
       </div>
-      <div className="flex flex-wrap px-5 md:flex-row flex-col gap-y-5 md:gap-y-0 py-20 bg-white ">
-        <div className=" md:w-3/12 w-full md:p-5 destination-container relative">
+      <div className="flex flex-wrap px-5 gap-5 flex-col lg:flex-row py-20 bg-white ">
+        <div className=" lg:w-[23%] w-full  destination-container relative">
           <div className=" uppercase text-xs font-bold px-7 py-3 bg-secondary absolute z-10 text-white rounded-lg right-10 top-10">
             3 tours
           </div>
@@ -37,13 +37,13 @@ const Destination = () => {
             <div className="absolute bg-[#00000021] w-full h-full z-10"></div>
 
             <img
-              src="src/assets/images/Destination/image-08.jpg"
+              src="https://gaviaspreview.com/wp/gowilds/wp-content/uploads/2023/02/image-08.jpg"
               className=" object-cover destination-img"
               alt=""
             />
           </div>
         </div>
-        <div className=" md:w-3/12 w-full md:p-5 destination-container relative">
+        <div className=" lg:w-[23%] w-full  destination-container relative">
           <div className=" uppercase text-xs font-bold px-7 py-3 bg-secondary absolute z-10 text-white rounded-lg right-10 top-10">
             3 tours
           </div>
@@ -59,13 +59,13 @@ const Destination = () => {
             <div className="absolute bg-[#00000021] w-full h-full z-10"></div>
 
             <img
-              src="src/assets/images/Destination/image-09.jpg"
+              src="https://gaviaspreview.com/wp/gowilds/wp-content/uploads/2023/02/image-09.jpg"
               className=" object-cover destination-img"
               alt=""
             />
           </div>
         </div>
-        <div className=" md:w-6/12  md:p-5 destination-container relative">
+        <div className=" lg:w-[49%] w-full  destination-container relative">
           <div className=" uppercase text-xs font-bold px-7 py-3 bg-secondary absolute z-10 text-white rounded-lg right-10 top-10">
             3 tours
           </div>
@@ -81,14 +81,14 @@ const Destination = () => {
             <div className="absolute bg-[#00000021] w-full h-full z-10"></div>
 
             <img
-              src="src/assets/images/Destination/image-10.jpg"
+              src="https://gaviaspreview.com/wp/gowilds/wp-content/uploads/2023/01/image-10.jpg"
               className=" w-full h-full object-cover destination-img"
               alt=""
             />
           </div>
         </div>
 
-        <div className=" md:w-3/12 w-full md:p-5 destination-container relative">
+        <div className=" lg:w-[23%] w-full  destination-container relative">
           <div className=" uppercase text-xs font-bold px-7 py-3 bg-secondary absolute z-10 text-white rounded-lg right-10 top-10">
             1 tours
           </div>
@@ -104,13 +104,13 @@ const Destination = () => {
             <div className="absolute bg-[#00000021] w-full h-full z-10"></div>
 
             <img
-              src="src/assets/images/Destination/image-11.jpg"
+              src="https://gaviaspreview.com/wp/gowilds/wp-content/uploads/2023/01/image-11.jpg"
               className=" object-cover destination-img"
               alt=""
             />
           </div>
         </div>
-        <div className=" md:w-3/12 w-full md:p-5 destination-container relative">
+        <div className=" lg:w-[23%] w-full  destination-container relative">
           <div className=" uppercase text-xs font-bold px-7 py-3 bg-secondary absolute z-10 text-white rounded-lg right-10 top-10">
             2 tours
           </div>
@@ -126,13 +126,13 @@ const Destination = () => {
             <div className="absolute bg-[#00000021] w-full h-full z-10"></div>
 
             <img
-              src="src/assets/images/Destination/image-12.jpg"
+              src="https://gaviaspreview.com/wp/gowilds/wp-content/uploads/2022/12/image-12.jpg"
               className=" object-cover destination-img"
               alt=""
             />
           </div>
         </div>
-        <div className=" md:w-3/12 w-full md:p-5 destination-container relative">
+        <div className=" lg:w-[23%] w-full  destination-container relative">
           <div className=" uppercase text-xs font-bold px-7 py-3 bg-secondary absolute z-10 text-white rounded-lg right-10 top-10">
             2 tours
           </div>
@@ -148,13 +148,13 @@ const Destination = () => {
             <div className="absolute bg-[#00000021] w-full h-full z-10"></div>
 
             <img
-              src="src/assets/images/Destination/image-13.jpg"
+              src="https://gaviaspreview.com/wp/gowilds/wp-content/uploads/2023/01/image-13.jpg"
               className=" object-cover destination-img"
               alt=""
             />
           </div>
         </div>
-        <div className=" md:w-3/12 w-full md:p-5 destination-container relative">
+        <div className=" lg:w-[23%] w-full  destination-container relative">
           <div className=" uppercase text-xs font-bold px-7 py-3 bg-secondary absolute z-10 text-white rounded-lg right-10 top-10">
             2 tours
           </div>
@@ -176,7 +176,7 @@ const Destination = () => {
             />
           </div>
         </div>
-        <div className=" md:w-6/12  md:p-5 destination-container relative">
+        <div className=" lg:w-[47.50%] w-full destination-container relative">
           <div className=" uppercase text-xs font-bold px-7 py-3 bg-secondary absolute z-10 text-white rounded-lg right-10 top-10">
             3 tours
           </div>
@@ -198,7 +198,7 @@ const Destination = () => {
             />
           </div>
         </div>
-        <div className=" md:w-3/12 w-full md:p-5 destination-container relative">
+        <div className=" lg:w-[23%] w-full  destination-container relative">
           <div className=" uppercase text-xs font-bold px-7 py-3 bg-secondary absolute z-10 text-white rounded-lg right-10 top-10">
             2 tours
           </div>
@@ -220,7 +220,7 @@ const Destination = () => {
             />
           </div>
         </div>
-        <div className=" md:w-3/12 w-full md:p-5 destination-container relative">
+        <div className=" lg:w-[23%] w-full  destination-container relative">
           <div className=" absolute z-20 p-12 bottom-5 flex flex-col justify-start  items-start gap-4">
             <span className=" uppercase text-xs font-bold px-5 py-3 bg-secondary  text-white rounded-lg ">
               up to 50% off
@@ -239,14 +239,14 @@ const Destination = () => {
           <div className=" rounded-lg overflow-hidden relative  h-80">
             <div className="absolute bg-[rgba(98,171,96,0.75)] w-full h-full z-10"></div>
             <img
-              src="src/assets/images/Destination/tour-10.jpg"
+              src="https://gaviaspreview.com/wp/gowilds/wp-content/uploads/2023/01/tour-10.jpg"
               className=" h-full object-cover destination-img w-full"
               alt=""
             />
           </div>
         </div>
       </div>
-      <div className="flex flex-col md:flex-row md:items-center items-start justify-between md:min-h-[340px] min-h-[200px] relative  overflow-hidden z-50 md:px-28 px-5 py-20">
+      <div className="flex flex-col md:flex-row md:items-center items-start justify-between lg:min-h-[100vh] min-h-[200px] relative  overflow-hidden z-50 md:px-28 px-5 py-20">
         <div className={`bg-fixed-photo-for-music md:hidden`}></div>
         <div className=" text-white flex flex-col items-start">
           <div className="px-5 py-4 bg-[#f7921e2f] text-secondary rounded-lg font-semibold mb-7">
@@ -255,7 +255,7 @@ const Destination = () => {
           <h2 className=" md:text-[48px] font-bold leading-tight mb-10">
             Ready to travel with real <br /> adventure and enjoy natural
           </h2>
-          <div className=" cursor-pointer text-white px-5 py-4 rounded-lg duration-150 transition bg-[#7ecc5d] hover:bg-primary relative -bottom-4">
+          <div className=" cursor-pointer text-white px-5 py-4 rounded-lg duration-150 transition bg-[#7ecc5d] hover:bg-primary relative bottom-3">
             <a href="/tours" className=" capitalize font-bold">
               Discover more
             </a>
@@ -381,7 +381,7 @@ const Destination = () => {
           </div>
         </div>
       </div>
-      <Adventure_gallery/>
+      <Adventure_gallery />
     </div>
   );
 };
