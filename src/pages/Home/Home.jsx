@@ -235,27 +235,10 @@ const Home = () => {
       />
       <div className="relative h-screen">
         <img
-          src="https://gaviaspreview.com/wp/gowilds/wp-content/uploads/2023/02/slider-1.jpg"
-          className=" h-full w-full absolute"
+          src="src/assets/images/breadcrumb-01.jpg"
+          className=" absolute"
           alt=""
         />
-        <div className=" relative z-10 flex flex-col justify-center items-start h-full">
-          <div className=" py-10 px-20">
-            <h1 className=" text-[74px] font-semibold leading-[79px] text-white mb-5">
-              Tour Travel & <br /> Adventure Camping
-            </h1>
-            <p className=" text-white mb-12 text-lg leading-7">
-              Phasellus condimentum Laoreet turpis sodales <br /> in.Integer leo
-              arcu mollis anmet tempor.
-            </p>
-            <a
-              href="/tour"
-              className=" bg-primary text-white rounded-md text-base font-bold leading-6 px-12 py-6 cursor-pointer z-10"
-            >
-              Let's get started
-            </a>
-          </div>
-        </div>
       </div>
       {/* Popular Activities */}
       <div className=" min-h-screen relative bg-white">
@@ -295,7 +278,7 @@ const Home = () => {
               <div className=" rounded-tr-[50px] overflow-hidden w-fit">
                 <a href="/about">
                   <img
-                    src="src/assets/images/image-20.jpg"
+                    src="https://gaviaspreview.com/wp/gowilds/wp-content/uploads/2023/02/image-20.jpg"
                     className=" hover:scale-150 transition duration-[5.5s] ease-in"
                     alt=""
                   />
@@ -307,7 +290,7 @@ const Home = () => {
               >
                 <a href="/about">
                   <img
-                    src="src/assets/images/image-21.jpg"
+                    src="https://gaviaspreview.com/wp/gowilds/wp-content/uploads/2023/02/image-21.jpg"
                     className=" rounded-3xl hover:scale-150 transition duration-[5.5s] ease-in"
                     alt=""
                   />
@@ -430,65 +413,65 @@ const Home = () => {
             {/* row */}
             <div className="flex md:flex-row flex-col gap-14 pb-64">
               {/* first column */}
-              <div className="flex-[30%] bg-white p-7 rounded-xl flex flex-col justify-center">
+              <div className="flex-[33%] bg-white p-5 rounded-xl flex flex-col justify-center">
                 <div className="flex item-center  gap-5 cursor-pointer  bg-secondary text-white rounded-lg p-3">
                   <GiCampingTent size={"2.5rem"} />
-                  <h3 className=" text-lg font-bold flex w-full items-center">
+                  <h3 className=" text-md font-bold flex w-full items-center ">
                     <a href="/tour" className=" w-full">
                       Tent camping
                     </a>
                   </h3>
                 </div>
-                <div className="flex item-center  gap-5 bg-[#f3f8f6] rounded-lg p-3 hover:bg-secondary hover:text-white transition duration-500 activity-card cursor-pointer mt-5">
+                <div className="flex item-center  gap-5 bg-[#f3f8f6] rounded-lg p-3 hover:bg-secondary transition duration-500 activity-card cursor-pointer mt-5">
                   <BiWorld
                     size={"2.5rem"}
                     className=" text-primary activity-icon transition duration-500"
                   />
-                  <h3 className=" text-lg font-bold flex w-full items-center">
+                  <h3 className=" text-md font-bold flex w-full items-center text-black hover:text-white">
                     <a href="/tour" className=" w-full">
                       Adventure travel
                     </a>
                   </h3>
                 </div>
-                <div className="flex item-center  gap-5 bg-[#f3f8f6] rounded-lg p-3 hover:bg-secondary hover:text-white transition duration-500 activity-card cursor-pointer mt-5">
+                <div className="flex item-center  gap-5 bg-[#f3f8f6] rounded-lg p-3 hover:bg-secondary text-black  transition duration-500 activity-card cursor-pointer mt-5">
                   <GiMountainRoad
                     size={"2.5rem"}
                     className=" text-primary activity-icon transition duration-500"
                   />
-                  <h3 className=" text-lg font-bold flex w-full items-center">
+                  <h3 className=" text-md font-bold flex w-full text-black hover:text-white items-center">
                     <a href="/tour" className=" w-full">
                       Mountain biking
                     </a>
                   </h3>
                 </div>
-                <div className="flex item-center  gap-5 bg-[#f3f8f6] rounded-lg p-3 hover:bg-secondary hover:text-white transition duration-500 activity-card cursor-pointer mt-5">
+                <div className="flex item-center gap-5 bg-[#f3f8f6] rounded-lg p-3 hover:bg-secondary text-black  transition duration-500 activity-card cursor-pointer mt-5">
                   <GiCommercialAirplane
                     size={"2.5rem"}
                     className=" text-primary activity-icon transition duration-500"
                   />
-                  <h3 className=" text-lg font-bold flex w-full items-center">
+                  <h3 className=" text-md font-bold flex w-full text-black hover:text-white items-center">
                     <a href="/tour" className=" w-full">
                       Discovery world
                     </a>
                   </h3>
                 </div>
-                <div className="flex item-center  gap-5 bg-[#f3f8f6] rounded-lg p-3 hover:bg-secondary hover:text-white transition duration-500 activity-card cursor-pointer mt-5">
+                <div className="flex item-center  gap-5 bg-[#f3f8f6] rounded-lg p-3 hover:bg-secondary text-black  transition duration-500 activity-card cursor-pointer mt-5">
                   <GiFishingBoat
                     size={"2.5rem"}
                     className=" text-primary activity-icon transition duration-500"
                   />
-                  <h3 className=" text-lg font-bold flex w-full items-center">
+                  <h3 className=" text-md font-bold flex w-full text-black hover:text-white items-center">
                     <a href="/tour" className=" w-full">
                       Fishing & swimming
                     </a>
                   </h3>
                 </div>
-                <div className="flex item-center  gap-5 bg-[#f3f8f6] rounded-lg p-3 hover:bg-secondary hover:text-white transition duration-500 activity-card cursor-pointer mt-5">
+                <div className="flex item-center   gap-5 bg-[#f3f8f6] rounded-lg p-3 hover:bg-secondary text-black hover:text-white transition duration-500 activity-card cursor-pointer mt-5">
                   <FaHiking
                     size={"2.2rem"}
                     className=" text-primary activity-icon transition duration-500"
                   />
-                  <h3 className=" text-lg font-bold flex w-full items-center">
+                  <h3 className=" text-md font-bold flex w-full text-black hover:text-white items-center">
                     <a href="/tour" className=" w-full">
                       Mountain hiking
                     </a>
@@ -496,9 +479,12 @@ const Home = () => {
                 </div>
               </div>
               {/* second column */}
-              <div className="flex-[30%] text-white flex flex-col gap-5">
+              <div className="flex-[33%] text-white flex flex-col gap-5">
                 <div className=" w-28">
-                  <img src="src/assets/images/camp.png" alt="" />
+                  <img
+                    src="http://localhost:5173/src/assets/images/camp.png"
+                    alt=""
+                  />
                 </div>
                 <h2 className=" text-[26px] font-bold leading-9 mb-1">
                   Real adventure & enjoy your dream tours
@@ -508,7 +494,10 @@ const Home = () => {
                   volutpat neque fermeny massa lacus.
                 </p>
                 <div className="">
-                  <img src="src/assets/images/People/people.png" alt="" />
+                  <img
+                    src="https://gaviaspreview.com/wp/gowilds/wp-content/uploads/2023/02/people.png"
+                    alt=""
+                  />
                 </div>
                 <div className="">
                   <div className="flex justify-between mb-3">
@@ -534,10 +523,10 @@ const Home = () => {
                 </div>
               </div>
               {/* third column */}
-              <div className="flex-[30%]">
+              <div className="flex-[33%]">
                 <div className=" rounded-xl overflow-hidden h-full">
                   <img
-                    src="src/assets/images/People/image-06.jpg"
+                    src="http://localhost:5173/src/assets/images/People/image-06.jpg"
                     className=" h-full object-cover"
                     alt="tent-img"
                   />
