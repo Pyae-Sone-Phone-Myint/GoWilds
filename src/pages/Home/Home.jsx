@@ -234,8 +234,28 @@ const Home = () => {
         alt=""
       />
       <div className="relative h-screen">
-        <img src="src/assets/images/breadcrumb-01.jpg" className=" absolute" alt="" />
-       
+        <img
+          src="https://gaviaspreview.com/wp/gowilds/wp-content/uploads/2023/02/slider-1.jpg"
+          className=" h-full w-full absolute"
+          alt=""
+        />
+        <div className=" relative z-10 flex flex-col justify-center items-start h-full">
+          <div className=" py-10 px-20">
+            <h1 className=" text-[74px] font-semibold leading-[79px] text-white mb-5">
+              Tour Travel & <br /> Adventure Camping
+            </h1>
+            <p className=" text-white mb-12 text-lg leading-7">
+              Phasellus condimentum Laoreet turpis sodales <br /> in.Integer leo
+              arcu mollis anmet tempor.
+            </p>
+            <a
+              href="/tour"
+              className=" bg-primary text-white rounded-md text-base font-bold leading-6 px-12 py-6 cursor-pointer z-10"
+            >
+              Let's get started
+            </a>
+          </div>
+        </div>
       </div>
       {/* Popular Activities */}
       <div className=" min-h-screen relative bg-white">

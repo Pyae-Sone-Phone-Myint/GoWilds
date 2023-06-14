@@ -7,10 +7,13 @@ import iconEarth from "../../assets/images/planet-earth.png";
 import { GiEarthAmerica } from "react-icons/gi";
 import { FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa";
 import { IoLogoLinkedin } from "react-icons/io5";
+import Landing_image from "../../components/Landing/Landing_image";
+import Explore_more from "../../components/Explore_more/Explore_more";
 const ContactPage = () => {
   return (
     <div className="contact-page">
-      <div className="2xl:w-[68%] xl:w-[97%] w-[98%]  mx-auto  ">
+      <Landing_image about={"contact"} page={"contact"} />
+      <div className="2xl:w-[68%] xl:w-[97%] w-[98%]  mx-auto pt-20 ">
         <div className="main-contact-section">
           <div className=" text-center mb-4 xl:w-[60%] lg:w-[65%] md:w-[80%] mx-auto flex flex-col gap-3">
             <span className="py-[9px] px-[22px]  self-center  inline-block text-primary bg-[#e2f0dc] rounded text-base font-[600]">
@@ -93,41 +96,21 @@ const ContactPage = () => {
             </div>
           </div>
         </div>
-        
       </div>
       <div className="relative">
-        <div className="absolute top-[-10%] w-full">
-
-      <div className="2xl:w-[68%] xl:w-[97%] w-[98%] floating-msg flex md:flex-row flex-col gap-3 md:justify-between lg:p-16 py-[50px] px-[10px]  rounded-xl  mx-auto   ">
-      {/* <img src={iconEarth} alt="" /> */}
-      <div className=" flex gap-3 items-center">
-        <GiEarthAmerica className=" text-6xl" />
-        <div className="">
-          <p className="  font-[500] text-[#e6e4e3]">QUISEQUE VEL ORTOR </p>
-          <p className=" lg:text-4xl text-2xl font-bold">
-            Ready to adventure and enjoy natural
-          </p>
+        <Explore_more />
+        <div className="map  ">
+          <iframe
+            className=" w-full"
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d317893.1993960357!2d-0.119554!3d51.503297!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487604b900d26973%3A0x4291f3172409ea92!2slastminute.com%20London%20Eye!5e0!3m2!1sen!2sus!4v1686317170961!5m2!1sen!2sus"
+            style={{ border: 0 }}
+            allowFullScreen=""
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+            width={600}
+            height={450}
+          />
         </div>
-      </div>
-        </div>
-      <div className="">
-        <button className=" bg-white hover:bg-[#f3f8f6] font-bold text-[#1C231F] lg:py-[18px]  py-[16px] rounded-lg lg:px-[32px] px-[26px] duration-300 ease-in-out">
-          Explore More
-        </button>
-      </div>
-    </div>
-      <div className="map  ">
-            <iframe
-              className=" w-full"
-              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d317893.1993960357!2d-0.119554!3d51.503297!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487604b900d26973%3A0x4291f3172409ea92!2slastminute.com%20London%20Eye!5e0!3m2!1sen!2sus!4v1686317170961!5m2!1sen!2sus"
-              style={{ border: 0 }}
-              allowFullScreen=""
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-              width={600}
-              height={450}
-            />
-          </div>
       </div>
     </div>
   );
