@@ -228,9 +228,16 @@ const Home = () => {
 
   return (
     <>
-      <img src="src/assets/images/Bg_shape/bg-01.jpg" className="fixed-bg" alt="" />
+      <img
+        src="src/assets/images/Bg_shape/bg-01.jpg"
+        className="fixed-bg"
+        alt=""
+      />
+      <div className="relative h-screen">
+        <img src="src/assets/images/breadcrumb-01.jpg" className=" absolute" alt="" />
+       
+      </div>
       {/* Popular Activities */}
-      <img src="src/assets/images/breadcrumb-01.jpg" alt="" />
       <div className=" min-h-screen relative bg-white">
         <div className="bg-world-photo"></div>
         <div className=" text-center py-32">
@@ -575,7 +582,7 @@ const Home = () => {
               </div>
             </div>
           </div>
-          <div className="card-column md:flex-[30%] shadow-md rounded-lg cursor-pointer relative ">
+          <div className="card-column md:flex-[30%] a-md rounded-lg cursor-pointer relative ">
             <div className="flex items-center gap-10 py-5 px-7 relative z-10">
               <div className=" card-icon">
                 <GiSolarPower size={"3.5rem"} className="" />
@@ -675,7 +682,7 @@ const Home = () => {
 
               <img
                 src="src/assets/images/Destination/image-08.jpg"
-                className=" object-cover destination-img"
+                className=" object-cover destination-img h-full w-full"
                 alt=""
               />
             </div>
@@ -719,7 +726,7 @@ const Home = () => {
 
               <img
                 src="src/assets/images/Destination/image-09.jpg"
-                className=" object-cover destination-img"
+                className=" object-cover destination-img h-full w-full"
                 alt=""
               />
             </div>
@@ -741,7 +748,7 @@ const Home = () => {
 
               <img
                 src="src/assets/images/Destination/image-11.jpg"
-                className=" object-cover destination-img"
+                className=" object-cover destination-img w-full h-full"
                 alt=""
               />
             </div>
@@ -763,7 +770,7 @@ const Home = () => {
 
               <img
                 src="src/assets/images/Destination/image-12.jpg"
-                className=" object-cover destination-img"
+                className=" object-cover destination-img h-full w-full"
                 alt=""
               />
             </div>
@@ -785,7 +792,7 @@ const Home = () => {
 
               <img
                 src="src/assets/images/Destination/image-13.jpg"
-                className=" object-cover destination-img"
+                className=" object-cover destination-img h-full w-full"
                 alt=""
               />
             </div>
@@ -893,11 +900,11 @@ const Home = () => {
       </div>
       {/* Testimonials */}
       <div className="relative min-h-screen overflow-hidden">
-        <div className="absolute h-screen bg-transparent w-full overflow-hidden">
+        <div className="absolute h-full bg-transparent w-full overflow-hidden">
           <div className="bg-shape-10"></div>
         </div>
         <div className=" md:px-10 px-5 flex flex-col md:flex-row md:items-center items-start justify-between relative  overflow-hidden z-50 pb-16 py-20">
-          <div className=" md:flex-[50%] flex-1">
+          <div className=" md:flex-[50%] flex-1 pb-56">
             <div className=" py-32">
               <div className=" mb-10">
                 <span className=" px-5 py-4 bg-[#64ab4513] text-primary rounded-lg font-semibold">
