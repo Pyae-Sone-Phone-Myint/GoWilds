@@ -87,7 +87,7 @@ const Team = () => {
               <div className=" flex items-center gap-5">
                 <div className=" p-3 rounded-full overflow-hidden border-4 w-fit border-primary">
                   <img
-                    src={"src/assets/images/avatar.jpg"}
+                    src="https://gaviaspreview.com/wp/gowilds/wp-content/uploads/2023/01/avatar.jpg"
                     className=" rounded-full w-12"
                     alt="avatar"
                   />
@@ -109,7 +109,7 @@ const Team = () => {
               <a href="/about" className=" team_img">
                 <div className=" rounded-xl overflow-hidden w-[90%]">
                   <img
-                    src={"src/assets/images/Landing_Team/image-20.jpg"}
+                    src="https://gaviaspreview.com/wp/gowilds/wp-content/uploads/2023/02/image-20.jpg"
                     alt=""
                   />
                 </div>
@@ -117,7 +117,7 @@ const Team = () => {
               <div className=" absolute -bottom-20">
                 <a href="/about" className=" team_img">
                   <div className=" landing rounded-xl overflow-hidden w-[70%]">
-                    <img src={"src/assets/images/Tour/tour-2.jpg"} alt="" />
+                    <img src="https://gaviaspreview.com/wp/gowilds/wp-content/uploads/2023/01/tour-2.jpg" alt="" />
                   </div>
                 </a>
               </div>

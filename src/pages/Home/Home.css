@@ -95,7 +95,7 @@
  }
 
 .bg-world-photo {
-  background-image: url("src/assets/images/Bg_shape/bg-shape-04.png");
+  /* background-image: url("https://gaviaspreview.com/wp/gowilds/wp-content/uploads/2022/12/bg-shape-01.png"); */
   background-position: center;
   background-size: cover;
   width: 100%;
@@ -144,7 +144,7 @@
 /* About Company */
 
 .bg-shape-02 {
-  background-image: url("src/assets/images/Bg_shape/bg-shape-02.png");
+  background-image: url("https://gaviaspreview.com/wp/gowilds/wp-content/uploads/2022/12/bg-shape-02.png");
   background-position: bottom;
   background-size: contain;
   background-repeat: no-repeat;
