@@ -46,10 +46,15 @@ import { FaCheck } from "react-icons/fa";
 import { ImCross } from "react-icons/im";
 import { FiHeart } from "react-icons/fi";
 import { LuClock3 } from "react-icons/lu";
-import { MdLocationOn, MdOutlineKeyboardArrowDown, MdOutlineKeyboardArrowUp, MdPeopleOutline } from "react-icons/md";
+import {
+  MdLocationOn,
+  MdOutlineKeyboardArrowDown,
+  MdOutlineKeyboardArrowUp,
+  MdPeopleOutline,
+} from "react-icons/md";
 import { Progress } from "@material-tailwind/react";
 
-const TourDetail = ({name}) => {
+const TourDetail = ({ name }) => {
   const [open, setOpen] = useState(false);
   const toggleOpen = () => setOpen((cur) => !cur);
   return (
@@ -319,15 +324,13 @@ const TourDetail = ({name}) => {
           </div>
           <div className=" text-[30px] font-bold my-7">Tour Plan</div>
           <div className=" w-full">
-            {open ? null : (
-              <Button
-                className=" w-full flex justify-between items-center text-xl bg-[#71b356] shadow-none hover:shadow-none"
-                onClick={toggleOpen}
-              >
-                Day 1st <MdOutlineKeyboardArrowDown size={"1.5rem"} />
-              </Button>
-            )}
-            <Collapse open={open} className=" relative z-10">
+            <Button
+              className=" w-full flex justify-between items-center text-xl bg-[#71b356] shadow-none hover:shadow-none"
+              onClick={toggleOpen}
+            >
+              Day 1st <MdOutlineKeyboardArrowDown size={"1.5rem"} />
+            </Button>
+            <Collapse open={open} className=" relative z-50">
               <Card
                 className=" w-full border shadow-none py-3"
                 onClick={toggleOpen}

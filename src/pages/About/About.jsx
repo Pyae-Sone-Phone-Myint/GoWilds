@@ -399,7 +399,6 @@ const About = () => {
         </div>
       </div>
       <Adventure_gallery />
-      <div className="h-[500px] relative bg-black"></div>
     </>
   );
 };

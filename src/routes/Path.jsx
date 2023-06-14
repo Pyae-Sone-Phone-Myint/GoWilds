@@ -12,7 +12,6 @@ import TourDetail from "../pages/Tours/TourDetail";
 
 import ContactPage from "../pages/Contact/ContactPage";
 
-import Home from "../pages/Home";
 import New01 from "../pages/New/New01";
 import News01Page2 from "../pages/New/News01Page2";
 import News1Detail from "../pages/New/News1Detail";

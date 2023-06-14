@@ -10,7 +10,7 @@ import "./App.css"
 const App = () => {
   return (
     <>
-      <div className="sticky top-0 z-10">
+      <div className="sticky top-0 z-[1000]">
         <Navbar />
       </div>
       <Path />

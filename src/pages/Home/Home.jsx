@@ -928,7 +928,6 @@ const Home = () => {
       </div>
       {/* Adventure Gallery */}
       <Adventure_gallery />
-      <div className="h-[500px] relative bg-black"></div>
       {/* Lazy Loader */}
       <div className={`lazy-loader ${displayCheck ? "" : "hidden"}`}>
         <div

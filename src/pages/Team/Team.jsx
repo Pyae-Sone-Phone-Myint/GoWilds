@@ -149,7 +149,6 @@ const Team = () => {
       {/* Explore More */}
       <Explore_more/>
 
-      <div className="h-[500px] relative bg-black"></div>
     </>
   );
 };
