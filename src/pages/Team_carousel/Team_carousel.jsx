@@ -10,26 +10,26 @@ import { SplideSlide } from "@splidejs/react-splide";
 
 const Team_carousel = () => {
   const brands = [
-    { id: 1, image: "src/assets/images/brand.png" },
-    { id: 2, image: "src/assets/images/brand.png" },
-    { id: 3, image: "src/assets/images/brand.png" },
-    { id: 4, image: "src/assets/images/brand.png" },
-    { id: 5, image: "src/assets/images/brand.png" },
-    { id: 6, image: "src/assets/images/brand.png" },
+    { id: 1, image: "https://gaviaspreview.com/wp/gowilds/wp-content/plugins/gowilds-themer/elementor/assets/images/brand.png" },
+    { id: 2, image: "https://gaviaspreview.com/wp/gowilds/wp-content/plugins/gowilds-themer/elementor/assets/images/brand.png" },
+    { id: 3, image: "https://gaviaspreview.com/wp/gowilds/wp-content/plugins/gowilds-themer/elementor/assets/images/brand.png" },
+    { id: 4, image: "https://gaviaspreview.com/wp/gowilds/wp-content/plugins/gowilds-themer/elementor/assets/images/brand.png" },
+    { id: 5, image: "https://gaviaspreview.com/wp/gowilds/wp-content/plugins/gowilds-themer/elementor/assets/images/brand.png" },
+    { id: 6, image: "https://gaviaspreview.com/wp/gowilds/wp-content/plugins/gowilds-themer/elementor/assets/images/brand.png" },
   ];
 
   const brand = brands.map((item) => {
     return (
       <SplideSlide key={item.id}>
         <div className=" px-20 py-5 brand-holder">
-          <img src={item.image} alt="" />
+          <img src="https://gaviaspreview.com/wp/gowilds/wp-content/plugins/gowilds-themer/elementor/assets/images/brand.png" alt="" />
         </div>
       </SplideSlide>
     );
   });
   return (
     <>
-      <img src="src/assets/images/bg-01.jpg" className="fixed-bg" alt="" />
+      <img src="https://gaviaspreview.com/wp/gowilds/wp-content/uploads/2023/02/bg-01.jpg" className="fixed-bg" alt="" />
       <Landing_image about={"Team Carousel"} page={"Team carousel"} />
       {/* Team Members */}
       <div className=" px-10 min-h-screen py-32 relative bg-white">

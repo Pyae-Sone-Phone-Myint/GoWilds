@@ -13,9 +13,6 @@ import {IoLogoLinkedin} from 'react-icons/io5'
 import { MdLocationOn, MdMail } from "react-icons/md";
 import { HiArrowUpRight, HiPhone } from "react-icons/hi2";
 import { Link } from "react-router-dom";
-import iconHeadphone from "../../assets/images/icon-headphone.png";
-import iconTravel from "../../assets/images/icon-travel.png";
-import logoWhite from "../../assets/images/logo-white.png";
 const Footer = () => {
   return (
     <>
@@ -25,7 +22,7 @@ const Footer = () => {
             <div className="flex items-center  pl-[15px] md:pr-[60px] px-[15px] md:pb-[70px] pb-[30px] mb-[40px] md:mb-0 mobile-border">
               <div className="pr-[35px]">
                 <Link to="/">
-                  <img src={iconHeadphone} alt="" className="max-w-[80px]" />
+                  <img src="https://gaviaspreview.com/wp/gowilds/wp-content/uploads/2023/01/icon-headphone.png" alt="" className="max-w-[80px]" />
                 </Link>
               </div>
               <Link to={"/"}>
@@ -45,7 +42,7 @@ const Footer = () => {
             <div className="flex items-center  pl-[15px] md:pr-[60px] px-[15px] pb-[70px] md:border-none ">
               <div className="pr-[35px]">
                 <Link to={"/"}>
-                  <img src={iconTravel} alt="" className="max-w-[80px]" />
+                  <img src="https://gaviaspreview.com/wp/gowilds/wp-content/uploads/2023/01/icon-travel.png" alt="" className="max-w-[80px]" />
                 </Link>
               </div>
               <Link to={"/"}>
@@ -64,7 +61,7 @@ const Footer = () => {
           </div>
           <div className="py-[80px] main-footer-container flex lg:justify-evenly justify-between lg:flex-nowrap flex-wrap">
             <div className="footer-items lg:w-72 md:w-[45%] w-[80%] lg:mb-0 mb-8 flex flex-col gap-4">
-              <img src={logoWhite} alt="" className=" max-w-[140px]" />
+              <img src="https://gaviaspreview.com/wp/gowilds/wp-content/uploads/2022/12/logo-white.png" alt="" className=" max-w-[140px]" />
               <p className=" leading-7 text-[16px] mb-[16px]">
                 To take trivial example which us ever undertakes laborious
                 physica exercise except obsome.
