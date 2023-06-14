@@ -29,12 +29,12 @@ const About = () => {
   ];
 
   const brands = [
-    { id: 1, image: "src/assets/images/brand.png" },
-    { id: 2, image: "src/assets/images/brand.png" },
-    { id: 3, image: "src/assets/images/brand.png" },
-    { id: 4, image: "src/assets/images/brand.png" },
-    { id: 5, image: "src/assets/images/brand.png" },
-    { id: 6, image: "src/assets/images/brand.png" },
+    { id: 1, image: "https://gaviaspreview.com/wp/gowilds/wp-content/plugins/gowilds-themer/elementor/assets/images/brand.png" },
+    { id: 2, image: "https://gaviaspreview.com/wp/gowilds/wp-content/plugins/gowilds-themer/elementor/assets/images/brand.png" },
+    { id: 3, image: "https://gaviaspreview.com/wp/gowilds/wp-content/plugins/gowilds-themer/elementor/assets/images/brand.png" },
+    { id: 4, image: "https://gaviaspreview.com/wp/gowilds/wp-content/plugins/gowilds-themer/elementor/assets/images/brand.png" },
+    { id: 5, image: "https://gaviaspreview.com/wp/gowilds/wp-content/plugins/gowilds-themer/elementor/assets/images/brand.png" },
+    { id: 6, image: "https://gaviaspreview.com/wp/gowilds/wp-content/plugins/gowilds-themer/elementor/assets/images/brand.png" },
   ];
 
   const service = services.map((item) => {
@@ -59,7 +59,7 @@ const About = () => {
         <hr />
         <div className=" flex py-5 items-center gap-8">
           <div className=" w-20 overflow-hidden rounded-full">
-            <img src="src/assets/images/testimonial.jpg" alt="" />
+            <img src="https://gaviaspreview.com/wp/gowilds/wp-content/plugins/gowilds-themer/elementor/assets/images/testimonial.jpg" alt="" />
           </div>
           <div className="">
             <h4 className=" text-xl font-bold">{item.name}</h4>
@@ -82,7 +82,11 @@ const About = () => {
 
   return (
     <>
-      <img src="src/assets/images/Bg_shape/bg-01.jpg" className="fixed-bg" alt="" />
+      <img
+        src="https://gaviaspreview.com/wp/gowilds/wp-content/uploads/2023/02/bg-01.jpg"
+        className="fixed-bg"
+        alt=""
+      />
       {/*About Page Hero Section */}
       <Hero_section about={"About"} />
 
@@ -198,7 +202,10 @@ const About = () => {
       <div className="flex flex-col lg:flex-row justify-between min-h-[calc(100vh-100px)] relative bg-white z-50 pt-24 md:px-20 px-5 gap-y-10">
         <div className=" flex-[40%]  px-5 pb-0">
           <div className=" overflow-hidden h-full top-rounded">
-            <img src="src/assets/images/image-07.jpg" alt="" />
+            <img
+              src="https://gaviaspreview.com/wp/gowilds/wp-content/uploads/2022/12/image-07.jpg"
+              alt=""
+            />
           </div>
         </div>
         <div className=" flex-[60%] flex ">
@@ -260,7 +267,7 @@ const About = () => {
             </span>
           </h2>
         </div>
-          <Team_slider />
+        <Team_slider />
       </div>
 
       {/* Who we are */}
@@ -269,14 +276,14 @@ const About = () => {
           <div className="flex md:items-end md:flex-row flex-col gap-8">
             <div className="">
               <img
-                src="src/assets/images/image-16.jpg"
+                src="https://gaviaspreview.com/wp/gowilds/wp-content/uploads/2023/01/image-16.jpg"
                 className=" w-full h-full object-contain rounded-lg"
                 alt=""
               />
             </div>
             <div className="">
               <img
-                src="src/assets/images/image-17.jpg"
+                src="https://gaviaspreview.com/wp/gowilds/wp-content/uploads/2023/01/image-17.jpg"
                 className=" w-full h-full object-contain rounded-lg"
                 alt=""
               />
@@ -285,7 +292,7 @@ const About = () => {
           <div className=" flex md:justify-center">
             <div className="md:w-[80%] w-full">
               <img
-                src="src/assets/images/image-18.jpg"
+                src="https://gaviaspreview.com/wp/gowilds/wp-content/uploads/2023/01/image-18.jpg"
                 className=" w-full h-full object-contain rounded-lg"
                 alt=""
               />
@@ -386,7 +393,10 @@ const About = () => {
         <div className="flex flex-col md:flex-row md:items-center items-start justify-between relative  overflow-hidden z-50 pb-16">
           <div className=" md:flex-[50%] flex-1">
             <div className="">
-              <img src="src/assets/images/icon-testimonial.png" alt="" />
+              <img
+                src="https://gaviaspreview.com/wp/gowilds/wp-content/uploads/2023/02/icon-testimonial.png"
+                alt=""
+              />
             </div>
           </div>
           <div className="md:flex-[50%] flex-1 overflow-hidden w-full">

@@ -461,7 +461,7 @@ const Navbar = () => {
             <div className="mx-3">
               <Link>
                 <img
-                  src="src\assets\images\logo.png"
+                  src="https://gaviaspreview.com/wp/gowilds/wp-content/uploads/2023/01/logo.png"
                   className="w-[150px] mx-3"
                   alt=""
                 />
