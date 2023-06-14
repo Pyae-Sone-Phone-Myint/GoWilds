@@ -115,7 +115,9 @@ const Home = () => {
             <div className=" flex items-center gap-5">
               <div className=" p-3 rounded-full overflow-hidden border-4 w-fit border-primary">
                 <img
-                  src={"src/assets/images/testimonial.jpg"}
+                  src={
+                    "https://gaviaspreview.com/wp/gowilds/wp-content/plugins/gowilds-themer/elementor/assets/images/testimonial.jpg"
+                  }
                   className=" rounded-full w-20"
                   alt="avatar"
                 />
@@ -617,7 +619,7 @@ const Home = () => {
               </div>
             </div>
           </div>
-          <div className="card-column md:flex-[30%] a-md rounded-lg cursor-pointer relative ">
+          <div className="card-column md:flex-[30%] shadow-md  rounded-lg cursor-pointer relative ">
             <div className="flex items-center gap-10 py-5 px-7 relative z-10">
               <div className=" card-icon">
                 <GiSolarPower size={"3.5rem"} className="" />
@@ -716,7 +718,7 @@ const Home = () => {
               <div className="absolute bg-[#00000021] w-full h-full z-10"></div>
 
               <img
-                src="src/assets/images/Destination/image-08.jpg"
+                src="https://gaviaspreview.com/wp/gowilds/wp-content/uploads/2023/02/image-08.jpg"
                 className=" object-cover destination-img h-full w-full"
                 alt=""
               />
@@ -738,7 +740,7 @@ const Home = () => {
               <div className="absolute bg-[#00000021] w-full h-full z-10"></div>
 
               <img
-                src="src/assets/images/Destination/image-10.jpg"
+                src="https://gaviaspreview.com/wp/gowilds/wp-content/uploads/2023/01/image-10.jpg"
                 className=" w-full h-full object-cover destination-img"
                 alt=""
               />
@@ -760,7 +762,7 @@ const Home = () => {
               <div className="absolute bg-[#00000021] w-full h-full z-10"></div>
 
               <img
-                src="src/assets/images/Destination/image-09.jpg"
+                src="https://gaviaspreview.com/wp/gowilds/wp-content/uploads/2023/02/image-09.jpg"
                 className=" object-cover destination-img h-full w-full"
                 alt=""
               />
@@ -782,7 +784,7 @@ const Home = () => {
               <div className="absolute bg-[#00000021] w-full h-full z-10"></div>
 
               <img
-                src="src/assets/images/Destination/image-11.jpg"
+                src="https://gaviaspreview.com/wp/gowilds/wp-content/uploads/2023/01/image-11.jpg"
                 className=" object-cover destination-img w-full h-full"
                 alt=""
               />
@@ -804,7 +806,7 @@ const Home = () => {
               <div className="absolute bg-[#00000021] w-full h-full z-10"></div>
 
               <img
-                src="src/assets/images/Destination/image-12.jpg"
+                src="https://gaviaspreview.com/wp/gowilds/wp-content/uploads/2022/12/image-12.jpg"
                 className=" object-cover destination-img h-full w-full"
                 alt=""
               />
@@ -826,7 +828,7 @@ const Home = () => {
               <div className="absolute bg-[#00000021] w-full h-full z-10"></div>
 
               <img
-                src="src/assets/images/Destination/image-13.jpg"
+                src="https://gaviaspreview.com/wp/gowilds/wp-content/uploads/2023/01/image-13.jpg"
                 className=" object-cover destination-img h-full w-full"
                 alt=""
               />
@@ -851,7 +853,7 @@ const Home = () => {
             <div className=" rounded-lg overflow-hidden relative  h-80">
               <div className="absolute bg-[rgba(98,171,96,0.75)] w-full h-full z-10"></div>
               <img
-                src="src/assets/images/Destination/tour-10.jpg"
+                src="https://gaviaspreview.com/wp/gowilds/wp-content/uploads/2023/01/tour-10.jpg"
                 className=" h-full object-cover destination-img"
                 alt=""
               />

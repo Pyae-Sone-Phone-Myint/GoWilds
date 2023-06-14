@@ -14,7 +14,8 @@ import {
   MdOutlineKeyboardArrowUp,
 } from "react-icons/md";
 import { BiMinus, BiPlus } from "react-icons/bi";
-import {BsFillPersonFill} from "react-icons/bs"
+import {BsFillCalendarWeekFill, BsFillPersonFill} from "react-icons/bs"
+import { RiDeviceRecoverFill } from "react-icons/ri";
 
 const DropDown = ({sort,setSort}) => {
   const [location, setLocation] = useState("Location");
@@ -45,7 +46,7 @@ const DropDown = ({sort,setSort}) => {
           <MenuHandler>
             <button className=" flex w-full justify-between tour-click-btn py-2 border-b-2 border-gray-300">
               <div
-                className=" w-full flex gap-2"
+                className=" w-full flex gap-2 items-center"
                 onClick={() => {
                   setArrowLocation(!arrowLocation);
                 }}
@@ -165,16 +166,18 @@ const DropDown = ({sort,setSort}) => {
           <MenuHandler>
             <button className=" flex w-full justify-between tour-click-btn py-2 border-b-2 border-gray-300">
               <div
-                className=" w-full flex gap-2"
+                className=" w-full flex gap-2 items-center"
                 onClick={() => {
                   setArrowBooking(!arrowBooking);
                 }}
               >
-                <img
-                  src="src/assets/images/recovery.png"
-                  className=" w-[48px]"
-                  alt=""
-                />
+                <div>
+                  <RiDeviceRecoverFill
+                    size={"2.5rem"}
+                    className=" text-[#63AB45]"
+                    style={{ color: "#63AB45" }}
+                  />
+                </div>
                 <div className=" text-start  text-gray-600">
                   <p className=" m-0">Activity</p>
                   <div className="font-bold text-black ">{booking}</div>
@@ -296,12 +299,14 @@ const DropDown = ({sort,setSort}) => {
         <Menu placement="bottom">
           <MenuHandler>
             <button className=" flex w-full justify-between  tour-click-btn mb-0 py-2 border-b-2 border-gray-300">
-              <div className=" w-full flex gap-2">
-                <img
-                  src="src/assets/images/calendar.png"
-                  className=" w-[48px]"
-                  alt=""
-                />
+              <div className=" w-full flex gap-3 items-center">
+                <div>
+                  <BsFillCalendarWeekFill
+                    size={"2.2rem"}
+                    className=" text-[#63AB45]"
+                    style={{ color: "#63AB45" }}
+                  />
+                </div>
                 <div className=" text-start  text-gray-600">
                   <p className=" m-0">Date form</p>
                   <input type="date" className="" />
@@ -415,7 +420,7 @@ const DropDown = ({sort,setSort}) => {
       </div>
       <div className="w-full flex items-center gap-5 lg:w-1/5 ">
         <div className=" items-center hidden  lg:flex">
-          <button onClick={() => setSort(!sort)} >
+          <button onClick={() => setSort(!sort)}>
             <img
               src="src/assets/images/filter.png"
               className=" w-[30px]"
