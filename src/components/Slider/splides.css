@@ -15,12 +15,11 @@
 }
 
 .splide__arrow--prev {
-  left: -10px;
-
+  left: 10;
 }
 
 .splide__arrow--next {
-  right: -10px;
+  right: 10;
 }
 
 .splide:hover .splide__arrow--prev,

@@ -33,7 +33,7 @@ const Team_carousel = () => {
       <Landing_image about={"Team Carousel"} page={"Team carousel"} />
       {/* Team Members */}
       <div className=" px-10 min-h-screen py-32 relative bg-white">
-        <div className=" text-center">
+        <div className="2xl:w-[68%]  w-[100%]  xl:mx-auto  text-center">
           <div className=" mb-10">
             <span className=" px-5 py-4 bg-[#64ab4513] text-primary rounded-lg font-semibold">
               Team members
@@ -52,7 +52,7 @@ const Team_carousel = () => {
       <Tour_bgBlur check={"check availability"} />
 
       <div className=" px-10 min-h-screen py-32 relative bg-white">
-        <div className=" text-center">
+        <div className="2xl:w-[68%]  w-[100%]  xl:mx-auto  text-center">
           <div className=" mb-10">
             <span className=" px-5 py-4 bg-[#64ab4513] text-primary rounded-lg font-semibold">
               Team members

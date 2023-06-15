@@ -10,9 +10,9 @@ const Splides = ({ brand, view = 1, controller = true, center = "center" }) => {
       if (window.innerWidth >= 992) {
         setPerPage(view);
       } else if (window.innerWidth >= 768 && window.innerWidth < 992) {
-        setPerPage(3);
+        setPerPage(view-1);
       } else if (window.innerWidth >= 481 && window.innerWidth < 768) {
-        setPerPage(2);
+        setPerPage(view-1);
       } else {
         setPerPage(1);
       }

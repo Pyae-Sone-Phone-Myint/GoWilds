@@ -9,7 +9,7 @@ const Lazy_loader = ({detailImage}) => {
     return (
       <SplideSlide key={item.id} className=" h-screen cursor-grab">
         <div className=" rounded-md relative flex justify-center h-screen p-20 object-cover w-full">
-          <img src={item.imageDetail} alt="" />
+          <img src={item.imageDetail} alt="" className=" object-contain w-full h-full"/>
         </div>
       </SplideSlide>
     );

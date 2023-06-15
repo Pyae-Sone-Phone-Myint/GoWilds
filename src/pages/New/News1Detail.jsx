@@ -13,11 +13,13 @@ import { TfiLayoutLineSolid } from "react-icons/tfi";
 import { BsArrowRight } from "react-icons/bs";
 import { LuPhoneCall } from "react-icons/lu";
 import { Link } from "react-router-dom";
+import Landing_image from "../../components/Landing/Landing_image";
 
 const News1Detail = () => {
 	return (
 		<>
-			<div className=" container  w-full overflow-hidden md:flex-row lg:flex justify-between ">
+		<Landing_image about={'A Place Where Start New Life With Adventure Travel'} page={'city tours'} />
+			<div className=" container 2xl:w-[68%]  w-[100%]  xl:mx-auto overflow-hidden md:flex-row lg:flex justify-between md:mt-20 mt-10">
 				{/* first one */}
 				<div className="  w-full lg:w-7/12 flex-col container mx-auto">
 					<div className=" ">

@@ -43,8 +43,22 @@
 .travel {
   opacity: 0;
   transition: 1s;
-  transform: translateY(100%);
-  animation: fadeT 1s ease-out 3.5s forwards;
+  transform: rotate(-15deg) translateY(100%);
+  animation: fadeT 1s ease-out 4.3s forwards;
+}
+
+.home-img {
+  transform: scale(1);
+  animation: zoomIn 20s ease-out infinite;
+}
+
+@keyframes zoomIn {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.5);
+  }
 }
 
 @keyframes fadeIn {
@@ -61,13 +75,11 @@
 @keyframes fadeT {
   0% {
     opacity: 0;
-    transform: rotate(20deg);
-    transform: translateY(100%);
+    transform: rotate(-15deg) translateY(100%);
   }
   100% {
-    transform: rotate(20deg);
     opacity: 1;
-    transform: translateY(0);
+    transform: rotate(-15deg) translateY(0%);
   }
 }
 
@@ -331,6 +343,7 @@
 .destination-img {
   transform: scale(1);
   transition: 8s ease-in;
+  height: 100%;
 }
 
 .destination-container:hover .destination-img {
