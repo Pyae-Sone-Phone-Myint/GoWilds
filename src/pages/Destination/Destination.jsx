@@ -3,6 +3,7 @@ import { BsPatchCheckFill } from "react-icons/bs";
 import { FaCoins, FaPlay, FaVest } from "react-icons/fa";
 import { GiCommercialAirplane } from "react-icons/gi";
 import Adventure_gallery from "../../components/Adventure/Adventure_gallery";
+import RevealUp from "../../components/Animations/RevealUp";
 
 const Destination = () => {
   return (
@@ -22,7 +23,8 @@ const Destination = () => {
       </div>
 
       <div className=" bg-white relative">
-        <div className="2xl:w-[68%]  w-[100%]  xl:mx-auto flex flex-wrap px-5 gap-5 flex-col lg:flex-row py-20 bg-white ">
+       <RevealUp>
+       <div className="2xl:w-[68%]  w-[100%]  xl:mx-auto flex flex-wrap px-5 gap-5 flex-col lg:flex-row py-20 bg-white ">
           <div className=" lg:w-[23%] w-full  destination-container relative">
             <div className=" uppercase text-xs font-bold px-7 py-3 bg-secondary absolute z-10 text-white rounded-lg right-10 top-10">
               3 tours
@@ -248,6 +250,7 @@ const Destination = () => {
             </div>
           </div>
         </div>
+       </RevealUp>
       </div>
 
       <div className="flex flex-col md:flex-row md:items-center items-start justify-between lg:min-h-[100vh] min-h-[200px] relative  overflow-hidden z-50 2xl:w-[68%]  w-[100%] px-5  xl:mx-auto py-20">
