@@ -49,6 +49,7 @@ import RevealUp from "../../components/Animations/RevealUp";
 
 const Home = ({name,setName}) => {
   const [displayCheck, setDisplayCheck] = useState(false);
+  const [sort, setSort] = useState(false);
   const clickHandler = () => {
     setDisplayCheck(true);
   };
@@ -60,6 +61,7 @@ const Home = ({name,setName}) => {
   ];
 
   const slide = slides.map((item) => {
+      
     return (
       <SplideSlide>
         <div className=" relative content-card min-h-[410px] cursor-pointer">
@@ -243,29 +245,34 @@ const Home = ({name,setName}) => {
       />
       <div className="bg-dark relative">
         <Home_page_animation />
+        <div className=" 2xl:w-[68%]  w-[100%] xl:mx-auto">
+          <div className=" w-full z-[80] lg:w-[97%] px-5 gap-5 left-0 lg:left-5 items-center shadow-xl rounded-lg bottom-[-380px] lg:bottom-[-40px] absolute flex flex-col lg:flex-row bg-white py-4">
+            <DropDown sort={sort} setSort={setSort} />
+          </div>
+        </div>
       </div>
 
       {/* Popular Activities */}
-      <div className=" min-h-screen relative bg-white">
+      <div className=" min-h-screen relative pt-96 lg:pt-20 bg-white">
         <div className="bg-world-photo"></div>
 
-        <div className=" text-center py-32">
+        <div className=" text-center py-14">
           <Reveal>
-            <div className=" mb-10">
+            <div className=" py-3">
               <span className=" px-5 py-4 bg-[#64ab4513] text-primary rounded-lg font-semibold">
                 Popular Activities
               </span>
             </div>
           </Reveal>
           <Reveal value={-200}>
-            <h2>
-              <span className=" md:text-[48px] font-bold leading-tight">
+            <h2 className=" mt-10">
+              <span className=" md:text-[48px] text-[30px] font-bold leading-tight">
                 Explore Real Adventure
               </span>
             </h2>
           </Reveal>
         </div>
-        <RevealUp >
+        <RevealUp>
           <div className=" 2xl:w-[78%]  w-[100%]  xl:mx-auto px-5 pb-10">
             <Splides brand={slide} view={4} center="" />
           </div>
@@ -552,7 +559,6 @@ const Home = ({name,setName}) => {
         </div>
 
         <div className="2xl:w-[68%]  w-[100%]  xl:mx-auto px-5 lg:px-2 rounded-xl overflow-hidden absolute md:-bottom-20 -bottom-36  left-0 right-0 md:mx-20 ">
-
           <Explore_more />
         </div>
       </div>
@@ -691,9 +697,12 @@ const Home = ({name,setName}) => {
         </div>
         {/* Destination Row */}
         <div className="2xl:w-[68%]  w-[100%]  xl:mx-auto flex flex-wrap md:flex-row flex-col gap-y-5 md:gap-y-0">
-          <div className=" md:w-3/12 w-full md:p-5 destination-container relative" onClick={()=>{
-            setName("Switzerland");
-          }}>
+          <div
+            className=" md:w-3/12 w-full md:p-5 destination-container relative"
+            onClick={() => {
+              setName("Switzerland");
+            }}
+          >
             <Link to={"/destination/destination-detail"}>
               <div className=" uppercase text-xs font-bold px-7 py-3 bg-secondary absolute z-10 text-white rounded-lg right-10 top-10">
                 3 tours
@@ -717,134 +726,149 @@ const Home = ({name,setName}) => {
               </div>
             </Link>
           </div>
-          <div className=" md:w-6/12  md:p-5 destination-container relative" onClick={()=>{
-            setName("United Kingdom");
-          }}>
+          <div
+            className=" md:w-6/12  md:p-5 destination-container relative"
+            onClick={() => {
+              setName("United Kingdom");
+            }}
+          >
             <Link to={"/destination/destination-detail"}>
-            <div className=" uppercase text-xs font-bold px-7 py-3 bg-secondary absolute z-10 text-white rounded-lg right-10 top-10">
-              3 tours
-            </div>
-            <div className=" absolute z-10 p-10 bottom-0">
-              <h4 className=" text-primary text-xl font-normal leading-7">
-                Travel to
-              </h4>
-              <h2 className=" text-white text-[26px] font-bold leading-9">
-                United Kingdom
-              </h2>
-            </div>
-            <div className=" rounded-lg overflow-hidden relative w-full h-80 object-cover">
-              <div className="absolute bg-[#00000021] w-full h-full z-10"></div>
+              <div className=" uppercase text-xs font-bold px-7 py-3 bg-secondary absolute z-10 text-white rounded-lg right-10 top-10">
+                3 tours
+              </div>
+              <div className=" absolute z-10 p-10 bottom-0">
+                <h4 className=" text-primary text-xl font-normal leading-7">
+                  Travel to
+                </h4>
+                <h2 className=" text-white text-[26px] font-bold leading-9">
+                  United Kingdom
+                </h2>
+              </div>
+              <div className=" rounded-lg overflow-hidden relative w-full h-80 object-cover">
+                <div className="absolute bg-[#00000021] w-full h-full z-10"></div>
 
-              <img
-                src="https://gaviaspreview.com/wp/gowilds/wp-content/uploads/2023/01/image-10.jpg"
-                className=" w-full h-full object-cover destination-img"
-                alt=""
-              />
-            </div>
+                <img
+                  src="https://gaviaspreview.com/wp/gowilds/wp-content/uploads/2023/01/image-10.jpg"
+                  className=" w-full h-full object-cover destination-img"
+                  alt=""
+                />
+              </div>
             </Link>
           </div>
-          <div className=" md:w-3/12 w-full md:p-5 destination-container relative" onClick={()=>{
-            setName("France");
-          }}>
+          <div
+            className=" md:w-3/12 w-full md:p-5 destination-container relative"
+            onClick={() => {
+              setName("France");
+            }}
+          >
             <Link to={"/destination/destination-detail"}>
-            <div className=" uppercase text-xs font-bold px-7 py-3 bg-secondary absolute z-10 text-white rounded-lg right-10 top-10">
-              3 tours
-            </div>
-            <div className=" absolute z-10 p-10 bottom-0">
-              <h4 className=" text-primary text-xl font-normal leading-7">
-                Travel to
-              </h4>
-              <h2 className=" text-white text-[26px] font-bold leading-9">
-                France
-              </h2>
-            </div>
-            <div className=" rounded-lg overflow-hidden relative h-80 object-cover">
-              <div className="absolute bg-[#00000021] w-full h-full z-10"></div>
+              <div className=" uppercase text-xs font-bold px-7 py-3 bg-secondary absolute z-10 text-white rounded-lg right-10 top-10">
+                3 tours
+              </div>
+              <div className=" absolute z-10 p-10 bottom-0">
+                <h4 className=" text-primary text-xl font-normal leading-7">
+                  Travel to
+                </h4>
+                <h2 className=" text-white text-[26px] font-bold leading-9">
+                  France
+                </h2>
+              </div>
+              <div className=" rounded-lg overflow-hidden relative h-80 object-cover">
+                <div className="absolute bg-[#00000021] w-full h-full z-10"></div>
 
-              <img
-                src="https://gaviaspreview.com/wp/gowilds/wp-content/uploads/2023/02/image-09.jpg"
-                className=" object-cover destination-img h-full w-full"
-                alt=""
-              />
-            </div>
+                <img
+                  src="https://gaviaspreview.com/wp/gowilds/wp-content/uploads/2023/02/image-09.jpg"
+                  className=" object-cover destination-img h-full w-full"
+                  alt=""
+                />
+              </div>
             </Link>
           </div>
-          <div className=" md:w-3/12 w-full md:p-5 destination-container relative" onClick={()=>{
-            setName("Thailand");
-          }}>
+          <div
+            className=" md:w-3/12 w-full md:p-5 destination-container relative"
+            onClick={() => {
+              setName("Thailand");
+            }}
+          >
             <Link to={"/destination/destination-detail"}>
-            <div className=" uppercase text-xs font-bold px-7 py-3 bg-secondary absolute z-10 text-white rounded-lg right-10 top-10">
-              1 tours
-            </div>
-            <div className=" absolute z-10 p-10 bottom-0">
-              <h4 className=" text-primary text-xl font-normal leading-7">
-                Travel to
-              </h4>
-              <h2 className=" text-white text-[26px] font-bold leading-9">
-                Thailand
-              </h2>
-            </div>
-            <div className=" rounded-lg overflow-hidden relative h-80 object-cover">
-              <div className="absolute bg-[#00000021] w-full h-full z-10"></div>
+              <div className=" uppercase text-xs font-bold px-7 py-3 bg-secondary absolute z-10 text-white rounded-lg right-10 top-10">
+                1 tours
+              </div>
+              <div className=" absolute z-10 p-10 bottom-0">
+                <h4 className=" text-primary text-xl font-normal leading-7">
+                  Travel to
+                </h4>
+                <h2 className=" text-white text-[26px] font-bold leading-9">
+                  Thailand
+                </h2>
+              </div>
+              <div className=" rounded-lg overflow-hidden relative h-80 object-cover">
+                <div className="absolute bg-[#00000021] w-full h-full z-10"></div>
 
-              <img
-                src="https://gaviaspreview.com/wp/gowilds/wp-content/uploads/2023/01/image-11.jpg"
-                className=" object-cover destination-img w-full h-full"
-                alt=""
-              />
-            </div>
+                <img
+                  src="https://gaviaspreview.com/wp/gowilds/wp-content/uploads/2023/01/image-11.jpg"
+                  className=" object-cover destination-img w-full h-full"
+                  alt=""
+                />
+              </div>
             </Link>
           </div>
-          <div className=" md:w-3/12 w-full md:p-5 destination-container relative" onClick={()=>{
-            setName('Singapore')
-          }}>
+          <div
+            className=" md:w-3/12 w-full md:p-5 destination-container relative"
+            onClick={() => {
+              setName("Singapore");
+            }}
+          >
             <Link to={"/destination/destination-detail"}>
-            <div className=" uppercase text-xs font-bold px-7 py-3 bg-secondary absolute z-10 text-white rounded-lg right-10 top-10">
-              2 tours
-            </div>
-            <div className=" absolute z-10 p-10 bottom-0">
-              <h4 className=" text-primary text-xl font-normal leading-7">
-                Travel to
-              </h4>
-              <h2 className=" text-white text-[26px] font-bold leading-9">
-                Singapore
-              </h2>
-            </div>
-            <div className=" rounded-lg overflow-hidden relative h-80 object-cover">
-              <div className="absolute bg-[#00000021] w-full h-full z-10"></div>
+              <div className=" uppercase text-xs font-bold px-7 py-3 bg-secondary absolute z-10 text-white rounded-lg right-10 top-10">
+                2 tours
+              </div>
+              <div className=" absolute z-10 p-10 bottom-0">
+                <h4 className=" text-primary text-xl font-normal leading-7">
+                  Travel to
+                </h4>
+                <h2 className=" text-white text-[26px] font-bold leading-9">
+                  Singapore
+                </h2>
+              </div>
+              <div className=" rounded-lg overflow-hidden relative h-80 object-cover">
+                <div className="absolute bg-[#00000021] w-full h-full z-10"></div>
 
-              <img
-                src="https://gaviaspreview.com/wp/gowilds/wp-content/uploads/2022/12/image-12.jpg"
-                className=" object-cover destination-img h-full w-full"
-                alt=""
-              />
-            </div>
+                <img
+                  src="https://gaviaspreview.com/wp/gowilds/wp-content/uploads/2022/12/image-12.jpg"
+                  className=" object-cover destination-img h-full w-full"
+                  alt=""
+                />
+              </div>
             </Link>
           </div>
-          <div className=" md:w-3/12 w-full md:p-5 destination-container relative" onClick={()=>{
-            setName('Italy')
-          }}>
+          <div
+            className=" md:w-3/12 w-full md:p-5 destination-container relative"
+            onClick={() => {
+              setName("Italy");
+            }}
+          >
             <Link to={"/destination/destination-detail"}>
-            <div className=" uppercase text-xs font-bold px-7 py-3 bg-secondary absolute z-10 text-white rounded-lg right-10 top-10">
-              2 tours
-            </div>
-            <div className=" absolute z-10 p-10 bottom-0">
-              <h4 className=" text-primary text-xl font-normal leading-7">
-                Travel to
-              </h4>
-              <h2 className=" text-white text-[26px] font-bold leading-9">
-                Italy
-              </h2>
-            </div>
-            <div className=" rounded-lg overflow-hidden relative  h-80 object-cover">
-              <div className="absolute bg-[#00000021] w-full h-full z-10"></div>
+              <div className=" uppercase text-xs font-bold px-7 py-3 bg-secondary absolute z-10 text-white rounded-lg right-10 top-10">
+                2 tours
+              </div>
+              <div className=" absolute z-10 p-10 bottom-0">
+                <h4 className=" text-primary text-xl font-normal leading-7">
+                  Travel to
+                </h4>
+                <h2 className=" text-white text-[26px] font-bold leading-9">
+                  Italy
+                </h2>
+              </div>
+              <div className=" rounded-lg overflow-hidden relative  h-80 object-cover">
+                <div className="absolute bg-[#00000021] w-full h-full z-10"></div>
 
-              <img
-                src="https://gaviaspreview.com/wp/gowilds/wp-content/uploads/2023/01/image-13.jpg"
-                className=" object-cover destination-img h-full w-full"
-                alt=""
-              />
-            </div>
+                <img
+                  src="https://gaviaspreview.com/wp/gowilds/wp-content/uploads/2023/01/image-13.jpg"
+                  className=" object-cover destination-img h-full w-full"
+                  alt=""
+                />
+              </div>
             </Link>
           </div>
           <div className=" md:w-3/12 w-full md:p-5 destination-container relative">
