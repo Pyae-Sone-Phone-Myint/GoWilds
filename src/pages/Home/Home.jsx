@@ -325,7 +325,7 @@ const Home = () => {
               </span>
             </div>
             <h2 className=" mb-5">
-              <span className=" md:text-[48px] text-[36px] font-bold leading-tight">
+              <span className=" md:text-[38px] text-[26px] font-bold leading-tight">
                 Great Opportunity For Adventure & Travels
               </span>
             </h2>

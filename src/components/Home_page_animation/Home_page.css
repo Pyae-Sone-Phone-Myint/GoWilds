@@ -1,23 +1,21 @@
 .splide__slide.is-active .swipe {
   position: relative;
   width: fit-content;
-  &::after {
-    display: block;
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 100%;
-    width: 0%;
-    height: 100%;
-    background-color: #fff;
-    animation: swipe 1s ease-out 0.3s forwards;
-  }
 }
-.splide__slide.is-active .swipe--delay {
-  &::after {
-    animation-delay: 1.5s;
-  }
+.splide__slide.is-activ .swipe::after {
+  display: block;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 100%;
+  width: 0%;
+  height: 100%;
+  background-color: #fff;
+  animation: swipe 1s ease-out 0.3s forwards;
+}
+.splide__slide.is-active .swipe--delay::after {
+  animation-delay: 1.5s;
 }
 
 .swipe-title,
