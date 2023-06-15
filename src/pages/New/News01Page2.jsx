@@ -7,28 +7,14 @@ import { Link } from "react-router-dom";
 const News01Page2 = () => {
 	return (
 		<>
-			<section className="">
-				<div className=" relative">
-					<img src="src\assets\newsImage\newsBg.jpg" className=" bg-img" />
-					<div className=" absolute md:top-[100px] md:left-[100px]">
-						<h2 className=" text-3xl text-white capitalize"> News 01</h2>
-						<div className=" text-xl text-white  p-3">
-							<ul className=" list-none flex ">
-								<li className=" hover:underline cursor-pointer">Home </li>
-								<li className="mx-2">/</li>
-								<li>News</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</section>
+			
 			<section className=" bg-gray-50">
-				<div className=" container mx-auto ">
+				<div className=" container mx-auto mb-3 ">
 					<div className=" mt-10 grid grid-flow-row md:grid-cols-2  lg:grid-cols-3  gap-5">
 						<div className="flex flex-col w-fit md:w-96 border shadow-md px-4 py-3 rounded">
 							<div className=" relative">
 								<img
-									src="src\assets\newsImage\newsPage1.jpeg"
+									src="https://gaviaspreview.com/wp/gowilds/wp-content/uploads/2022/12/blog-07-500x360.jpg"
 									className=" rounded w-fit mx-auto"
 								/>
 								<button className=" absolute bottom-[-12px] tracking-wider left-6 bg-secondary text-white px-3 py-1 text-sm hover:underline">
