@@ -42,10 +42,10 @@ const Home_page_animation = () => {
                 </p>
               </div>
               <a
-                href="/tour"
+                href="/tours-page"
                 className={`${
                   false && "is-active"
-                } title-btn bg-primary text-white rounded-md md:text-base text-sm font-bold leading-6 md:px-10 px-6 md:py-4 py-2 cursor-pointer z-10`}
+                } title-btn bg-primary hover:bg-green-400 text-white rounded-md md:text-base text-sm font-bold leading-6 md:px-10 px-6 md:py-4 py-2 cursor-pointer z-10`}
               >
                 Let's get started
               </a>
@@ -88,8 +88,8 @@ const Home_page_animation = () => {
                 </p>
               </div>
               <a
-                href="/tour"
-                className={` zoom-btn bg-primary text-white rounded-md md:text-base text-sm font-bold leading-6 md:px-10 px-6 md:py-4 py-2 cursor-pointer z-10`}
+                href="/tours-page"
+                className={` zoom-btn bg-primary hover:bg-green-400 text-white rounded-md md:text-base text-sm font-bold leading-6 md:px-10 px-6 md:py-4 py-2 cursor-pointer z-10`}
               >
                 Let's get started
               </a>
@@ -133,10 +133,10 @@ const Home_page_animation = () => {
               </p>
             </div>
             <a
-              href="/tour"
+              href="/tours-page"
               className={`${
                 false && "is-active"
-              } title-btn bg-primary text-white rounded-md md:text-base text-sm font-bold leading-6 md:px-10 px-6 md:py-4 py-2 cursor-pointer z-10`}
+              } title-btn bg-primary hover:bg-green-400 text-white rounded-md md:text-base text-sm font-bold leading-6 md:px-10 px-6 md:py-4 py-2 cursor-pointer z-10`}
             >
               Let's get started
             </a>
@@ -148,7 +148,7 @@ const Home_page_animation = () => {
 
   return (
     <>
-      <Splides brand={slides} autoplay={true}/>
+      <Splides brand={slides} autoplay={false}/>
     </>
   );
 };

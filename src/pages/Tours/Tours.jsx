@@ -19,17 +19,16 @@ import TourItem1 from "../../components/tourPageDropDown/TourItem1";
 import TourItem2 from "../../components/tourPageDropDown/TourItem2";
 import RevealUp from "../../components/Animations/RevealUp";
 
-const Tours = ({name,setName}) => {
-  
+const Tours = ({ name, setName }) => {
   const [value, setValue] = React.useState([109, 619]);
   const [sort, setSort] = useState(false);
-  const [pagination,setPagination]=useState(1);
+  const [pagination, setPagination] = useState(1);
 
   const handleChange = (event, newValue) => {
     setValue(newValue);
   };
   return (
-    <div className="w-full">
+    <>
       <div className=" w-full px-5 h-[65vh] relative top-search-banner flex flex-col items-center justify-center ">
         <div className="banner-word  flex flex-col items-center justify-center">
           <h1 className=" text-[30px] lg:text-[45px]  text-white font-bold">
@@ -129,8 +128,8 @@ const Tours = ({name,setName}) => {
           </div>
         </div>
       </div>
-      <div className=" 2xl:w-[68%]  xl:mx-auto mt-[430px] lg:mt-[150px] w-full">
-        <div className=" flex justify-between px-5 mb-5 text-gray-600">
+      <div className="  mt-[430px] lg:mt-[150px] w-full">
+        <div className="2xl:w-[68%]  xl:mx-auto flex justify-between px-5 mb-5 text-gray-600">
           <div className=" ">
             <span className="font-bold">12</span> Tours
           </div>
@@ -161,7 +160,7 @@ const Tours = ({name,setName}) => {
             <TourItem2 name={name} setName={setName} />
           </RevealUp>
         )}
-        <div className=" flex px-5 gap-5">
+        <div className="2xl:w-[68%]  xl:mx-auto flex px-5 gap-5">
           <button
             onClick={() => {
               setPagination(1);
@@ -255,7 +254,7 @@ const Tours = ({name,setName}) => {
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 

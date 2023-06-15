@@ -53,7 +53,7 @@ import { IoPricetag } from "react-icons/io5";
 import { GiDuration } from "react-icons/gi";
 import { RiParkingBoxLine } from "react-icons/ri";
 import Lazy_loader from "../../components/Slider/lazyLoader/lazy_loader";
-import tours from '../../Json/adventure.json'
+import tours from "../../Json/adventure.json";
 
 const TourDetail = ({ name }) => {
   const [displayCheck, setDisplayCheck] = useState(false);
@@ -146,7 +146,7 @@ const TourDetail = ({ name }) => {
             </SwiperSlide>
           </Swiper>
         </div>
-        <div className=" flex text-white gap-5 items-center justify-center opacity-80 absolute right-0 top-[397px] lg:top-[237px] z-[10] bg-black w-[100px] py-2">
+        <div className=" flex text-white gap-5 items-center justify-center opacity-80 absolute right-0 bottom-0  z-[10] bg-black w-[100px] py-2">
           <button className="hover:text-[#63ab45] relative">
             <HiOutlineCamera onClick={clickHandler} size={"1.5rem"} />
             <span className=" text-[10px] absolute top-[-3px] right-[-2px] text-white bg-[#63ab45] rounded-full px-1">
@@ -387,7 +387,7 @@ const TourDetail = ({ name }) => {
                   <div className=" flex flex-col relative mb-56 w-full">
                     <div className=" w-full rounded-t-lg">
                       <img
-                        className=" w-full h-[60vh] rounded-t-xl lg:h-[50vh]"
+                        className=" w-full h-[60vh] rounded-t-xl lg:h-[50vh] object-cover"
                         src="	https://gaviaspreview.com/wp/gowilds/wp-content/uploads/2023/01/tour-5.jpg"
                         alt=""
                       />
@@ -452,16 +452,21 @@ const TourDetail = ({ name }) => {
                       </div>
                       <div className=" absolute bg-white flex gap-4 rounded-lg top-[-18px] right-5 shadow-md px-4 py-1">
                         <button className="hover:text-[#63ab45] relative">
-                          <HiOutlineCamera onClick={clickHandler} size={"1.5rem"} />
+                          <HiOutlineCamera
+                            onClick={clickHandler}
+                            size={"1.5rem"}
+                          />
                           <span className=" text-[10px] absolute top-[-3px] right-[-2px] text-white bg-[#63ab45] rounded-full px-1">
                             5
                           </span>
                         </button>
-<a className="hover:text-[#63ab45]" href="https://www.youtube.com/watch?v=MtCMtC50gwY">
-
+                        <a
+                          className="hover:text-[#63ab45]"
+                          href="https://www.youtube.com/watch?v=MtCMtC50gwY"
+                        >
                           <VscDeviceCameraVideo size={"1.5rem"} />
-</a>
-                        </div>
+                        </a>
+                      </div>
                     </div>
                   </div>
                 </SwiperSlide>
@@ -469,7 +474,7 @@ const TourDetail = ({ name }) => {
                   <div className=" flex flex-col relative w-full mb-56">
                     <div className=" w-full rounded-t-lg">
                       <img
-                        className=" w-full h-[60vh] rounded-t-xl lg:h-[50vh]"
+                        className=" w-full h-[60vh] rounded-t-xl lg:h-[50vh] object-cover"
                         src="https://gaviaspreview.com/wp/gowilds/wp-content/uploads/2023/01/tour-4.jpg"
                         alt=""
                       />
@@ -538,16 +543,21 @@ const TourDetail = ({ name }) => {
                       </div>
                       <div className=" absolute bg-white flex gap-4 rounded-lg top-[-18px] right-5 shadow-md px-4 py-1">
                         <button className="hover:text-[#63ab45] relative">
-                          <HiOutlineCamera onClick={clickHandler} size={"1.5rem"} />
+                          <HiOutlineCamera
+                            onClick={clickHandler}
+                            size={"1.5rem"}
+                          />
                           <span className=" text-[10px] absolute top-[-3px] right-[-2px] text-white bg-[#63ab45] rounded-full px-1">
                             5
                           </span>
                         </button>
-<a className="hover:text-[#63ab45]" href="https://www.youtube.com/watch?v=MtCMtC50gwY">
-
+                        <a
+                          className="hover:text-[#63ab45]"
+                          href="https://www.youtube.com/watch?v=MtCMtC50gwY"
+                        >
                           <VscDeviceCameraVideo size={"1.5rem"} />
-</a>
-                        </div>
+                        </a>
+                      </div>
                     </div>
                   </div>
                 </SwiperSlide>
@@ -555,7 +565,7 @@ const TourDetail = ({ name }) => {
                   <div className=" flex flex-col relative w-full mb-56">
                     <div className=" w-full rounded-t-lg">
                       <img
-                        className=" w-full h-[60vh] rounded-t-xl lg:h-[50vh]"
+                        className=" w-full h-[60vh] rounded-t-xl lg:h-[50vh] object-cover"
                         src="	https://gaviaspreview.com/wp/gowilds/wp-content/uploads/2023/01/tour-6.jpg"
                         alt=""
                       />
@@ -624,16 +634,21 @@ const TourDetail = ({ name }) => {
                       </div>
                       <div className=" absolute bg-white flex gap-4 rounded-lg top-[-18px] right-5 shadow-md px-4 py-1">
                         <button className="hover:text-[#63ab45] relative">
-                          <HiOutlineCamera onClick={clickHandler} size={"1.5rem"} />
+                          <HiOutlineCamera
+                            onClick={clickHandler}
+                            size={"1.5rem"}
+                          />
                           <span className=" text-[10px] absolute top-[-3px] right-[-2px] text-white bg-[#63ab45] rounded-full px-1">
                             5
                           </span>
                         </button>
-<a className="hover:text-[#63ab45]" href="https://www.youtube.com/watch?v=MtCMtC50gwY">
-
+                        <a
+                          className="hover:text-[#63ab45]"
+                          href="https://www.youtube.com/watch?v=MtCMtC50gwY"
+                        >
                           <VscDeviceCameraVideo size={"1.5rem"} />
-</a>
-                        </div>
+                        </a>
+                      </div>
                     </div>
                   </div>
                 </SwiperSlide>
@@ -641,7 +656,7 @@ const TourDetail = ({ name }) => {
                   <div className=" flex flex-col relative w-full mb-56">
                     <div className=" w-full rounded-t-lg">
                       <img
-                        className=" w-full h-[60vh] rounded-t-xl lg:h-[50vh]"
+                        className=" w-full h-[60vh] rounded-t-xl lg:h-[50vh] object-cover"
                         src="https://gaviaspreview.com/wp/gowilds/wp-content/uploads/2023/01/tour-12.jpg"
                         alt=""
                       />
@@ -706,16 +721,21 @@ const TourDetail = ({ name }) => {
                       </div>
                       <div className=" absolute bg-white flex gap-4 rounded-lg top-[-18px] right-5 shadow-md px-4 py-1">
                         <button className="hover:text-[#63ab45] relative">
-                          <HiOutlineCamera onClick={clickHandler} size={"1.5rem"} />
+                          <HiOutlineCamera
+                            onClick={clickHandler}
+                            size={"1.5rem"}
+                          />
                           <span className=" text-[10px] absolute top-[-3px] right-[-2px] text-white bg-[#63ab45] rounded-full px-1">
                             5
                           </span>
                         </button>
-<a className="hover:text-[#63ab45]" href="https://www.youtube.com/watch?v=MtCMtC50gwY">
-
+                        <a
+                          className="hover:text-[#63ab45]"
+                          href="https://www.youtube.com/watch?v=MtCMtC50gwY"
+                        >
                           <VscDeviceCameraVideo size={"1.5rem"} />
-</a>
-                        </div>
+                        </a>
+                      </div>
                     </div>
                   </div>
                 </SwiperSlide>
@@ -723,7 +743,7 @@ const TourDetail = ({ name }) => {
                   <div className=" flex flex-col relative w-full  mb-56 ">
                     <div className=" w-full rounded-t-lg">
                       <img
-                        className=" w-full h-[60vh] rounded-t-xl lg:h-[50vh]"
+                        className=" w-full h-[60vh] rounded-t-xl lg:h-[50vh] object-cover"
                         src="https://gaviaspreview.com/wp/gowilds/wp-content/uploads/2023/01/tour-10.jpg"
                         alt=""
                       />
@@ -788,16 +808,21 @@ const TourDetail = ({ name }) => {
                       </div>
                       <div className=" absolute bg-white flex gap-4 rounded-lg top-[-18px] right-5 shadow-md px-4 py-1">
                         <button className="hover:text-[#63ab45] relative">
-                          <HiOutlineCamera onClick={clickHandler} size={"1.5rem"} />
+                          <HiOutlineCamera
+                            onClick={clickHandler}
+                            size={"1.5rem"}
+                          />
                           <span className=" text-[10px] absolute top-[-3px] right-[-2px] text-white bg-[#63ab45] rounded-full px-1">
                             5
                           </span>
                         </button>
-<a className="hover:text-[#63ab45]" href="https://www.youtube.com/watch?v=MtCMtC50gwY">
-
+                        <a
+                          className="hover:text-[#63ab45]"
+                          href="https://www.youtube.com/watch?v=MtCMtC50gwY"
+                        >
                           <VscDeviceCameraVideo size={"1.5rem"} />
-</a>
-                        </div>
+                        </a>
+                      </div>
                     </div>
                   </div>
                 </SwiperSlide>
@@ -805,7 +830,7 @@ const TourDetail = ({ name }) => {
                   <div className=" flex flex-col relative w-full mb-56 ">
                     <div className=" w-full rounded-t-lg">
                       <img
-                        className=" w-full h-[60vh] rounded-t-xl lg:h-[50vh]"
+                        className=" w-full h-[60vh] rounded-t-xl lg:h-[50vh] object-cover"
                         src="https://gaviaspreview.com/wp/gowilds/wp-content/uploads/2023/01/tour-8.jpg"
                         alt=""
                       />
@@ -870,16 +895,21 @@ const TourDetail = ({ name }) => {
                       </div>
                       <div className=" absolute bg-white flex gap-4 rounded-lg top-[-18px] right-5 shadow-md px-4 py-1">
                         <button className="hover:text-[#63ab45] relative">
-                          <HiOutlineCamera onClick={clickHandler} size={"1.5rem"} />
+                          <HiOutlineCamera
+                            onClick={clickHandler}
+                            size={"1.5rem"}
+                          />
                           <span className=" text-[10px] absolute top-[-3px] right-[-2px] text-white bg-[#63ab45] rounded-full px-1">
                             5
                           </span>
                         </button>
-<a className="hover:text-[#63ab45]" href="https://www.youtube.com/watch?v=MtCMtC50gwY">
-
+                        <a
+                          className="hover:text-[#63ab45]"
+                          href="https://www.youtube.com/watch?v=MtCMtC50gwY"
+                        >
                           <VscDeviceCameraVideo size={"1.5rem"} />
-</a>
-                        </div>
+                        </a>
+                      </div>
                     </div>
                   </div>
                 </SwiperSlide>
@@ -903,7 +933,7 @@ const TourDetail = ({ name }) => {
                   <div className=" flex flex-col relative mb-56 w-full">
                     <div className=" w-full rounded-t-lg">
                       <img
-                        className=" w-full h-[60vh] rounded-t-xl lg:h-[50vh]"
+                        className=" w-full h-[60vh] rounded-t-xl lg:h-[50vh] object-cover"
                         src="	https://gaviaspreview.com/wp/gowilds/wp-content/uploads/2023/01/tour-5.jpg"
                         alt=""
                       />
@@ -968,7 +998,10 @@ const TourDetail = ({ name }) => {
                       </div>
                       <div className=" absolute bg-white flex gap-4 rounded-lg top-[-18px] right-5 shadow-md px-4 py-1">
                         <button className="hover:text-[#63ab45] relative">
-                          <HiOutlineCamera onClick={clickHandler} size={"1.5rem"} />
+                          <HiOutlineCamera
+                            onClick={clickHandler}
+                            size={"1.5rem"}
+                          />
                           <span className=" text-[10px] absolute top-[-3px] right-[-2px] text-white bg-[#63ab45] rounded-full px-1">
                             5
                           </span>

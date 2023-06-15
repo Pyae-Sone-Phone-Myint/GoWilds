@@ -13,6 +13,7 @@ import { Link } from "react-router-dom";
 
 const TourItem2 = ({name,setName}) => {
   return (
+  
     <div className=" w-full px-4 mb-[10px] lg:mb-[120px] flex flex-wrap justify-between">
       <div className=" flex flex-col relative w-full lg:w-[32%] mb-56">
         <div className=" w-full rounded-t-lg">
