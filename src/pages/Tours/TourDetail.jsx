@@ -146,7 +146,7 @@ const TourDetail = ({ name }) => {
             </SwiperSlide>
           </Swiper>
         </div>
-        <div className=" flex text-white gap-5 items-center justify-center opacity-80 absolute right-0 bottom-0  z-[10] bg-black w-[100px] py-2">
+        <div className=" flex text-white gap-5 items-center justify-center opacity-80 absolute right-4 lg:right-0 top-0 z-50 bg-black w-[100px] py-2">
           <button className="hover:text-[#63ab45] relative">
             <HiOutlineCamera onClick={clickHandler} size={"1.5rem"} />
             <span className=" text-[10px] absolute top-[-3px] right-[-2px] text-white bg-[#63ab45] rounded-full px-1">
@@ -1549,7 +1549,7 @@ const TourDetail = ({ name }) => {
             </h1>
             <div className="flex gap-5 border-b pb-7">
               <img
-                className=" w-24 rounded-lg"
+                className=" w-24 rounded-lg object-cover"
                 src="https://gaviaspreview.com/wp/gowilds/wp-content/uploads/2023/01/tour-8-500x360.jpg"
                 alt=""
               />
@@ -1571,7 +1571,7 @@ const TourDetail = ({ name }) => {
             </div>
             <div className="flex gap-5 border-b py-7">
               <img
-                className=" w-24 rounded-lg"
+                className=" w-24 rounded-lg object-cover"
                 src="https://gaviaspreview.com/wp/gowilds/wp-content/uploads/2023/01/tour-11-500x360.jpg"
                 alt=""
               />
@@ -1593,7 +1593,7 @@ const TourDetail = ({ name }) => {
             </div>
             <div className="flex gap-5  py-7">
               <img
-                className=" w-24 rounded-lg"
+                className=" w-24 rounded-lg object-cover"
                 src="https://gaviaspreview.com/wp/gowilds/wp-content/uploads/2023/01/tour-10-500x360.jpg"
                 alt=""
               />
