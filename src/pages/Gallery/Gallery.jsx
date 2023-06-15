@@ -39,7 +39,7 @@ const Gallery = () => {
     <>
       <Hero_section about={"Gallery"} />
       <div className=" px-10 min-h-screen py-32">
-        <div className="flex flex-wrap gap-14">{tour}</div>
+        <div className="2xl:w-[68%]  w-[100%]  xl:mx-auto  flex flex-wrap gap-14">{tour}</div>
       </div>
       <div className={`lazy-loader ${displayCheck ? "" : "hidden"}`}>
         <div

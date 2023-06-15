@@ -48,7 +48,7 @@ const Adventure_gallery = () => {
       <div className="w-[100%] h-24 bg-dark">
       </div>
       <div className={`lazy-loader ${displayCheck ? "" : "hidden"}`}>
-        <div className=" w-fit absolute right-48 p-5 top-10 cursor-pointer z-20" onClick={() => setDisplayCheck(false)}>
+        <div className=" w-fit absolute right-[10%] p-5 top-7 cursor-pointer z-20" onClick={() => setDisplayCheck(false)}>
           <ImCross className="cursor-pointer" />
         </div>
         <Lazy_loader detailImage={tours}/>

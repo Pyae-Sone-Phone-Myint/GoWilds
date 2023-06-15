@@ -41,7 +41,7 @@ const DropDown = ({sort,setSort}) => {
 
   return (
     <>
-      <div className="w-full  lg:w-1/5 relative">
+      <div className="w-full lg:w-1/5 relative">
         <Menu placement="bottom">
           <MenuHandler>
             <button className=" flex w-full justify-between tour-click-btn py-2 border-b-2 border-gray-300">

@@ -48,7 +48,7 @@ const Team_slider2 = () => {
     );
   });
   return (
-    <div className=" md:px-20 px-5 py-10 overflow-hidden">
+    <div className=" py-10 overflow-hidden">
       <Splides brand={slide} view={3} />
     </div>
   );

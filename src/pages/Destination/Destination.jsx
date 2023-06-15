@@ -6,9 +6,9 @@ import Adventure_gallery from "../../components/Adventure/Adventure_gallery";
 
 const Destination = () => {
   return (
-    <div>
+    <>
       <img
-        src="src/assets/images/Bg_shape/bg-01.jpg"
+        src="https://gaviaspreview.com/wp/gowilds/wp-content/uploads/2023/02/bg-01.jpg"
         className="fixed-bg"
         alt=""
       />
@@ -20,233 +20,237 @@ const Destination = () => {
           </h1>
         </div>
       </div>
-      <div className="flex flex-wrap px-5 gap-5 flex-col lg:flex-row py-20 bg-white ">
-        <div className=" lg:w-[23%] w-full  destination-container relative">
-          <div className=" uppercase text-xs font-bold px-7 py-3 bg-secondary absolute z-10 text-white rounded-lg right-10 top-10">
-            3 tours
-          </div>
-          <div className=" absolute z-10 p-10 bottom-0">
-            <h4 className=" text-primary text-xl font-normal leading-7">
-              Travel to
-            </h4>
-            <h2 className=" text-white text-[26px] font-bold leading-9">
-              Switzerland
-            </h2>
-          </div>
-          <div className=" rounded-lg overflow-hidden relative  h-80 object-cover">
-            <div className="absolute bg-[#00000021] w-full h-full z-10"></div>
 
-            <img
-              src="https://gaviaspreview.com/wp/gowilds/wp-content/uploads/2023/02/image-08.jpg"
-              className=" object-cover destination-img"
-              alt=""
-            />
-          </div>
-        </div>
-        <div className=" lg:w-[23%] w-full  destination-container relative">
-          <div className=" uppercase text-xs font-bold px-7 py-3 bg-secondary absolute z-10 text-white rounded-lg right-10 top-10">
-            3 tours
-          </div>
-          <div className=" absolute z-10 p-10 bottom-0">
-            <h4 className=" text-primary text-xl font-normal leading-7">
-              Travel to
-            </h4>
-            <h2 className=" text-white text-[26px] font-bold leading-9">
-              France
-            </h2>
-          </div>
-          <div className=" rounded-lg overflow-hidden relative h-80 object-cover">
-            <div className="absolute bg-[#00000021] w-full h-full z-10"></div>
+      <div className=" bg-white relative">
+        <div className="2xl:w-[68%]  w-[100%]  xl:mx-auto flex flex-wrap px-5 gap-5 flex-col lg:flex-row py-20 bg-white ">
+          <div className=" lg:w-[23%] w-full  destination-container relative">
+            <div className=" uppercase text-xs font-bold px-7 py-3 bg-secondary absolute z-10 text-white rounded-lg right-10 top-10">
+              3 tours
+            </div>
+            <div className=" absolute z-10 p-10 bottom-0">
+              <h4 className=" text-primary text-xl font-normal leading-7">
+                Travel to
+              </h4>
+              <h2 className=" text-white text-[26px] font-bold leading-9">
+                Switzerland
+              </h2>
+            </div>
+            <div className=" rounded-lg overflow-hidden relative  h-80 object-cover">
+              <div className="absolute bg-[#00000021] w-full h-full z-10"></div>
 
-            <img
-              src="https://gaviaspreview.com/wp/gowilds/wp-content/uploads/2023/02/image-09.jpg"
-              className=" object-cover destination-img"
-              alt=""
-            />
+              <img
+                src="https://gaviaspreview.com/wp/gowilds/wp-content/uploads/2023/02/image-08.jpg"
+                className=" object-cover destination-img"
+                alt=""
+              />
+            </div>
           </div>
-        </div>
-        <div className=" lg:w-[49%] w-full  destination-container relative">
-          <div className=" uppercase text-xs font-bold px-7 py-3 bg-secondary absolute z-10 text-white rounded-lg right-10 top-10">
-            3 tours
-          </div>
-          <div className=" absolute z-10 p-10 bottom-0">
-            <h4 className=" text-primary text-xl font-normal leading-7">
-              Travel to
-            </h4>
-            <h2 className=" text-white text-[26px] font-bold leading-9">
-              United Kingdom
-            </h2>
-          </div>
-          <div className=" rounded-lg overflow-hidden relative w-full h-80 object-cover">
-            <div className="absolute bg-[#00000021] w-full h-full z-10"></div>
+          <div className=" lg:w-[23%] w-full  destination-container relative">
+            <div className=" uppercase text-xs font-bold px-7 py-3 bg-secondary absolute z-10 text-white rounded-lg right-10 top-10">
+              3 tours
+            </div>
+            <div className=" absolute z-10 p-10 bottom-0">
+              <h4 className=" text-primary text-xl font-normal leading-7">
+                Travel to
+              </h4>
+              <h2 className=" text-white text-[26px] font-bold leading-9">
+                France
+              </h2>
+            </div>
+            <div className=" rounded-lg overflow-hidden relative h-80 object-cover">
+              <div className="absolute bg-[#00000021] w-full h-full z-10"></div>
 
-            <img
-              src="https://gaviaspreview.com/wp/gowilds/wp-content/uploads/2023/01/image-10.jpg"
-              className=" w-full h-full object-cover destination-img"
-              alt=""
-            />
+              <img
+                src="https://gaviaspreview.com/wp/gowilds/wp-content/uploads/2023/02/image-09.jpg"
+                className=" object-cover destination-img"
+                alt=""
+              />
+            </div>
           </div>
-        </div>
+          <div className=" lg:w-[49%] w-full  destination-container relative">
+            <div className=" uppercase text-xs font-bold px-7 py-3 bg-secondary absolute z-10 text-white rounded-lg right-10 top-10">
+              3 tours
+            </div>
+            <div className=" absolute z-10 p-10 bottom-0">
+              <h4 className=" text-primary text-xl font-normal leading-7">
+                Travel to
+              </h4>
+              <h2 className=" text-white text-[26px] font-bold leading-9">
+                United Kingdom
+              </h2>
+            </div>
+            <div className=" rounded-lg overflow-hidden relative w-full h-80 object-cover">
+              <div className="absolute bg-[#00000021] w-full h-full z-10"></div>
 
-        <div className=" lg:w-[23%] w-full  destination-container relative">
-          <div className=" uppercase text-xs font-bold px-7 py-3 bg-secondary absolute z-10 text-white rounded-lg right-10 top-10">
-            1 tours
+              <img
+                src="https://gaviaspreview.com/wp/gowilds/wp-content/uploads/2023/01/image-10.jpg"
+                className=" w-full h-full object-cover destination-img"
+                alt=""
+              />
+            </div>
           </div>
-          <div className=" absolute z-10 p-10 bottom-0">
-            <h4 className=" text-primary text-xl font-normal leading-7">
-              Travel to
-            </h4>
-            <h2 className=" text-white text-[26px] font-bold leading-9">
-              Thailand
-            </h2>
-          </div>
-          <div className=" rounded-lg overflow-hidden relative h-80 object-cover">
-            <div className="absolute bg-[#00000021] w-full h-full z-10"></div>
 
-            <img
-              src="https://gaviaspreview.com/wp/gowilds/wp-content/uploads/2023/01/image-11.jpg"
-              className=" object-cover destination-img"
-              alt=""
-            />
-          </div>
-        </div>
-        <div className=" lg:w-[23%] w-full  destination-container relative">
-          <div className=" uppercase text-xs font-bold px-7 py-3 bg-secondary absolute z-10 text-white rounded-lg right-10 top-10">
-            2 tours
-          </div>
-          <div className=" absolute z-10 p-10 bottom-0">
-            <h4 className=" text-primary text-xl font-normal leading-7">
-              Travel to
-            </h4>
-            <h2 className=" text-white text-[26px] font-bold leading-9">
-              Singapore
-            </h2>
-          </div>
-          <div className=" rounded-lg overflow-hidden relative h-80 object-cover">
-            <div className="absolute bg-[#00000021] w-full h-full z-10"></div>
+          <div className=" lg:w-[23%] w-full  destination-container relative">
+            <div className=" uppercase text-xs font-bold px-7 py-3 bg-secondary absolute z-10 text-white rounded-lg right-10 top-10">
+              1 tours
+            </div>
+            <div className=" absolute z-10 p-10 bottom-0">
+              <h4 className=" text-primary text-xl font-normal leading-7">
+                Travel to
+              </h4>
+              <h2 className=" text-white text-[26px] font-bold leading-9">
+                Thailand
+              </h2>
+            </div>
+            <div className=" rounded-lg overflow-hidden relative h-80 object-cover">
+              <div className="absolute bg-[#00000021] w-full h-full z-10"></div>
 
-            <img
-              src="https://gaviaspreview.com/wp/gowilds/wp-content/uploads/2022/12/image-12.jpg"
-              className=" object-cover destination-img"
-              alt=""
-            />
+              <img
+                src="https://gaviaspreview.com/wp/gowilds/wp-content/uploads/2023/01/image-11.jpg"
+                className=" object-cover destination-img"
+                alt=""
+              />
+            </div>
           </div>
-        </div>
-        <div className=" lg:w-[23%] w-full  destination-container relative">
-          <div className=" uppercase text-xs font-bold px-7 py-3 bg-secondary absolute z-10 text-white rounded-lg right-10 top-10">
-            2 tours
-          </div>
-          <div className=" absolute z-10 p-10 bottom-0">
-            <h4 className=" text-primary text-xl font-normal leading-7">
-              Travel to
-            </h4>
-            <h2 className=" text-white text-[26px] font-bold leading-9">
-              Italy
-            </h2>
-          </div>
-          <div className=" rounded-lg overflow-hidden relative  h-80 object-cover">
-            <div className="absolute bg-[#00000021] w-full h-full z-10"></div>
+          <div className=" lg:w-[23%] w-full  destination-container relative">
+            <div className=" uppercase text-xs font-bold px-7 py-3 bg-secondary absolute z-10 text-white rounded-lg right-10 top-10">
+              2 tours
+            </div>
+            <div className=" absolute z-10 p-10 bottom-0">
+              <h4 className=" text-primary text-xl font-normal leading-7">
+                Travel to
+              </h4>
+              <h2 className=" text-white text-[26px] font-bold leading-9">
+                Singapore
+              </h2>
+            </div>
+            <div className=" rounded-lg overflow-hidden relative h-80 object-cover">
+              <div className="absolute bg-[#00000021] w-full h-full z-10"></div>
 
-            <img
-              src="https://gaviaspreview.com/wp/gowilds/wp-content/uploads/2023/01/image-13.jpg"
-              className=" object-cover destination-img"
-              alt=""
-            />
+              <img
+                src="https://gaviaspreview.com/wp/gowilds/wp-content/uploads/2022/12/image-12.jpg"
+                className=" object-cover destination-img"
+                alt=""
+              />
+            </div>
           </div>
-        </div>
-        <div className=" lg:w-[23%] w-full  destination-container relative">
-          <div className=" uppercase text-xs font-bold px-7 py-3 bg-secondary absolute z-10 text-white rounded-lg right-10 top-10">
-            2 tours
-          </div>
-          <div className=" absolute z-10 p-10 bottom-0">
-            <h4 className=" text-primary text-xl font-normal leading-7">
-              Travel to
-            </h4>
-            <h2 className=" text-white text-[26px] font-bold leading-9">
-              Japan
-            </h2>
-          </div>
-          <div className=" rounded-lg overflow-hidden relative  h-80 object-cover">
-            <div className="absolute bg-[#00000021] w-full h-full z-10"></div>
+          <div className=" lg:w-[23%] w-full  destination-container relative">
+            <div className=" uppercase text-xs font-bold px-7 py-3 bg-secondary absolute z-10 text-white rounded-lg right-10 top-10">
+              2 tours
+            </div>
+            <div className=" absolute z-10 p-10 bottom-0">
+              <h4 className=" text-primary text-xl font-normal leading-7">
+                Travel to
+              </h4>
+              <h2 className=" text-white text-[26px] font-bold leading-9">
+                Italy
+              </h2>
+            </div>
+            <div className=" rounded-lg overflow-hidden relative  h-80 object-cover">
+              <div className="absolute bg-[#00000021] w-full h-full z-10"></div>
 
-            <img
-              src="https://gaviaspreview.com/wp/gowilds/wp-content/uploads/2022/12/image-03.jpg"
-              className=" object-cover destination-img"
-              alt=""
-            />
+              <img
+                src="https://gaviaspreview.com/wp/gowilds/wp-content/uploads/2023/01/image-13.jpg"
+                className=" object-cover destination-img"
+                alt=""
+              />
+            </div>
           </div>
-        </div>
-        <div className=" lg:w-[47.50%] w-full destination-container relative">
-          <div className=" uppercase text-xs font-bold px-7 py-3 bg-secondary absolute z-10 text-white rounded-lg right-10 top-10">
-            3 tours
-          </div>
-          <div className=" absolute z-10 p-10 bottom-0">
-            <h4 className=" text-primary text-xl font-normal leading-7">
-              Travel to
-            </h4>
-            <h2 className=" text-white text-[26px] font-bold leading-9">
-              Hong Kong
-            </h2>
-          </div>
-          <div className=" rounded-lg overflow-hidden relative w-full h-80 object-cover">
-            <div className="absolute bg-[#00000021] w-full h-full z-10"></div>
+          <div className=" lg:w-[23%] w-full  destination-container relative">
+            <div className=" uppercase text-xs font-bold px-7 py-3 bg-secondary absolute z-10 text-white rounded-lg right-10 top-10">
+              2 tours
+            </div>
+            <div className=" absolute z-10 p-10 bottom-0">
+              <h4 className=" text-primary text-xl font-normal leading-7">
+                Travel to
+              </h4>
+              <h2 className=" text-white text-[26px] font-bold leading-9">
+                Japan
+              </h2>
+            </div>
+            <div className=" rounded-lg overflow-hidden relative  h-80 object-cover">
+              <div className="absolute bg-[#00000021] w-full h-full z-10"></div>
 
-            <img
-              src="https://gaviaspreview.com/wp/gowilds/wp-content/uploads/2023/02/bg-05.jpg"
-              className=" w-full h-full object-cover destination-img"
-              alt=""
-            />
+              <img
+                src="https://gaviaspreview.com/wp/gowilds/wp-content/uploads/2022/12/image-03.jpg"
+                className=" object-cover destination-img"
+                alt=""
+              />
+            </div>
           </div>
-        </div>
-        <div className=" lg:w-[23%] w-full  destination-container relative">
-          <div className=" uppercase text-xs font-bold px-7 py-3 bg-secondary absolute z-10 text-white rounded-lg right-10 top-10">
-            2 tours
-          </div>
-          <div className=" absolute z-10 p-10 bottom-0">
-            <h4 className=" text-primary text-xl font-normal leading-7">
-              Travel to
-            </h4>
-            <h2 className=" text-white text-[26px] font-bold leading-9">
-              Italy
-            </h2>
-          </div>
-          <div className=" rounded-lg overflow-hidden relative  h-80 object-cover">
-            <div className="absolute bg-[#00000021] w-full h-full z-10"></div>
+          <div className=" lg:w-[47.50%] w-full destination-container relative">
+            <div className=" uppercase text-xs font-bold px-7 py-3 bg-secondary absolute z-10 text-white rounded-lg right-10 top-10">
+              3 tours
+            </div>
+            <div className=" absolute z-10 p-10 bottom-0">
+              <h4 className=" text-primary text-xl font-normal leading-7">
+                Travel to
+              </h4>
+              <h2 className=" text-white text-[26px] font-bold leading-9">
+                Hong Kong
+              </h2>
+            </div>
+            <div className=" rounded-lg overflow-hidden relative w-full h-80 object-cover">
+              <div className="absolute bg-[#00000021] w-full h-full z-10"></div>
 
-            <img
-              src="https://gaviaspreview.com/wp/gowilds/wp-content/uploads/2023/01/tour-2.jpg"
-              className=" object-cover destination-img h-full w-full"
-              alt=""
-            />
+              <img
+                src="https://gaviaspreview.com/wp/gowilds/wp-content/uploads/2023/02/bg-05.jpg"
+                className=" w-full h-full object-cover destination-img"
+                alt=""
+              />
+            </div>
           </div>
-        </div>
-        <div className=" lg:w-[23%] w-full  destination-container relative">
-          <div className=" absolute z-20 p-12 bottom-5 flex flex-col justify-start  items-start gap-4">
-            <span className=" uppercase text-xs font-bold px-5 py-3 bg-secondary  text-white rounded-lg ">
-              up to 50% off
-            </span>
+          <div className=" lg:w-[23%] w-full  destination-container relative">
+            <div className=" uppercase text-xs font-bold px-7 py-3 bg-secondary absolute z-10 text-white rounded-lg right-10 top-10">
+              2 tours
+            </div>
+            <div className=" absolute z-10 p-10 bottom-0">
+              <h4 className=" text-primary text-xl font-normal leading-7">
+                Travel to
+              </h4>
+              <h2 className=" text-white text-[26px] font-bold leading-9">
+                Italy
+              </h2>
+            </div>
+            <div className=" rounded-lg overflow-hidden relative  h-80 object-cover">
+              <div className="absolute bg-[#00000021] w-full h-full z-10"></div>
 
-            <h2 className=" text-white text-[26px] font-bold leading-9">
-              Members are <br /> Saving up t 50%
-            </h2>
-            <a
-              href="/about"
-              className=" py-4 px-8 rounded-lg bg-white font-bold text-sm"
-            >
-              View Deals
-            </a>
+              <img
+                src="https://gaviaspreview.com/wp/gowilds/wp-content/uploads/2023/01/tour-2.jpg"
+                className=" object-cover destination-img h-full w-full"
+                alt=""
+              />
+            </div>
           </div>
-          <div className=" rounded-lg overflow-hidden relative  h-80">
-            <div className="absolute bg-[rgba(98,171,96,0.75)] w-full h-full z-10"></div>
-            <img
-              src="https://gaviaspreview.com/wp/gowilds/wp-content/uploads/2023/01/tour-10.jpg"
-              className=" h-full object-cover destination-img w-full"
-              alt=""
-            />
+          <div className=" lg:w-[23%] w-full  destination-container relative">
+            <div className=" absolute z-20 p-12 bottom-5 flex flex-col justify-start  items-start gap-4">
+              <span className=" uppercase text-xs font-bold px-5 py-3 bg-secondary  text-white rounded-lg ">
+                up to 50% off
+              </span>
+
+              <h2 className=" text-white text-[26px] font-bold leading-9">
+                Members are <br /> Saving up t 50%
+              </h2>
+              <a
+                href="/about"
+                className=" py-4 px-8 rounded-lg bg-white font-bold text-sm"
+              >
+                View Deals
+              </a>
+            </div>
+            <div className=" rounded-lg overflow-hidden relative  h-80">
+              <div className="absolute bg-[rgba(98,171,96,0.75)] w-full h-full z-10"></div>
+              <img
+                src="https://gaviaspreview.com/wp/gowilds/wp-content/uploads/2023/01/tour-10.jpg"
+                className=" h-full object-cover destination-img w-full"
+                alt=""
+              />
+            </div>
           </div>
         </div>
       </div>
-      <div className="flex flex-col md:flex-row md:items-center items-start justify-between lg:min-h-[100vh] min-h-[200px] relative  overflow-hidden z-50 md:px-28 px-5 py-20">
+
+      <div className="flex flex-col md:flex-row md:items-center items-start justify-between lg:min-h-[100vh] min-h-[200px] relative  overflow-hidden z-50 2xl:w-[68%]  w-[100%]  xl:mx-auto py-20">
         <div className={`bg-fixed-photo-for-music md:hidden`}></div>
         <div className=" text-white flex flex-col items-start">
           <div className="px-5 py-4 bg-[#f7921e2f] text-secondary rounded-lg font-semibold mb-7">
@@ -269,7 +273,7 @@ const Destination = () => {
         </a>
       </div>
       <div className=" relative min-h-screen md:px-20 px-5 py-10 pb-52 overflow-hidden bg-white">
-        <div className="flex flex-col lg:flex-row justify-center md:justify-between min-h-screen relative z-50 md:py-24 gap-y-10 ">
+        <div className="2xl:w-[68%]  w-[100%]  xl:mx-auto flex flex-col lg:flex-row justify-center md:justify-between min-h-screen relative z-50 md:py-24 gap-y-10 ">
           <div className=" flex-[50%] ">
             <div className="relative flex justify-end pl-10 ">
               <a href="/about" className=" team_img">
@@ -382,7 +386,7 @@ const Destination = () => {
         </div>
       </div>
       <Adventure_gallery />
-    </div>
+    </>
   );
 };
 

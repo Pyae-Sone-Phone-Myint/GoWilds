@@ -33,8 +33,8 @@ const Tours = ({name,setName}) => {
           <h1 className=" text-[30px] lg:text-[45px]  text-white font-bold">Explore The Worlds</h1>
           <div className=" text-white text-lg lg:text-xl">People Don’t Take, Trips Take People</div>
         </div>
-        <div className=" w-full ">
-          <div className=" w-[95%] lg:w-[97%] px-8 gap-5 items-center shadow-xl rounded-lg bottom-[-380px] lg:bottom-[-40px] absolute flex flex-col lg:flex-row bg-white py-4">
+        <div className=" 2xl:w-[68%]  w-[100%]  xl:mx-auto">
+          <div className=" w-fit lg:w-[97%] px-8 gap-5 items-center shadow-xl rounded-lg bottom-[-380px] lg:bottom-[-40px] absolute flex flex-col lg:flex-row bg-white py-4">
             <DropDown sort={sort} setSort={setSort} />
           </div>
         </div>
@@ -123,7 +123,7 @@ const Tours = ({name,setName}) => {
           </div>
         </div>
       </div>
-      <div className=" mt-[430px] lg:mt-[150px] w-full">
+      <div className=" 2xl:w-[68%]  xl:mx-auto mt-[430px] lg:mt-[150px] w-full">
         <div className=" flex justify-between px-5 mb-5 text-gray-600">
           <div className=" ">
             <span className="font-bold">12</span> Tours
@@ -188,7 +188,7 @@ const Tours = ({name,setName}) => {
           </button>
         </div>
       </div>
-      <div className=" w-full flex  flex-col  gap-10 lg:gap-0 lg:flex-row my-20 px-3 lg:px-5">
+      <div className=" w-full flex  flex-col  2xl:w-[68%]  xl:mx-auto gap-10 lg:gap-0 lg:flex-row my-20 px-3 lg:px-5">
         <div
           className=" w-full lg:w-[50%] h-[80vh] lg:h-[100vh] relative"
           style={{

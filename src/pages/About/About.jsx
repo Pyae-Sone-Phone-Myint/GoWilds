@@ -29,12 +29,36 @@ const About = () => {
   ];
 
   const brands = [
-    { id: 1, image: "https://gaviaspreview.com/wp/gowilds/wp-content/plugins/gowilds-themer/elementor/assets/images/brand.png" },
-    { id: 2, image: "https://gaviaspreview.com/wp/gowilds/wp-content/plugins/gowilds-themer/elementor/assets/images/brand.png" },
-    { id: 3, image: "https://gaviaspreview.com/wp/gowilds/wp-content/plugins/gowilds-themer/elementor/assets/images/brand.png" },
-    { id: 4, image: "https://gaviaspreview.com/wp/gowilds/wp-content/plugins/gowilds-themer/elementor/assets/images/brand.png" },
-    { id: 5, image: "https://gaviaspreview.com/wp/gowilds/wp-content/plugins/gowilds-themer/elementor/assets/images/brand.png" },
-    { id: 6, image: "https://gaviaspreview.com/wp/gowilds/wp-content/plugins/gowilds-themer/elementor/assets/images/brand.png" },
+    {
+      id: 1,
+      image:
+        "https://gaviaspreview.com/wp/gowilds/wp-content/plugins/gowilds-themer/elementor/assets/images/brand.png",
+    },
+    {
+      id: 2,
+      image:
+        "https://gaviaspreview.com/wp/gowilds/wp-content/plugins/gowilds-themer/elementor/assets/images/brand.png",
+    },
+    {
+      id: 3,
+      image:
+        "https://gaviaspreview.com/wp/gowilds/wp-content/plugins/gowilds-themer/elementor/assets/images/brand.png",
+    },
+    {
+      id: 4,
+      image:
+        "https://gaviaspreview.com/wp/gowilds/wp-content/plugins/gowilds-themer/elementor/assets/images/brand.png",
+    },
+    {
+      id: 5,
+      image:
+        "https://gaviaspreview.com/wp/gowilds/wp-content/plugins/gowilds-themer/elementor/assets/images/brand.png",
+    },
+    {
+      id: 6,
+      image:
+        "https://gaviaspreview.com/wp/gowilds/wp-content/plugins/gowilds-themer/elementor/assets/images/brand.png",
+    },
   ];
 
   const service = services.map((item) => {
@@ -59,7 +83,10 @@ const About = () => {
         <hr />
         <div className=" flex py-5 items-center gap-8">
           <div className=" w-20 overflow-hidden rounded-full">
-            <img src="https://gaviaspreview.com/wp/gowilds/wp-content/plugins/gowilds-themer/elementor/assets/images/testimonial.jpg" alt="" />
+            <img
+              src="https://gaviaspreview.com/wp/gowilds/wp-content/plugins/gowilds-themer/elementor/assets/images/testimonial.jpg"
+              alt=""
+            />
           </div>
           <div className="">
             <h4 className=" text-xl font-bold">{item.name}</h4>
@@ -91,11 +118,11 @@ const About = () => {
       <Hero_section about={"About"} />
 
       {/* Availability */}
-      <div className="min-h-[calc(100vh-100px)] relative bg-white z-50">
+      <div className="min-h-[calc(100vh-100px)] relative bg-white z-50 ">
         <div className="absolute h-screen bg-transparent w-full overflow-hidden">
           <div className="bg-shape-04"></div>
         </div>
-        <div className=" flex flex-col md:flex-row min-h-[calc(100vh-100px)] md:items-center md:mx-28 mx-10">
+        <div className="2xl:w-[68%]  w-[100%]  xl:mx-auto flex flex-col md:flex-row min-h-[calc(100vh-100px)] md:items-center md:mx-28 mx-10">
           <div className="flex flex-col md:w-1/2  items-start gap-7 my-28">
             <div className="">
               <span className=" px-5 py-4 bg-[#64ab4513] text-primary rounded-lg font-semibold">
@@ -199,51 +226,63 @@ const About = () => {
       <Tour_bgBlur check={"discover more"} />
 
       {/* Who we Are */}
-      <div className="flex flex-col lg:flex-row justify-between min-h-[calc(100vh-100px)] relative bg-white z-50 pt-24 md:px-20 px-5 gap-y-10">
-        <div className=" flex-[40%]  px-5 pb-0">
-          <div className=" overflow-hidden h-full top-rounded">
-            <img
-              src="https://gaviaspreview.com/wp/gowilds/wp-content/uploads/2022/12/image-07.jpg"
-              alt=""
-            />
+      <div className="bg-white">
+        <div className="2xl:w-[68%]  w-[100%]  xl:mx-auto  flex flex-col lg:flex-row justify-between min-h-[calc(100vh-100px)] relative bg-white z-50 pt-24 md:px-20 px-5 gap-y-10">
+          <div className=" flex-[40%]  px-5 pb-0">
+            <div className=" overflow-hidden h-full top-rounded">
+              <img
+                src="https://gaviaspreview.com/wp/gowilds/wp-content/uploads/2022/12/image-07.jpg"
+                alt=""
+              />
+            </div>
           </div>
-        </div>
-        <div className=" flex-[60%] flex ">
-          <div className="flex flex-col gap-8 md:px-20 ">
-            <div className="">
-              <span className=" px-5 py-4 bg-[#64ab4513] text-primary rounded-lg font-semibold">
-                Who We Are
-              </span>
-            </div>
-            <h2>
-              <span className=" md:text-[48px] font-bold leading-tight">
-                Great Opportunity For Adventure & Travels
-              </span>
-            </h2>
-            <div className=" text-[#82828a] leading-7 ">
-              Sit amet consectetur integer tincidunt sceleries noda lesry
-              volutpat neque fermentum malesuada scelequecy leocras odio blandit
-              rhoncus eues feugiat.
-            </div>
-            <div className="bg-white flex md:justify-between justify-center flex-col md:flex-row shadow-xl rounded-lg py-8 px-24 gap-y-5">
-              <div className="relative flex justify-center flex-col items-center">
-                <div className=" relative w-fit">
-                  <div class="progress-bar css">
-                    <progress id="css" min="0" max="100" value="50"></progress>
-                  </div>
-                </div>
-                <h4 className=" text-lg font-semibold mt-5">
-                  Satisfied Clients
-                </h4>
+          <div className=" flex-[60%] flex ">
+            <div className="flex flex-col gap-8 md:px-20 ">
+              <div className="">
+                <span className=" px-5 py-4 bg-[#64ab4513] text-primary rounded-lg font-semibold">
+                  Who We Are
+                </span>
               </div>
-              <div className=" h bg-primary md:w-[0.2px] w-0"></div>
-              <div className="relative flex justify-center flex-col items-center">
-                <div className=" relative w-fit">
-                  <div class="progress-bar css">
-                    <progress id="css" min="0" max="100" value="50"></progress>
+              <h2>
+                <span className=" md:text-[48px] font-bold leading-tight">
+                  Great Opportunity For Adventure & Travels
+                </span>
+              </h2>
+              <div className=" text-[#82828a] leading-7 ">
+                Sit amet consectetur integer tincidunt sceleries noda lesry
+                volutpat neque fermentum malesuada scelequecy leocras odio
+                blandit rhoncus eues feugiat.
+              </div>
+              <div className="bg-white flex md:justify-between justify-center flex-col md:flex-row shadow-xl rounded-lg py-8 px-24 gap-y-5">
+                <div className="relative flex justify-center flex-col items-center">
+                  <div className=" relative w-fit">
+                    <div class="progress-bar css">
+                      <progress
+                        id="css"
+                        min="0"
+                        max="100"
+                        value="50"
+                      ></progress>
+                    </div>
                   </div>
+                  <h4 className=" text-lg font-semibold mt-5">
+                    Satisfied Clients
+                  </h4>
                 </div>
-                <h4 className=" text-lg font-semibold mt-5">Success Rate</h4>
+                <div className=" h bg-primary md:w-[0.2px] w-0"></div>
+                <div className="relative flex justify-center flex-col items-center">
+                  <div className=" relative w-fit">
+                    <div class="progress-bar css">
+                      <progress
+                        id="css"
+                        min="0"
+                        max="100"
+                        value="50"
+                      ></progress>
+                    </div>
+                  </div>
+                  <h4 className=" text-lg font-semibold mt-5">Success Rate</h4>
+                </div>
               </div>
             </div>
           </div>
@@ -251,118 +290,137 @@ const About = () => {
       </div>
 
       {/* Team Members */}
-      <div className=" min-h-screen relative bg-white z-50  text-center">
-        <div className="absolute h-screen bg-transparent w-full overflow-hidden">
+      <div className="relative">
+        <div className="absolute h-screen bg-transparent w-full overflow-hidden ">
           <div className="bg-shape-10"></div>
         </div>
-        <div className="flex flex-col items-center justify-center gap-5 md:pt-24 pt-12 overflow-hidden">
-          <div className="">
-            <span className=" px-5 py-4 bg-[#64ab4513] text-primary rounded-lg font-semibold">
-              Team members
-            </span>
+        <div className="2xl:w-[68%]  w-[100%]  xl:mx-auto min-h-screen relative z-50  text-center">
+          <div className=" flex flex-col items-center justify-center gap-5 md:pt-24 pt-12 overflow-hidden">
+            <div className="">
+              <span className=" px-5 py-4 bg-[#64ab4513] text-primary rounded-lg font-semibold">
+                Team members
+              </span>
+            </div>
+            <h2>
+              <span className=" md:text-[48px] font-bold leading-tight">
+                We've Expert Team <br /> Members Meet With Team
+              </span>
+            </h2>
           </div>
-          <h2>
-            <span className=" md:text-[48px] font-bold leading-tight">
-              We've Expert Team <br /> Members Meet With Team
-            </span>
-          </h2>
+          <Team_slider />
         </div>
-        <Team_slider />
       </div>
 
       {/* Who we are */}
-      <div className="flex flex-col lg:flex-row justify-center md:justify-between min-h-screen relative bg-white z-50 md:py-24 py-10 md:px-20 px-5 gap-y-10 ">
-        <div className=" flex-[50%] flex flex-col gap-8 md:pr-10 ">
-          <div className="flex md:items-end md:flex-row flex-col gap-8">
-            <div className="">
-              <img
-                src="https://gaviaspreview.com/wp/gowilds/wp-content/uploads/2023/01/image-16.jpg"
-                className=" w-full h-full object-contain rounded-lg"
-                alt=""
-              />
+      <div className="relative bg-white">
+        <div className="2xl:w-[68%]  w-[100%]  xl:mx-auto flex flex-col lg:flex-row justify-center md:justify-between min-h-screen relative bg-white z-50 md:py-24 py-10  px-5 gap-y-10 ">
+          <div className=" flex-[50%] flex flex-col gap-8 md:pr-10 ">
+            <div className="flex md:items-end md:flex-row flex-col gap-8">
+              <div className="">
+                <img
+                  src="https://gaviaspreview.com/wp/gowilds/wp-content/uploads/2023/01/image-16.jpg"
+                  className=" w-full h-full object-contain rounded-lg"
+                  alt=""
+                />
+              </div>
+              <div className="">
+                <img
+                  src="https://gaviaspreview.com/wp/gowilds/wp-content/uploads/2023/01/image-17.jpg"
+                  className=" w-full h-full object-contain rounded-lg"
+                  alt=""
+                />
+              </div>
             </div>
-            <div className="">
-              <img
-                src="https://gaviaspreview.com/wp/gowilds/wp-content/uploads/2023/01/image-17.jpg"
-                className=" w-full h-full object-contain rounded-lg"
-                alt=""
-              />
+            <div className=" flex md:justify-center">
+              <div className="md:w-[80%] w-full">
+                <img
+                  src="https://gaviaspreview.com/wp/gowilds/wp-content/uploads/2023/01/image-18.jpg"
+                  className=" w-full h-full object-contain rounded-lg"
+                  alt=""
+                />
+              </div>
             </div>
           </div>
-          <div className=" flex md:justify-center">
-            <div className="md:w-[80%] w-full">
-              <img
-                src="https://gaviaspreview.com/wp/gowilds/wp-content/uploads/2023/01/image-18.jpg"
-                className=" w-full h-full object-contain rounded-lg"
-                alt=""
-              />
+          <div className=" flex-[40%] flex flex-col md:pl-5">
+            <div className="mb-10">
+              <span className=" px-5 py-4 bg-[#64ab4513] text-primary rounded-lg font-semibold">
+                Who We Are
+              </span>
             </div>
-          </div>
-        </div>
-        <div className=" flex-[40%] flex flex-col md:pl-5">
-          <div className="mb-10">
-            <span className=" px-5 py-4 bg-[#64ab4513] text-primary rounded-lg font-semibold">
-              Who We Are
-            </span>
-          </div>
-          <h2 className=" mb-10">
-            <span className=" md:text-[48px] text-[36px] font-bold leading-tight">
-              Great Opportunity For Adventure & Travels
-            </span>
-          </h2>
-          <div className="parent gap-14 flex flex-col">
-            <div className="child flex items-center md:gap-14 gap-8">
-              <div className=" icon-parent flex items-center md:gap-8 gap-3 ">
-                <BsPatchCheckFill className=" text-secondary" size={"1.5rem"} />
-                <div className="icon_1 relative">
-                  <FaVest
-                    className="p-5 relative bg-white text-primary border rounded-full"
-                    size={"5rem"}
+            <h2 className=" mb-10">
+              <span className=" md:text-[48px] text-[36px] font-bold leading-tight">
+                Great Opportunity For Adventure & Travels
+              </span>
+            </h2>
+            <div className="parent gap-14 flex flex-col">
+              <div className="child flex items-center md:gap-14 gap-8">
+                <div className=" icon-parent flex items-center md:gap-8 gap-3 ">
+                  <BsPatchCheckFill
+                    className=" text-secondary"
+                    size={"1.5rem"}
                   />
+                  <div className="icon_1 relative">
+                    <FaVest
+                      className="p-5 relative bg-white text-primary border rounded-full"
+                      size={"5rem"}
+                    />
+                  </div>
+                </div>
+                <div className="flex flex-col md:gap-3 gap-1">
+                  <h4 className=" text-xl font-semibold">
+                    Safety First Always
+                  </h4>
+                  <p className="text-[#82828a] leading-7 ">
+                    Set perspiciatis unde omnis estenatus voluptatem totarem
+                    aperiae.
+                  </p>
                 </div>
               </div>
-              <div className="flex flex-col md:gap-3 gap-1">
-                <h4 className=" text-xl font-semibold">Safety First Always</h4>
-                <p className="text-[#82828a] leading-7 ">
-                  Set perspiciatis unde omnis estenatus voluptatem totarem
-                  aperiae.
-                </p>
-              </div>
-            </div>
-            <div className="child flex items-center md:gap-14 gap-8">
-              <div className=" icon-parent flex items-center md:gap-8 gap-3 ">
-                <BsPatchCheckFill className=" text-secondary" size={"1.5rem"} />
-                <div className="icon_1 relative">
-                  <FaCoins
-                    className="p-5 relative bg-white text-primary border rounded-full"
-                    size={"5rem"}
+              <div className="child flex items-center md:gap-14 gap-8">
+                <div className=" icon-parent flex items-center md:gap-8 gap-3 ">
+                  <BsPatchCheckFill
+                    className=" text-secondary"
+                    size={"1.5rem"}
                   />
+                  <div className="icon_1 relative">
+                    <FaCoins
+                      className="p-5 relative bg-white text-primary border rounded-full"
+                      size={"5rem"}
+                    />
+                  </div>
+                </div>
+                <div className="flex flex-col md:gap-3 gap-1">
+                  <h4 className=" text-xl font-semibold">
+                    Low Price & Friendly
+                  </h4>
+                  <p className="text-[#82828a] leading-7 ">
+                    Quis autem vel eum iure voluptate velit esse nihile
+                    consequatur.
+                  </p>
                 </div>
               </div>
-              <div className="flex flex-col md:gap-3 gap-1">
-                <h4 className=" text-xl font-semibold">Low Price & Friendly</h4>
-                <p className="text-[#82828a] leading-7 ">
-                  Quis autem vel eum iure voluptate velit esse nihile
-                  consequatur.
-                </p>
-              </div>
-            </div>
-            <div className="child flex items-center md:gap-14 gap-8">
-              <div className=" icon-parent flex items-center md:gap-8 gap-3 ">
-                <BsPatchCheckFill className=" text-secondary" size={"1.5rem"} />
-                <div className=" relative">
-                  <GiCommercialAirplane
-                    className="p-5 relative bg-white text-primary border rounded-full"
-                    size={"5rem"}
+              <div className="child flex items-center md:gap-14 gap-8">
+                <div className=" icon-parent flex items-center md:gap-8 gap-3 ">
+                  <BsPatchCheckFill
+                    className=" text-secondary"
+                    size={"1.5rem"}
                   />
+                  <div className=" relative">
+                    <GiCommercialAirplane
+                      className="p-5 relative bg-white text-primary border rounded-full"
+                      size={"5rem"}
+                    />
+                  </div>
                 </div>
-              </div>
-              <div className="flex flex-col md:gap-3 gap-1">
-                <h4 className=" text-xl font-semibold">Trusted Travel Guide</h4>
-                <p className="text-[#82828a] leading-7 ">
-                  At vero accusamus dignissimos ducimus blanditiis deleniti
-                  atque quos.
-                </p>
+                <div className="flex flex-col md:gap-3 gap-1">
+                  <h4 className=" text-xl font-semibold">
+                    Trusted Travel Guide
+                  </h4>
+                  <p className="text-[#82828a] leading-7 ">
+                    At vero accusamus dignissimos ducimus blanditiis deleniti
+                    atque quos.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
@@ -370,42 +428,46 @@ const About = () => {
       </div>
 
       {/* Play */}
-      <div className="flex flex-col md:flex-row md:items-center items-start justify-between md:min-h-[340px] min-h-[200px] relative  overflow-hidden z-50 md:px-28 px-5 py-10">
+      <div className=" relative">
         <div className={`bg-fixed-photo-for-music md:hidden`}></div>
-        <div className=" text-white ">
-          <h1 className=" text-[30px] md:text-[52px] font-[700]">
-            Ready to travel with real <br /> adventure and enjoy natural
-          </h1>
+        <div className=" 2xl:w-[68%]  w-[100%]  xl:mx-auto flex flex-col md:flex-row md:items-center items-start justify-between md:min-h-[340px] min-h-[200px] relative  overflow-hidden z-50  py-10">
+          <div className=" text-white">
+            <h1 className=" text-[30px] md:text-[52px] font-[700]">
+              Ready to travel with real <br /> adventure and enjoy natural
+            </h1>
+          </div>
+          <a
+            href="https://www.youtube.com/watch?v=JA0g4KYMf_k"
+            className="music-btn music-btn-2 hover:scale-95 duration-150 transition relative p-10 bg-white rounded-full "
+          >
+            <FaPlay className=" text-black" size={"2rem"} />
+          </a>
         </div>
-        <a
-          href="https://www.youtube.com/watch?v=JA0g4KYMf_k"
-          className="music-btn music-btn-2 hover:scale-95 duration-150 transition relative p-10 bg-white rounded-full "
-        >
-          <FaPlay className=" text-black" size={"2rem"} />
-        </a>
       </div>
 
       {/* Services */}
-      <div className=" bg-white items-start justify-between min-h-screen relative  overflow-hidden z-50 md:px-28 px-5 md:py-40">
+      <div className="relative bg-white">
         <div className="absolute left-0 h-screen bg-transparent w-full overflow-hidden">
           <div className="bg-shape-05"></div>
         </div>
-        <div className="flex flex-col md:flex-row md:items-center items-start justify-between relative  overflow-hidden z-50 pb-16">
-          <div className=" md:flex-[50%] flex-1">
-            <div className="">
-              <img
-                src="https://gaviaspreview.com/wp/gowilds/wp-content/uploads/2023/02/icon-testimonial.png"
-                alt=""
-              />
+        <div className="2xl:w-[68%]  w-[100%]  xl:mx-auto items-start justify-between min-h-screen relative  overflow-hidden z-50  md:pt-40">
+          <div className="flex flex-col md:flex-row md:items-center items-start justify-between relative  overflow-hidden z-50 pb-16">
+            <div className=" md:flex-[50%] flex-1">
+              <div className="w-[70%] ">
+                <img
+                  src="https://gaviaspreview.com/wp/gowilds/wp-content/uploads/2023/02/icon-testimonial.png"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div className="md:flex-[50%] flex-1 overflow-hidden w-full">
+              <Splides brand={service} controller={false} />
             </div>
           </div>
-          <div className="md:flex-[50%] flex-1 overflow-hidden w-full">
-            <Splides brand={service} controller={false} />
+          <hr />
+          <div className=" py-16 pb-40 overflow-hidden">
+            <Splides brand={brand} view={5} controller={false} />
           </div>
-        </div>
-        <hr />
-        <div className=" py-16 pb-40 overflow-hidden">
-          <Splides brand={brand} view={5} controller={false} />
         </div>
       </div>
       <Adventure_gallery />
