@@ -2,7 +2,7 @@
   position: relative;
   width: fit-content;
 }
-.splide__slide.is-activ .swipe::after {
+.splide__slide.is-active .swipe::after {
   display: block;
   content: "";
   position: absolute;
