@@ -17,6 +17,7 @@ import {
 import DropDown from "../../components/tourPageDropDown/DropDown";
 import TourItem1 from "../../components/tourPageDropDown/TourItem1";
 import TourItem2 from "../../components/tourPageDropDown/TourItem2";
+import RevealUp from "../../components/Animations/RevealUp";
 
 const Tours = ({name,setName}) => {
   const [value, setValue] = React.useState([109, 619]);
@@ -146,7 +147,7 @@ const Tours = ({name,setName}) => {
             </div>
           </div>
         </div>
-        {pagination === 1 ? <TourItem1 name={name} setName={setName}/> : <TourItem2  name={name} setName={setName}/>}
+        {pagination === 1 ? <RevealUp><TourItem1 name={name} setName={setName}/> </RevealUp>: <RevealUp><TourItem2  name={name} setName={setName}/></RevealUp>}
         <div className=" flex px-5 gap-5">
           <button
             onClick={() => {

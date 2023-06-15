@@ -20,6 +20,8 @@ import { SplideSlide } from "@splidejs/react-splide";
 import Hero_section from "../../components/Hero_section/Hero_section";
 import Tour_bgBlur from "../../components/Tour_bgBlur/Tour_bgBlur";
 import Team_slider from "../../components/Slider/Team/Team_slider";
+import Reveal from "../../components/Animations/Reveal";
+import RevealUp from "../../components/Animations/RevealUp";
 
 const About = () => {
   const services = [
@@ -123,58 +125,62 @@ const About = () => {
           <div className="bg-shape-04"></div>
         </div>
         <div className="2xl:w-[68%]  w-[100%]  xl:mx-auto flex flex-col md:flex-row min-h-[calc(100vh-100px)] md:items-center md:mx-28 mx-10">
-          <div className="flex flex-col md:w-1/2  items-start gap-7 my-28">
+         
+ 
+       <div className="flex flex-col md:w-1/2  items-start gap-7 my-28">
+          <div className="">
+            <span className=" px-5 py-4 bg-[#64ab4513] text-primary rounded-lg font-semibold">
+              Availability
+            </span>
+          </div>
+          <h2>
+            <span className=" md:text-[48px] font-bold leading-tight">
+              Explore Go Wilds Real Adventure & Travels
+            </span>
+          </h2>
+          <div className=" text-[#82828a] leading-7">
+            Sit amet consectetur integer tincidunt sceleries noda lesry
+            volutpat neque fermentum malesuada scelequecy leocras odio blandit
+            rhoncus eues feugiat.
+          </div>
+          <div className=" flex items-center gap-4">
             <div className="">
-              <span className=" px-5 py-4 bg-[#64ab4513] text-primary rounded-lg font-semibold">
-                Availability
-              </span>
+              <img
+                src="src/assets/images/airplane.png"
+                className=" w-12"
+                alt="flight"
+              />
             </div>
-            <h2>
-              <span className=" md:text-[48px] font-bold leading-tight">
-                Explore Go Wilds Real Adventure & Travels
-              </span>
-            </h2>
-            <div className=" text-[#82828a] leading-7">
-              Sit amet consectetur integer tincidunt sceleries noda lesry
-              volutpat neque fermentum malesuada scelequecy leocras odio blandit
-              rhoncus eues feugiat.
-            </div>
-            <div className=" flex items-center gap-4">
-              <div className="">
-                <img
-                  src="src/assets/images/airplane.png"
-                  className=" w-12"
-                  alt="flight"
-                />
-              </div>
-              <div className="">
-                <h3>
-                  <span className="text-[20px] font-bold">
-                    Protect your life
-                  </span>
-                </h3>
-                <p className=" text-[#82828a]">
-                  We're here for look even you from start to finish.
-                </p>
-              </div>
-            </div>
-            <div className="flex items-center gap-3">
-              <div className=" p-3 rounded-full bg-secondary cursor-pointer relative hover:bg-primary duration-150 transition text-white">
-                <BiPhoneCall size={"1.5rem"} />
-              </div>
-              <div className="">
-                <h3>
-                  <span className=" text-[#82828a] text-[14px]">
-                    Call experts
-                  </span>
-                </h3>
-                <p className=" font-bold">+92 (03) 68-090</p>
-              </div>
-              <div className=" cursor-pointer text-white px-5 py-4 rounded-lg duration-150 transition bg-primary hover:bg-[#7ecc5d] relative -bottom-4">
-                <a href="/contact">Discover More</a>
-              </div>
+            <div className="">
+              <h3>
+                <span className="text-[20px] font-bold">
+                  Protect your life
+                </span>
+              </h3>
+              <p className=" text-[#82828a]">
+                We're here for look even you from start to finish.
+              </p>
             </div>
           </div>
+          <div className="flex items-center gap-3">
+            <div className=" p-3 rounded-full bg-secondary cursor-pointer relative hover:bg-primary duration-150 transition text-white">
+              <BiPhoneCall size={"1.5rem"} />
+            </div>
+            <div className="">
+              <h3>
+                <span className=" text-[#82828a] text-[14px]">
+                  Call experts
+                </span>
+              </h3>
+              <p className=" font-bold">+92 (03) 68-090</p>
+            </div>
+            <div className=" cursor-pointer text-white px-5 py-4 rounded-lg duration-150 transition bg-primary hover:bg-[#7ecc5d] relative -bottom-4">
+              <a href="/contact">Discover More</a>
+            </div>
+          </div>
+        </div>
+       
+         
           <div className="md:w-1/2 flex flex-wrap gap-5 relative z-30">
             <div className="card md:flex-[40%]  shadow-lg">
               <div className=" w-fit p-3 rounded-full bg-[#eeeded] cursor-pointer relative hover:bg-primary duration-150 transition text-primary">

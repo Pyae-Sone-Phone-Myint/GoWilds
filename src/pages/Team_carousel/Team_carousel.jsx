@@ -7,6 +7,7 @@ import Team_slider from "../../components/Slider/Team/Team_slider";
 import Team_slider2 from "../../components/Slider/Team/Team_slider2";
 import Splides from "../../components/Slider/Splides";
 import { SplideSlide } from "@splidejs/react-splide";
+import Reveal from "../../components/Animations/Reveal";
 
 const Team_carousel = () => {
   const brands = [
@@ -34,16 +35,22 @@ const Team_carousel = () => {
       {/* Team Members */}
       <div className=" px-10 min-h-screen py-32 relative bg-white">
         <div className="2xl:w-[68%]  w-[100%]  xl:mx-auto  text-center">
+          <Reveal value={-200}>
+
           <div className=" mb-10">
             <span className=" px-5 py-4 bg-[#64ab4513] text-primary rounded-lg font-semibold">
               Team members
             </span>
           </div>
+          </Reveal>
+          <Reveal>
+
           <h2>
             <span className=" md:text-[48px] font-bold leading-tight">
               Meet our best professional <br /> insurance agents
             </span>
           </h2>
+          </Reveal>
           <Team_slider />
         </div>
       </div>
@@ -53,16 +60,21 @@ const Team_carousel = () => {
 
       <div className=" px-10 min-h-screen py-32 relative bg-white">
         <div className="2xl:w-[68%]  w-[100%]  xl:mx-auto  text-center">
+       
+
           <div className=" mb-10">
             <span className=" px-5 py-4 bg-[#64ab4513] text-primary rounded-lg font-semibold">
               Team members
             </span>
           </div>
+   
+
           <h2>
             <span className=" md:text-[48px] font-bold leading-tight">
               Meet our best expert
             </span>
           </h2>
+     
           <Team_slider2 />
         </div>
       </div>
