@@ -7,7 +7,6 @@ import { Link } from "react-router-dom";
 const News01Page1 = () => {
 	return (
 		<>
-			
 			<section className=" ">
 				<div className=" container mx-auto mb-3">
 					<div className=" mt-10 grid grid-flow-row md:grid-cols-2  lg:grid-cols-3  gap-10">
@@ -19,10 +18,12 @@ const News01Page1 = () => {
 										className=" rounded w-fit mx-auto"
 									/>
 								</Link>
-								<button className=" absolute bottom-[-12px] tracking-wider left-6 bg-secondary text-white px-3 py-1 text-[15px] hover:underline">
-									{" "}
-									Adventure
-								</button>
+								<Link to={"/newsbutton"}>
+									<button className=" absolute bottom-[-12px] tracking-wider left-6 bg-secondary text-white px-3 py-1 text-[15px] hover:underline">
+										{" "}
+										Adventure
+									</button>
+								</Link>
 
 								<div className=" absolute top-0 left-3/4  bg-green-600 text-white flex flex-col items-center justify-center w-fit rounded px-2 py-1 ">
 									<p className=" text-sm mb-0">19</p>
@@ -63,14 +64,19 @@ const News01Page1 = () => {
 						</div>
 						<div className="flex flex-col w-fit md:w-96 border shadow-md px-4 py-3 rounded">
 							<div className=" relative">
-								<img
-									src="https://gaviaspreview.com/wp/gowilds/wp-content/uploads/2022/12/blog-02-500x360.jpg"
-									className=" rounded w-fit mx-auto"
-								/>
-								<button className=" absolute bottom-[-12px] tracking-wider left-6 bg-secondary text-white px-3 py-1 text-sm hover:underline">
-									{" "}
-									City Tours
-								</button>
+								<Link to={"/new1detail"}>
+									<img
+										src="https://gaviaspreview.com/wp/gowilds/wp-content/uploads/2022/12/blog-02-500x360.jpg"
+										className=" rounded w-fit mx-auto"
+									/>
+								</Link>
+
+								<Link to={"/newsbutton"}>
+									<button className=" absolute bottom-[-12px] tracking-wider left-6 bg-secondary text-white px-3 py-1 text-sm hover:underline">
+										{" "}
+										City Tours
+									</button>
+								</Link>
 
 								<div className=" absolute top-0 left-3/4  bg-green-600 text-white flex flex-col items-center justify-center w-fit rounded px-2 py-1 ">
 									<p className=" text-sm mb-0">19</p>
@@ -109,14 +115,18 @@ const News01Page1 = () => {
 						</div>
 						<div className="flex flex-col w-fit md:w-96 border shadow-md px-4 py-3 rounded">
 							<div className=" relative">
-								<img
-									src="https://gaviaspreview.com/wp/gowilds/wp-content/uploads/2022/12/blog-03-500x360.jpg"
-									className=" rounded w-fit mx-auto"
-								/>
-								<button className=" absolute bottom-[-12px] tracking-wider left-6 bg-secondary text-white px-3 py-1 text-sm hover:underline">
-									{" "}
-									Life Style
-								</button>
+								<Link to={"/new1detail"}>
+									<img
+										src="https://gaviaspreview.com/wp/gowilds/wp-content/uploads/2022/12/blog-03-500x360.jpg"
+										className=" rounded w-fit mx-auto"
+									/>
+								</Link>
+								<Link to={"/newsbutton"}>
+									<button className=" absolute bottom-[-12px] tracking-wider left-6 bg-secondary text-white px-3 py-1 text-sm hover:underline">
+										{" "}
+										Life Style
+									</button>
+								</Link>
 
 								<div className=" absolute top-0 left-3/4  bg-green-600 text-white flex flex-col items-center justify-center w-fit rounded px-2 py-1 ">
 									<p className=" text-sm mb-0">19</p>
@@ -155,14 +165,18 @@ const News01Page1 = () => {
 						</div>
 						<div className="flex flex-col w-fit md:w-96 border shadow-md px-4 py-3 rounded">
 							<div className=" relative">
-								<img
-									src="https://gaviaspreview.com/wp/gowilds/wp-content/uploads/2022/12/blog-04-500x360.jpg"
-									className=" rounded w-fit mx-auto"
-								/>
-								<button className=" absolute bottom-[-12px] tracking-wider left-6 bg-secondary text-white px-3 py-1 text-sm hover:underline">
-									{" "}
-									Life Style
-								</button>
+								<Link to={"/new1detail"}>
+									<img
+										src="https://gaviaspreview.com/wp/gowilds/wp-content/uploads/2022/12/blog-04-500x360.jpg"
+										className=" rounded w-fit mx-auto"
+									/>
+								</Link>
+								<Link to={"/newsbutton"}>
+									<button className=" absolute bottom-[-12px] tracking-wider left-6 bg-secondary text-white px-3 py-1 text-sm hover:underline">
+										{" "}
+										Life Style
+									</button>
+								</Link>
 
 								<div className=" absolute top-0 left-3/4  bg-green-600 text-white flex flex-col items-center justify-center w-fit rounded px-2 py-1 ">
 									<p className=" text-sm mb-0">19</p>
@@ -201,14 +215,18 @@ const News01Page1 = () => {
 						</div>
 						<div className="flex flex-col w-fit md:w-96 border shadow-md px-4 py-3 rounded">
 							<div className=" relative">
-								<img
-									src="https://gaviaspreview.com/wp/gowilds/wp-content/uploads/2022/12/blog-05-500x360.jpg"
-									className=" rounded w-fit mx-auto"
-								/>
-								<button className=" absolute bottom-[-12px] tracking-wider left-6 bg-secondary text-white px-3 py-1 text-sm hover:underline">
-									{" "}
-									Wlid Camping
-								</button>
+								<Link to={"/new1detail"}>
+									<img
+										src="https://gaviaspreview.com/wp/gowilds/wp-content/uploads/2022/12/blog-05-500x360.jpg"
+										className=" rounded w-fit mx-auto"
+									/>
+								</Link>
+								<Link to={"/newsbutton"}>
+									<button className=" absolute bottom-[-12px] tracking-wider left-6 bg-secondary text-white px-3 py-1 text-sm hover:underline">
+										{" "}
+										Wlid Camping
+									</button>
+								</Link>
 
 								<div className=" absolute top-0 left-3/4  bg-green-600 text-white flex flex-col items-center justify-center w-fit rounded px-2 py-1 ">
 									<p className=" text-sm mb-0">19</p>
@@ -247,14 +265,18 @@ const News01Page1 = () => {
 						</div>
 						<div className="flex flex-col w-fit md:w-96 border shadow-md px-4 py-3 rounded">
 							<div className=" relative">
-								<img
-									src="https://gaviaspreview.com/wp/gowilds/wp-content/uploads/2022/12/blog-06-500x360.jpg"
-									className=" rounded w-fit mx-auto"
-								/>
-								<button className=" absolute bottom-[-12px] tracking-wider left-6 bg-secondary text-white px-3 py-1 text-sm hover:underline">
-									{" "}
-									Life Style
-								</button>
+								<Link to={"/new1detail"}>
+									<img
+										src="https://gaviaspreview.com/wp/gowilds/wp-content/uploads/2022/12/blog-06-500x360.jpg"
+										className=" rounded w-fit mx-auto"
+									/>
+								</Link>
+								<Link to={"/newsbutton"}>
+									<button className=" absolute bottom-[-12px] tracking-wider left-6 bg-secondary text-white px-3 py-1 text-sm hover:underline">
+										{" "}
+										Life Style
+									</button>
+								</Link>
 
 								<div className=" absolute top-0 left-3/4  bg-green-600 text-white flex flex-col items-center justify-center w-fit rounded px-2 py-1 ">
 									<p className=" text-sm mb-0">19</p>
