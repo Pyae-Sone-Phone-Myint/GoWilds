@@ -250,7 +250,7 @@ const Destination = () => {
         </div>
       </div>
 
-      <div className="flex flex-col md:flex-row md:items-center items-start justify-between lg:min-h-[100vh] min-h-[200px] relative  overflow-hidden z-50 2xl:w-[68%]  w-[100%]  xl:mx-auto py-20">
+      <div className="flex flex-col md:flex-row md:items-center items-start justify-between lg:min-h-[100vh] min-h-[200px] relative  overflow-hidden z-50 2xl:w-[68%]  w-[100%] px-5  xl:mx-auto py-20">
         <div className={`bg-fixed-photo-for-music md:hidden`}></div>
         <div className=" text-white flex flex-col items-start">
           <div className="px-5 py-4 bg-[#f7921e2f] text-secondary rounded-lg font-semibold mb-7">
@@ -288,7 +288,7 @@ const Destination = () => {
               </a>
               <div className=" absolute -bottom-20 -left-10">
                 <a href="/about" className=" team_img">
-                  <div className=" landing rounded-xl overflow-hidden w-[70%]">
+                  <div className="  rounded-xl overflow-hidden w-[70%]">
                     <img
                       src={
                         "https://gaviaspreview.com/wp/gowilds/wp-content/plugins/gowilds-themer/elementor/assets/images/image-2.jpg"
