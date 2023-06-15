@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 import "@splidejs/react-splide/css";
 import "./splides.css";
 
-const Splides = ({ brand, view = 1, controller = true, center = "center" }) => {
+const Splides = ({ brand, view = 1, controller = true, center = "center" ,autoplay = true}) => {
   const [perPage, setPerPage] = useState(1);
   useEffect(() => {
     function updatePerPage() {
@@ -26,8 +26,8 @@ const Splides = ({ brand, view = 1, controller = true, center = "center" }) => {
       <Splide
         options={{
           type: "loop",
-          // autoplay: true,
-          speed: 1500,
+          autoplay: autoplay,
+          speed: 2000,
           perPage: perPage,
           focus: center,
           gap: "2rem",
