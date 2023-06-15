@@ -3,25 +3,19 @@ import "./News.css";
 import { FaRegComments, FaUserCircle } from "react-icons/fa";
 import { AiOutlineArrowRight } from "react-icons/ai";
 import { Link } from "react-router-dom";
-import Landing_image from "../../components/Landing/Landing_image";
 
-import News01Page1 from "./News01Page1";
-import News01Page2 from "./News01Page2";
-
-const New01 = ({ name, setName }) => {
-	const [pagination, setPagination] = useState(1);
+const News01Page1 = () => {
 	return (
 		<>
-
-			<Landing_image page={"news"} about={"news"} />
+			
 			<section className=" bg-gray-50">
-				<div className="2xl:w-[68%]  w-[100%]  xl:mx-auto container mx-auto ">
-					<div className=" mt-10 grid grid-flow-row md:grid-cols-2  lg:grid-cols-3  gap-5">
+				<div className=" container mx-auto mb-3">
+					<div className=" mt-10 grid grid-flow-row md:grid-cols-2  lg:grid-cols-3  gap-10">
 						<div className="flex flex-col w-fit md:w-96 border shadow-md px-4 py-3 rounded">
 							<div className=" relative">
 								<Link to={"/new1detail"}>
 									<img
-										src="src\assets\newsImage\news1.jpeg"
+										src="https://gaviaspreview.com/wp/gowilds/wp-content/uploads/2022/12/blog-01-500x360.jpg"
 										className=" rounded w-fit mx-auto"
 									/>
 								</Link>
@@ -47,7 +41,7 @@ const New01 = ({ name, setName }) => {
 									</div>
 								</div>
 								<div className=" p-3">
-									<Link to={'/new1detail'}>
+									<Link to={"/new1detail"}>
 										<h2 className=" font-extrabold  text-[22px]   hover:text-green-600 duration-300 cursor-pointere p-2">
 											Things to see and do when visiting Japan
 										</h2>
@@ -70,7 +64,7 @@ const New01 = ({ name, setName }) => {
 						<div className="flex flex-col w-fit md:w-96 border shadow-md px-4 py-3 rounded">
 							<div className=" relative">
 								<img
-									src="src\assets\newsImage\news2.jpeg"
+									src="https://gaviaspreview.com/wp/gowilds/wp-content/uploads/2022/12/blog-02-500x360.jpg"
 									className=" rounded w-fit mx-auto"
 								/>
 								<button className=" absolute bottom-[-12px] tracking-wider left-6 bg-secondary text-white px-3 py-1 text-sm hover:underline">
@@ -116,7 +110,7 @@ const New01 = ({ name, setName }) => {
 						<div className="flex flex-col w-fit md:w-96 border shadow-md px-4 py-3 rounded">
 							<div className=" relative">
 								<img
-									src="src\assets\newsImage\news3.jpeg"
+									src="https://gaviaspreview.com/wp/gowilds/wp-content/uploads/2022/12/blog-03-500x360.jpg"
 									className=" rounded w-fit mx-auto"
 								/>
 								<button className=" absolute bottom-[-12px] tracking-wider left-6 bg-secondary text-white px-3 py-1 text-sm hover:underline">
@@ -162,7 +156,7 @@ const New01 = ({ name, setName }) => {
 						<div className="flex flex-col w-fit md:w-96 border shadow-md px-4 py-3 rounded">
 							<div className=" relative">
 								<img
-									src="src\assets\newsImage\news4.jpeg"
+									src="https://gaviaspreview.com/wp/gowilds/wp-content/uploads/2022/12/blog-04-500x360.jpg"
 									className=" rounded w-fit mx-auto"
 								/>
 								<button className=" absolute bottom-[-12px] tracking-wider left-6 bg-secondary text-white px-3 py-1 text-sm hover:underline">
@@ -208,7 +202,7 @@ const New01 = ({ name, setName }) => {
 						<div className="flex flex-col w-fit md:w-96 border shadow-md px-4 py-3 rounded">
 							<div className=" relative">
 								<img
-									src="src\assets\newsImage\news1.jpeg"
+									src="https://gaviaspreview.com/wp/gowilds/wp-content/uploads/2022/12/blog-05-500x360.jpg"
 									className=" rounded w-fit mx-auto"
 								/>
 								<button className=" absolute bottom-[-12px] tracking-wider left-6 bg-secondary text-white px-3 py-1 text-sm hover:underline">
@@ -254,7 +248,7 @@ const New01 = ({ name, setName }) => {
 						<div className="flex flex-col w-fit md:w-96 border shadow-md px-4 py-3 rounded">
 							<div className=" relative">
 								<img
-									src="src\assets\newsImage\news1.jpeg"
+									src="https://gaviaspreview.com/wp/gowilds/wp-content/uploads/2022/12/blog-06-500x360.jpg"
 									className=" rounded w-fit mx-auto"
 								/>
 								<button className=" absolute bottom-[-12px] tracking-wider left-6 bg-secondary text-white px-3 py-1 text-sm hover:underline">
@@ -299,72 +293,9 @@ const New01 = ({ name, setName }) => {
 						</div>
 					</div>
 				</div>
-				
-			<section className="">
-				<div className=" md:min-h-[250px] bg-white min-h-[200px]  relative flex items-center justify-center overflow-hidden z-50">
-					<div className="landing-img"></div>
-					<div className=" text-white absolute bottom-20 left-20">
-						<h1 className=" text-[20px]   text-white font-bold">
-							News 01
-						</h1>
-						<div className=" text-white text-[16px] flex items-center">
-							<h2>Home</h2>
-							<span>/</span>
-							<h2>News01</h2>
-						</div>
-					</div>
-				</div>
 			</section>
-			<section className=" bg-gray-50">
-				{pagination === 1 ? (
-					<News01Page1 name={name} setName={setName} />
-				) : (
-					<News01Page2 name={name} setName={setName} />
-				)}
-
-			</section>
-			<div className=" flex px-5 gap-5 mb-3">
-				<button
-					onClick={() => {
-						setPagination(1);
-					}}
-					className={`border-2 hover:border-green-500 hover:text-green-500 hover:shadow-lg  border-gray-400  text-sm px-4 py-2 rounded ${
-						pagination === 2 ? "flex" : "hidden"
-					}`}
-				>
-					Previous
-				</button>
-				<button
-					onClick={() => {
-						setPagination(1);
-					}}
-					className={` border-2 hover:border-green-500 hover:text-green-500 hover:shadow-lg  px-4 border-gray-400  text-sm rounded ${
-						pagination === 1 ? "border-green-500 text-green-500" : null
-					}`}
-				>
-					1
-				</button>
-				<button
-					onClick={() => {
-						setPagination(2);
-					}}
-					className={` border-2 hover:border-green-500 hover:text-green-500 hover:shadow-lg  px-4 border-gray-400  text-sm rounded ${
-						pagination === 2 ? "border-green-500 text-green-500" : null
-					}`}
-				>
-					2
-				</button>
-				<button
-					onClick={() => setPagination(2)}
-					className={`border-2 hover:border-green-500 hover:text-green-500 hover:shadow-lg  border-gray-400  text-sm px-4 py-2 rounded ${
-						pagination === 1 ? "flex" : "hidden"
-					}`}
-				>
-					Next
-				</button>
-			</div>
 		</>
 	);
 };
 
-export default New01;
+export default News01Page1;

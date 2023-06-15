@@ -24,7 +24,7 @@ const News1Detail = () => {
 				<div className="  w-full lg:w-7/12 flex-col container mx-auto">
 					<div className=" ">
 						<div className=" w-full">
-							<img src="src\assets\newsImage\newDetail1.jpeg" alt="" />
+							<img src="https://gaviaspreview.com/wp/gowilds/wp-content/uploads/2022/12/blog-01.jpg" alt="" />
 						</div>
 						<div className=" flex gap-4 py-3">
 							<div className=" flex  gap-2 text-[15px]">
@@ -244,7 +244,7 @@ const News1Detail = () => {
 							</div>
 							<div className=" flex items-center gap-3">
 								<div className=" w-[80px] h-[80px] rounded ">
-									<img src="src\assets\newsImage\recent1.jpeg" />
+									<img src="https://gaviaspreview.com/wp/gowilds/wp-content/uploads/2022/12/blog-01-300x300.jpg" />
 								</div>
 								<div className=" py-4">
 									<div className=" flex items-center">
@@ -264,27 +264,25 @@ const News1Detail = () => {
 							</div>
 							<div className=" flex items-center gap-3">
 								<div className=" w-[80px] h-[80px] rounded ">
-									<img src="src\assets\newsImage\recent2.jpeg" />
+									<img src="https://gaviaspreview.com/wp/gowilds/wp-content/uploads/2022/12/blog-02-300x300.jpg" />
 								</div>
-								<div className=" ">
+								<div className=" py-4">
 									<div className=" flex items-center">
 										<FaRegComments className=" text-xl text-green-400 mx-2" />
 										<h4 className=" text-[12px]  text-gray-500 capitalize">
 											0 comments
 										</h4>
 									</div>
-									<div className=" mt-2">
-										<h2 className=" text-[16px] flex flex-wrap leading-[24px]   font-semibold hover:text-green-500 cursor-pointer">
-											A place where start new life with
-											
-											adventure travel
+									<div className="  mt-2 ">
+										<h2 className=" text-[16px] flex flex-wrap leading-[24px]  font-semibold hover:text-green-500 cursor-pointer">
+										A place where start new life with adventure travel
 										</h2>
 									</div>
 								</div>
 							</div>
 							<div className=" flex items-center gap-3">
 								<div className=" w-[80px] h-[80px] rounded ">
-									<img src="src\assets\newsImage\recent3.jpeg" />
+									<img src="https://gaviaspreview.com/wp/gowilds/wp-content/uploads/2022/12/blog-03-300x300.jpg" />
 								</div>
 								<div className=" py-4">
 									<div className=" flex items-center">

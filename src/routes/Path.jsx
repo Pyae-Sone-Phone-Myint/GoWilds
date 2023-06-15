@@ -13,6 +13,7 @@ import TourDetail from "../pages/Tours/TourDetail";
 import ContactPage from "../pages/Contact/ContactPage";
 
 import New01 from "../pages/New/New01";
+import News01Page1 from "../pages/New/News01Page1";
 import News01Page2 from "../pages/New/News01Page2";
 import News1Detail from "../pages/New/News1Detail";
 import Destination from "../pages/Destination/Destination";
@@ -41,6 +42,8 @@ const Path = () => {
         <Route path="/team-carousel" element={<Team_carousel />} />
 
         <Route path="/news01" element={<New01 />} />
+        <Route path="/news01page1" element={<News01Page1 />} />
+
         <Route path="/news01page2" element={<News01Page2 />} />
         <Route path="/new1detail" element={<News1Detail />} />
         <Route path="/destination" element={<Destination/> } />
