@@ -1,204 +1,79 @@
-import React from "react";
-import {
-	FaFacebookF,
-	FaFolderOpen,
-	FaLinkedinIn,
-	FaRegComments,
-	FaTumblr,
-	FaTwitter,
-	FaUserAlt,
-} from "react-icons/fa";
+import React, { useState } from "react";
+import "./News.css";
+import { FaRegComments, FaUserCircle } from "react-icons/fa";
+import { AiOutlineArrowRight } from "react-icons/ai";
+import { Link } from "react-router-dom";
 import { RiDoubleQuotesR } from "react-icons/ri";
 import { TfiLayoutLineSolid } from "react-icons/tfi";
 import { BsArrowRight } from "react-icons/bs";
 import { LuPhoneCall } from "react-icons/lu";
-import { Link } from "react-router-dom";
 import Landing_image from "../../components/Landing/Landing_image";
 
-
-const News1Detail = () => {
+const NewsButton = () => {
 	return (
 		<>
-		<Landing_image about={'A Place Where Start New Life With Adventure Travel'} page={'city tours'} />
-			<div className="  2xl:w-[68%]  w-[100%]  xl:mx-auto overflow-hidden md:flex-row lg:flex justify-between md:mt-20 mt-10">
+			<Landing_image page={"adventure"} about={"adventure"} />
+			
+            <div className="  2xl:w-[68%]  w-[100%]  xl:mx-auto overflow-hidden md:flex-row lg:flex justify-between md:mt-20 mt-10">
 				{/* first one */}
-				<div className="  w-full lg:w-7/12 flex-col mx-auto">
-					<div className=" ">
-						<div className=" w-full">
-							<img src="https://gaviaspreview.com/wp/gowilds/wp-content/uploads/2022/12/blog-01.jpg" alt="" />
-						</div>
-						<div className=" flex gap-4 py-3">
-							<div className=" flex  gap-2 text-[15px]">
-								<FaUserAlt className=" text-xl text-green-500 " />
-								<h2 className=" text-sm text-gray-500">Admin</h2>
-							</div>
-							<div className=" flex gap-2 text-[15px]">
-								<FaFolderOpen className=" text-xl text-green-500 " />
-								<h2 className=" text-sm text-gray-500">Adventure</h2>
-							</div>
-						</div>
-					</div>
-					{/* description */}
-					<div className=" p-4">
-						<div className=" flex-col">
-							<h2 className=" text-[30px]  font-semibold my-3">
-								Things to see and do when visiting Japan
-							</h2>
-							<p className=" flex flex-wrap text-[16px]   text-gray-500 leading-[1.8em]">
-								Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-								accusantium doloremque laudantium totam rem
-								
-								aperiam, eaque ipsa quae ab illo veritatis et quasi beatae vitae
-								dicta sunt explicabo.
-							</p>
-						</div>
-						<div className=" flex-col">
-							<h2 className=" text-2xl font-semibold my-3">
-								Build camping easily.
-							</h2>
-							<p className=" flex flex-wrap text-[16px]   text-gray-500 leading-[1.8em]">
-								Less time collecting water means more time in class. Clean water
-								and proper toilets at school means teenage
-								
-								girls don’t have to stay home for a week out of every month.
-							</p>
-						</div>
-						<div className=" flex-col">
-							<div className=" p-5 shadow-sm border-l-2 border-green-600 bg-gray-100">
-								<div className=" py-4">
-									<RiDoubleQuotesR className=" text-[38px] " />
-								</div>
-								<p className=" text-[#313131] flex flex-wrap text-[18px]  py-2">
-									Metus eu, nisi nibh et adipiscing natoque morbi integer
-									scelerisque tincidunt mauris.
-									
-									Lectus molestie nisl rutrum cras dictum lectus molestie
-									leoenim.
-								</p>
-								<TfiLayoutLineSolid className=" text-3xl text-gray-300" />
-								<span className=" text-sm font-bold"> said Polito</span>
-							</div>
-						</div>
-						<div className=" flex-col">
-							<h2 className=" text-[20px] font-semibold my-3">
-								Great opportunity for adventure & travels
-							</h2>
-							<p className=" text-[#313131] flex flex-wrap text-[16px] ">
-								Neque porro quisquam estey qui dolorem ipsum quia dolor sit
-								amet, consectetur, adipisci velit sed quia non
-								<br />
-								numquam eius modie tempora incidunt ut labore et dolore magnam
-								aliquam quaerat voluptatem. Ut enim ad
-								<br />
-								minima veniam quis nostrum exercitationem ullam.
-							</p>
-						</div>
-					</div>
-					<hr className=" " />
-					{/* tags parts */}
-					<div className=" ">
-						<div className=" p-4 flex flex-col md:flex-row gap-y-5 items-center justify-between">
-							<div className="flex gap-3 items-center">
-								<p>Tags:</p>
-								<div className="flex gap-3 items-center ">
-									<button className=" px-2 font-[700] py-1 text-[14px] leading-[28px] bg-[#f3f8f6] tracking-wider hover:bg-green-600 hover:text-white duration-300">
+				<div className=" w-full lg:w-7/12 flex-col mx-auto">
+					<div className=" mt-10 grid grid-flow-row md:grid-cols-2  lg:grid-cols-3  gap-10">
+						<div className="flex flex-col w-fit md:w-96 border shadow-md px-4 py-3 rounded">
+							<div className=" relative">
+								<Link to={"/new1detail"}>
+									<img
+										src="https://gaviaspreview.com/wp/gowilds/wp-content/uploads/2022/12/blog-01-500x360.jpg"
+										className=" rounded w-fit mx-auto"
+									/>
+								</Link>
+								<Link to={'/newsbutton'}>
+									<button className=" absolute bottom-[-12px] tracking-wider left-6 bg-secondary text-white px-3 py-1 text-[15px] hover:underline">
+										{" "}
 										Adventure
 									</button>
-									<button className=" px-2 font-[700] py-1 text-[14px] leading-[28px] bg-[#f3f8f6] tracking-wider hover:bg-green-600 hover:text-white duration-300">
-										Camping{" "}
-									</button>
-									<button className=" px-2 font-[700] py-1 text-[14px] leading-[28px] bg-[#f3f8f6] tracking-wider hover:bg-green-600 hover:text-white duration-300">
-										Travels
-									</button>
+								</Link>
+
+								<div className=" absolute top-0 left-3/4  bg-green-600 text-white flex flex-col items-center justify-center w-fit rounded px-2 py-1 ">
+									<p className=" text-sm mb-0">19</p>
+									<p className=" text-sm">Dec</p>
 								</div>
 							</div>
-							<div className="mt-3 md:mt-0">
-								<div className=" flex items-center gap-3">
-									<div className="flex justify-center items-center w-10 h-10 rounded-full bg-gray-200 hover:bg-green-500 hover:text-white duration-300">
-										<FaFacebookF className=" " />
+							<div className=" p-3 flex flex-col items-start">
+								<div className=" flex p-3 ">
+									<div className=" flex items-center">
+										<FaUserCircle className=" text-xl text-green-400 mx-2" />
+										<h4 className="text-sm text-gray-500">Admin</h4>
 									</div>
-									<div className="flex justify-center items-center w-10 h-10 rounded-full bg-gray-200 hover:bg-green-500 hover:text-white duration-300">
-										<FaTwitter />
-									</div>
-									<div className="flex justify-center items-center w-10 h-10 rounded-full bg-gray-200 hover:bg-green-500 hover:text-white duration-300">
-										<FaLinkedinIn />
-									</div>
-									<div className="flex justify-center items-center w-10 h-10 rounded-full bg-gray-200 hover:bg-green-500 hover:text-white duration-300">
-										<FaTumblr />
+									<div className=" flex items-center">
+										<FaRegComments className=" text-xl text-green-400 mx-2" />
+										<h4 className=" text-sm text-gray-500">0 comments</h4>
 									</div>
 								</div>
-							</div>
-						</div>
-					</div>
-					{/* admin */}
-					<div className="flex flex-col md:flex-row items-center gap-3 p-4 bg-[#f3f8f6]">
-						<div className="w-[150px] h-[150px] rounded">
-							<img src="https://secure.gravatar.com/avatar/e64c7d89f26bd1972efa854d13d7dd61?s=190&d=mm&r=g" />
-						</div>
-						<div className="">
-							<div className=" px-1 py-3">
-								<h2 className=" capitalize font-semibold">Admin</h2>
-								<TfiLayoutLineSolid className=" text-3xl text-green-500" />
-							</div>
-							<div className=" text-gray-500 leading-[30px]">
-								It has survived not only five centuries, but also the leap into
-								electronic <br /> typesetting simply fee text aunchanged. It was
-								popularised in the <br />
-								sheets containing lorem ipsum is simply free text.
-							</div>
-						</div>
-					</div>
-					{/* add a comment */}
-					<div className="">
-						<div className="p-4">
-							<div className="">
-								<div className=" px-1 py-3">
-									<h2 className=" text-sm font-semibold">Add a comment</h2>
-									<TfiLayoutLineSolid className=" text-3xl text-green-500" />
+								<div className=" p-3">
+									<Link to={"/new1detail"}>
+										<h2 className=" font-extrabold  text-[22px]   hover:text-green-600 duration-300 cursor-pointere p-2">
+											Things to see and do when visiting Japan
+										</h2>
+									</Link>
+									<p className=" text-[16px] text-gray-500  p-2">
+										There are many variations of but the majority have simply
+										free text.
+									</p>
+									<Link>
+										<div className=" flex items-center  p-2">
+											<h2 className=" text-sm text-gray-500 hover:tracking-widest ease-linear duration-300">
+												Read More
+											</h2>
+											<AiOutlineArrowRight className=" text-green-400 mx-2" />
+										</div>
+									</Link>
 								</div>
-								<p className=" text-gray-400 text-[16px] leading-[1.8rem]">
-									Your email address will not be published.
-								</p>
-								<form className=" p-4">
-									<div className=" mt-5">
-										<input
-											type="text"
-											className=" block text-[16px] leading-[1.8rem] w-full px-6 py-4 bg-gray-100 text-lg  placeholder-gray-400 focus:outline-none  shadow-lg   "
-											placeholder="Your Name *"
-										/>
-									</div>
-									<div className=" mt-5">
-										<input
-											type="text"
-											className=" text-[16px] leading-[1.8rem] block w-full px-6 py-4 bg-gray-100 text-lg  placeholder-gray-400 focus:outline-none  shadow-lg   "
-											placeholder="Your Email *"
-										/>
-									</div>
-									<div className=" flex-col md-flex-row items-center gap-2 mt-4">
-										<input class=" p-5" type="checkbox" name="status" />
-										<p className=" text-gray-400 text-[16px] leading-[1.8rem]">
-											Save my name, email, and website in this browser for the
-											next time I comment.
-										</p>
-									</div>
-									<div className=" mt-4">
-										<textarea
-											className=" text-[16px] leading-[1.8rem] block w-full px-7 py-5 bg-gray-100 text-lg  placeholder-gray-400 focus:outline-none  shadow-lg   "
-											cols="80"
-											rows="5"
-											placeholder="Write your comment"
-										></textarea>
-									</div>
-									<button className=" text-[16px] leading-[1.8rem] mt-4 px-6 py-2 bg-green-500 text-white hover:bg-green-400 duration-200 rounded">
-										Post a comment
-									</button>
-								</form>
 							</div>
 						</div>
 					</div>
 				</div>
 				{/* for second div */}
-				<div className=" w-full  lg:w-4/12 gap-3">
+				<div className=" w-full  lg:w-4/12 gap-3 mb-10">
 					<div className="">
 						{/* for column 2 first component */}
 						<div className=" p-5 shadow-md border bg-[#f3f8f6] rounded">
@@ -381,4 +256,4 @@ const News1Detail = () => {
 	);
 };
 
-export default News1Detail;
+export default NewsButton;
