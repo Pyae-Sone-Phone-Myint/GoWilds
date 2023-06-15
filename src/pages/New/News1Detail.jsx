@@ -19,9 +19,9 @@ const News1Detail = () => {
 	return (
 		<>
 		<Landing_image about={'A Place Where Start New Life With Adventure Travel'} page={'city tours'} />
-			<div className=" container 2xl:w-[68%]  w-[100%]  xl:mx-auto overflow-hidden md:flex-row lg:flex justify-between md:mt-20 mt-10">
+			<div className="  2xl:w-[68%]  w-[100%]  xl:mx-auto overflow-hidden md:flex-row lg:flex justify-between md:mt-20 mt-10">
 				{/* first one */}
-				<div className="  w-full lg:w-7/12 flex-col container mx-auto">
+				<div className="  w-full lg:w-7/12 flex-col mx-auto">
 					<div className=" ">
 						<div className=" w-full">
 							<img src="https://gaviaspreview.com/wp/gowilds/wp-content/uploads/2022/12/blog-01.jpg" alt="" />
@@ -132,7 +132,7 @@ const News1Detail = () => {
 					{/* admin */}
 					<div className=" flex-col md-flex-row items-center gap-3 p-4 bg-[#f3f8f6]">
 						<div className="w-[150px] h-[150px] rounded">
-							<img src="src\assets\newsimage\admin1.png" />
+							<img src="https://secure.gravatar.com/avatar/e64c7d89f26bd1972efa854d13d7dd61?s=190&d=mm&r=g" />
 						</div>
 						<div className="">
 							<div className=" px-1 py-3">

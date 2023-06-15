@@ -237,7 +237,9 @@ const Home = () => {
         className="fixed-bg"
         alt=""
       />
-      <Home_page_animation />
+      <div className="bg-dark relative">
+        <Home_page_animation />
+      </div>
 
       {/* Popular Activities */}
       <div className=" min-h-screen relative bg-white">
@@ -811,7 +813,7 @@ const Home = () => {
                 up to 50% off
               </span>
 
-              <h2 className=" text-white text-[26px] font-bold leading-9">
+              <h2 className=" text-white lg:text-[26px] text-xs font-bold leading-9">
                 Members are <br /> Saving up t 50%
               </h2>
               <a
@@ -925,7 +927,7 @@ const Home = () => {
             </div>
           </div>
           <div className="md:flex-[50%] flex-1 overflow-hidden w-full">
-            <Splides brand={service} controller={false} />
+            <Splides brand={service} controller={false} center="" view={1}/>
           </div>
         </div>
       </div>

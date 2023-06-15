@@ -148,7 +148,7 @@ const Home_page_animation = () => {
 
   return (
     <>
-      <Splides brand={slides} autoplay={false}/>
+      <Splides brand={slides} autoplay={true}/>
     </>
   );
 };
