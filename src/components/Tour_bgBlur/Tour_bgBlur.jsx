@@ -1,6 +1,8 @@
 import React from "react";
 import "./Tour_bgBlur.css";
 import { FaPlay } from "react-icons/fa";
+import { MdOutlineParagliding, MdOutlineTour } from "react-icons/md";
+import { GiDetour } from "react-icons/gi";
 
 const Tour_bgBlur = ({check}) => {
   return (
@@ -32,11 +34,7 @@ const Tour_bgBlur = ({check}) => {
           <div className="tour-card md:flex-[40%] flex-1">
             <div className="drop"></div>
             <div className="flex justify-center">
-              <img
-                src="src/assets/images/001-wildlife.png"
-                className=" w-[100px] "
-                alt="deer"
-              />
+              <MdOutlineTour size={"6rem"}/>
             </div>
             <h4 className=" mt-3 relative z-10">
               Wildlife <br />
@@ -46,11 +44,7 @@ const Tour_bgBlur = ({check}) => {
           <div className="tour-card md:flex-[40%] flex-1">
             <div className="drop"></div>
             <div className="flex justify-center">
-              <img
-                src="src/assets/images/002-parachute.png"
-                className=" w-[100px]"
-                alt="parachute"
-              />
+              <MdOutlineParagliding size={'6rem'}/>
             </div>
             <h4 className=" mt-3 relative z-10">
               Paragliding <br /> Tours
@@ -59,11 +53,7 @@ const Tour_bgBlur = ({check}) => {
           <div className="tour-card md:flex-[40%] flex-1">
             <div className="drop"></div>
             <div className="flex justify-center">
-              <img
-                src="src/assets/images/003-adventurer.png"
-                className=" w-[100px]"
-                alt="adventurer"
-              />
+              <GiDetour size={"6rem"}/>
             </div>
             <h4 className=" mt-3 relative z-10">
               Adventure <br /> Tours

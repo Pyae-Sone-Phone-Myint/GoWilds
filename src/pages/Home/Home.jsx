@@ -41,8 +41,9 @@ import Lazy_loader from "../../components/Slider/lazyLoader/lazy_loader";
 import tours from "../../Json/adventure.json";
 import { TfiQuoteRight } from "react-icons/tfi";
 import DropDown from "../../components/tourPageDropDown/DropDown";
+import { Link } from "react-router-dom";
 
-const Home = () => {
+const Home = ({name,setName}) => {
   const [displayCheck, setDisplayCheck] = useState(false);
   const clickHandler = () => {
     setDisplayCheck(true);
@@ -238,7 +239,6 @@ const Home = () => {
       />
       <div className="relative md:h-screen">
         <img
-
           src="https://gaviaspreview.com/wp/gowilds/wp-content/uploads/2023/02/slider-1.jpg"
           className=" h-full w-full absolute object-cover"
           alt=""
@@ -264,8 +264,6 @@ const Home = () => {
             </a>
           </div>
         </div>
-
-
       </div>
       <div className=" 2xl:w-[68%]  w-[100%]  xl:mx-auto  ">
         <div className="  px-8 gap-5 items-center shadow-xl rounded-lg lg:bottom-[0px]  flex flex-col lg:flex-row bg-white py-4">
@@ -299,21 +297,22 @@ const Home = () => {
             <div className="relative w-fit">
               <div className=" absolute p-4 bg-primary rounded-lg logo-floating -top-5 z-50">
                 <img
-                  src="src/assets/images/logo-small-white.png"
+                  src="https://gaviaspreview.com/wp/gowilds/wp-content/plugins/gowilds-themer/elementor/assets/images/logo-small-white.png"
                   alt="floating-logo"
                 />
               </div>
               <div className="absolute -right-3 -top-1 bg-shaping-dot -z-[1]">
-                <img src="src/assets/images/shape-dot.png" alt="bg-shape-dot" />
+                <img
+                  src="	https://gaviaspreview.com/wp/gowilds/wp-content/themes/gowilds/assets/images/shape-dot.png"
+                  alt="bg-shape-dot"
+                />
               </div>
 
               <div className=" rounded-tr-[50px] h-[90%] overflow-hidden w-fit">
                 <a href="/about">
                   <img
                     src="https://gaviaspreview.com/wp/gowilds/wp-content/uploads/2023/02/image-20.jpg"
-
                     className=" hover:scale-150 transition duration-[5.5s] ease-in h-full"
-
                     alt=""
                   />
                 </a>
@@ -569,7 +568,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <div className="2xl:w-[68%]  w-[100%]  xl:mx-auto  rounded-xl overflow-hidden absolute md:-bottom-20 -bottom-36  left-0 right-0 md:mx-20 ">
+        <div className="2xl:w-[68%]  w-[100%]  xl:mx-auto px-5 lg:px-2 rounded-xl overflow-hidden absolute md:-bottom-20 -bottom-36  left-0 right-0 md:mx-20 ">
           <Explore_more />
         </div>
       </div>
@@ -691,7 +690,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <Tour_bgBlur  check={"check availability"} />
+      <Tour_bgBlur check={"check availability"} />
       {/* Destination */}
       <div className="relative bg-white min-h-screen px-5">
         <div className=" text-center pb-10 md:pt-32 pt-24">
@@ -708,29 +707,36 @@ const Home = () => {
         </div>
         {/* Destination Row */}
         <div className="2xl:w-[68%]  w-[100%]  xl:mx-auto flex flex-wrap md:flex-row flex-col gap-y-5 md:gap-y-0">
-          <div className=" md:w-3/12 w-full md:p-5 destination-container relative">
-            <div className=" uppercase text-xs font-bold px-7 py-3 bg-secondary absolute z-10 text-white rounded-lg right-10 top-10">
-              3 tours
-            </div>
-            <div className=" absolute z-10 p-10 bottom-0">
-              <h4 className=" text-primary text-xl font-normal leading-7">
-                Travel to
-              </h4>
-              <h2 className=" text-white text-[26px] font-bold leading-9">
-                Switzerland
-              </h2>
-            </div>
-            <div className=" rounded-lg overflow-hidden relative  h-80 object-cover">
-              <div className="absolute bg-[#00000021] w-full h-full z-10"></div>
+          <div className=" md:w-3/12 w-full md:p-5 destination-container relative" onClick={()=>{
+            setName("Switzerland");
+          }}>
+            <Link to={"/destination/destination-detail"}>
+              <div className=" uppercase text-xs font-bold px-7 py-3 bg-secondary absolute z-10 text-white rounded-lg right-10 top-10">
+                3 tours
+              </div>
+              <div className=" absolute z-10 p-10 bottom-0">
+                <h4 className=" text-primary text-xl font-normal leading-7">
+                  Travel to
+                </h4>
+                <h2 className=" text-white text-[26px] font-bold leading-9">
+                  Switzerland
+                </h2>
+              </div>
+              <div className=" rounded-lg overflow-hidden relative  h-80 object-cover">
+                <div className="absolute bg-[#00000021] w-full h-full z-10"></div>
 
-              <img
-                src="https://gaviaspreview.com/wp/gowilds/wp-content/uploads/2023/02/image-08.jpg"
-                className=" object-cover destination-img h-full w-full"
-                alt=""
-              />
-            </div>
+                <img
+                  src="https://gaviaspreview.com/wp/gowilds/wp-content/uploads/2023/02/image-08.jpg"
+                  className=" object-cover destination-img h-full w-full"
+                  alt=""
+                />
+              </div>
+            </Link>
           </div>
-          <div className=" md:w-6/12  md:p-5 destination-container relative">
+          <div className=" md:w-6/12  md:p-5 destination-container relative" onClick={()=>{
+            setName("United Kingdom");
+          }}>
+            <Link to={"/destination/destination-detail"}>
             <div className=" uppercase text-xs font-bold px-7 py-3 bg-secondary absolute z-10 text-white rounded-lg right-10 top-10">
               3 tours
             </div>
@@ -751,8 +757,12 @@ const Home = () => {
                 alt=""
               />
             </div>
+            </Link>
           </div>
-          <div className=" md:w-3/12 w-full md:p-5 destination-container relative">
+          <div className=" md:w-3/12 w-full md:p-5 destination-container relative" onClick={()=>{
+            setName("France");
+          }}>
+            <Link to={"/destination/destination-detail"}>
             <div className=" uppercase text-xs font-bold px-7 py-3 bg-secondary absolute z-10 text-white rounded-lg right-10 top-10">
               3 tours
             </div>
@@ -773,8 +783,12 @@ const Home = () => {
                 alt=""
               />
             </div>
+            </Link>
           </div>
-          <div className=" md:w-3/12 w-full md:p-5 destination-container relative">
+          <div className=" md:w-3/12 w-full md:p-5 destination-container relative" onClick={()=>{
+            setName("Thailand");
+          }}>
+            <Link to={"/destination/destination-detail"}>
             <div className=" uppercase text-xs font-bold px-7 py-3 bg-secondary absolute z-10 text-white rounded-lg right-10 top-10">
               1 tours
             </div>
@@ -795,8 +809,12 @@ const Home = () => {
                 alt=""
               />
             </div>
+            </Link>
           </div>
-          <div className=" md:w-3/12 w-full md:p-5 destination-container relative">
+          <div className=" md:w-3/12 w-full md:p-5 destination-container relative" onClick={()=>{
+            setName('Singapore')
+          }}>
+            <Link to={"/destination/destination-detail"}>
             <div className=" uppercase text-xs font-bold px-7 py-3 bg-secondary absolute z-10 text-white rounded-lg right-10 top-10">
               2 tours
             </div>
@@ -817,8 +835,12 @@ const Home = () => {
                 alt=""
               />
             </div>
+            </Link>
           </div>
-          <div className=" md:w-3/12 w-full md:p-5 destination-container relative">
+          <div className=" md:w-3/12 w-full md:p-5 destination-container relative" onClick={()=>{
+            setName('Italy')
+          }}>
+            <Link to={"/destination/destination-detail"}>
             <div className=" uppercase text-xs font-bold px-7 py-3 bg-secondary absolute z-10 text-white rounded-lg right-10 top-10">
               2 tours
             </div>
@@ -839,6 +861,7 @@ const Home = () => {
                 alt=""
               />
             </div>
+            </Link>
           </div>
           <div className=" md:w-3/12 w-full md:p-5 destination-container relative">
             <div className=" absolute z-20 p-12 bottom-5 flex flex-col justify-start  items-start gap-4">
@@ -881,10 +904,7 @@ const Home = () => {
         <div className="2xl:w-[68%]  w-[100%]  xl:mx-auto flex flex-wrap items-start justify-center gap-4 relative -bottom-16 z-10">
           <div className=" achievement-card flex flex-col  justify-center  md:flex-[22%] items-center shadow-lg py-10 px-5 md:px-0   rounded-xl">
             <div className=" achievement-icon p-10 bg-[rgba(100,171,69,0.12)] rounded-full">
-              <FaHiking
-               
-                className=" text-primary  ac-icon relative z-10 text-4xl md:text-6xl"
-              />
+              <FaHiking className=" text-primary  ac-icon relative z-10 text-4xl md:text-6xl" />
             </div>
             <div className=" md:text-[45px] text-3xl font-bold leading-7 mt-10 mb-5">
               <span>3500</span>
@@ -896,10 +916,7 @@ const Home = () => {
           </div>
           <div className=" achievement-card flex flex-col justify-center  md:flex-[22%]  items-center shadow-lg py-10  px-5 md:px-0  rounded-xl">
             <div className=" achievement-icon p-10 bg-[rgba(100,171,69,0.12)] rounded-full">
-              <GiCampingTent
-            
-                className=" text-primary ac-icon relative z-10 text-4xl md:text-6xl"
-              />
+              <GiCampingTent className=" text-primary ac-icon relative z-10 text-4xl md:text-6xl" />
             </div>
             <div className=" md:text-[45px] text-3xl font-bold leading-7 mt-10 mb-5">
               <span>1650</span>
@@ -911,10 +928,7 @@ const Home = () => {
           </div>
           <div className=" achievement-card flex flex-col justify-center  md:flex-[22%]  items-center shadow-lg py-10  px-5 md:px-0  rounded-xl">
             <div className=" achievement-icon p-12 bg-[rgba(100,171,69,0.12)] rounded-full">
-              <BsFillChatLeftTextFill
-            
-                className=" text-primary ac-icon relative z-10 text-xl md:text-6xl"
-              />
+              <BsFillChatLeftTextFill className=" text-primary ac-icon relative z-10 text-xl md:text-6xl" />
             </div>
             <div className="  md:text-[45px] text-3xl font-bold leading-7 mt-10 mb-5">
               <span>99.5</span>
@@ -926,10 +940,7 @@ const Home = () => {
           </div>
           <div className=" achievement-card flex flex-col justify-center  md:flex-[22%]  items-center shadow-lg py-10  px-5 md:px-0  rounded-xl">
             <div className=" achievement-icon p-10 bg-[rgba(100,171,69,0.12)] rounded-full">
-              <FaAward
-            
-                className=" text-primary ac-icon relative z-10 text-4xl md:text-6xl"
-              />
+              <FaAward className=" text-primary ac-icon relative z-10 text-4xl md:text-6xl" />
             </div>
             <div className="  md:text-[45px] text-3xl font-bold leading-7 mt-10 mb-5">
               <span>62k</span>
@@ -977,9 +988,8 @@ const Home = () => {
         </div>
       </div>
       {/* Adventure Gallery */}
-      <Adventure_gallery  />
+      <Adventure_gallery />
 
-      
       {/* Lazy Loader */}
       <div className={`lazy-loader ${displayCheck ? "" : "hidden"}`}>
         <div

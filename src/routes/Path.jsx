@@ -17,6 +17,7 @@ import News01Page1 from "../pages/New/News01Page1";
 import News01Page2 from "../pages/New/News01Page2";
 import News1Detail from "../pages/New/News1Detail";
 import Destination from "../pages/Destination/Destination";
+import Destination_detail from "../pages/Destination/Destination_detail";
 
 
 
@@ -25,7 +26,7 @@ const Path = () => {
   return (
     <>
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<Home name={name} setName={setName} />} />
 
         <Route
           path="/tours-page"
@@ -46,7 +47,14 @@ const Path = () => {
 
         <Route path="/news01page2" element={<News01Page2 />} />
         <Route path="/new1detail" element={<News1Detail />} />
-        <Route path="/destination" element={<Destination/> } />
+        <Route
+          path="/destination"
+          element={<Destination name={name} setName={setName} />}
+        />
+        <Route
+          path="/destination/destination-detail"
+          element={<Destination_detail name={name} />}
+        />
       </Routes>
     </>
   );

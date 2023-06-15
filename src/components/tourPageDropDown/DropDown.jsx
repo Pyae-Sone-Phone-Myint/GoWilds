@@ -18,24 +18,33 @@ import { BsFillCalendarWeekFill, BsFillPersonFill } from "react-icons/bs";
 import { RiDeviceRecoverFill } from "react-icons/ri";
 import "./DropStyle.css";
 
-
 const DropDown = ({ sort, setSort }) => {
   const [location, setLocation] = useState("Location");
   const [booking, setBooking] = useState("Booking Type");
   const [arrowLocation, setArrowLocation] = useState(true);
   const [arrowBooking, setArrowBooking] = useState(true);
-  const [date, setDate] = useState("Date from");
+  const [dateName, setDateName] = useState("Date from");
   const [children, setChildren] = useState(0);
   const [youth, setYouth] = useState(0);
   const [adult, setAdult] = useState(0);
-  const [destination,setDestination]=useState('hidden');
-  const [bookingType,setBookingType]=useState('hidden');
-  console.log(location)
+  const [date, setDate] = useState("hidden");
+  const [destination, setDestination] = useState("hidden");
+  const [bookingType, setBookingType] = useState("hidden");
+  console.log(location);
   return (
     <>
+      {/* destination */}
       <div className="w-full  lg:w-1/5 relative">
         {/* destination btn */}
-        <button className=" flex w-full justify-between tour-click-btn py-2 border-b-2 border-gray-300">
+        <button
+          className=" flex w-full justify-between tour-click-btn py-2 border-b-2 border-gray-300"
+          onClick={() => {
+            destination === "hidden"
+              ? setDestination("block")
+              : setDestination("hidden");
+            setArrowLocation(!arrowLocation);
+          }}
+        >
           <div className=" w-full flex gap-5 items-center">
             <div>
               <HiOutlineLocationMarker
@@ -49,10 +58,27 @@ const DropDown = ({ sort, setSort }) => {
               <div className="font-bold text-black ">{location}</div>
             </div>
           </div>
+          {arrowLocation ? (
+            <MdOutlineKeyboardArrowDown
+              size={"1.5rem"}
+              className=" text-[#72B357]"
+            />
+          ) : (
+            <MdOutlineKeyboardArrowUp
+              size={"1.5rem"}
+              className=" text-[#72B357]"
+            />
+          )}
         </button>
         {/* destination dropdown */}
         <div
-          className={` absolute top-[70px] h-[250px] overflow-y-scroll bg-white  border w-full destination_dropdown px-5 rounded`}
+          className={` absolute top-[72px] h-[250px] z-20 overflow-y-scroll bg-white  border w-full ${destination} px-5 rounded`}
+          onClick={() => {
+            destination === "hidden"
+              ? setDestination("block")
+              : setDestination("hidden");
+            setArrowLocation(!arrowLocation);
+          }}
         >
           <div className=" text-[16px] text-black font-thin pt-2">
             - Locations -
@@ -135,7 +161,16 @@ const DropDown = ({ sort, setSort }) => {
       </div>
       {/* Activity */}
       <div className="w-full lg:w-1/5 relative">
-        <button className=" flex w-full justify-between tour-click-btn py-2 border-b-2 border-gray-300">
+        {/* activity btn */}
+        <button
+          className=" flex w-full justify-between  py-2 border-b-2 border-gray-300"
+          onClick={() => {
+            bookingType === "hidden"
+              ? setBookingType("block")
+              : setBookingType("hidden");
+            setArrowBooking(!arrowBooking);
+          }}
+        >
           <div className=" w-full flex gap-5 items-center">
             <div>
               <RiDeviceRecoverFill
@@ -149,10 +184,27 @@ const DropDown = ({ sort, setSort }) => {
               <div className="font-bold text-black ">{booking}</div>
             </div>
           </div>
+          {arrowBooking ? (
+            <MdOutlineKeyboardArrowDown
+              size={"1.5rem"}
+              className=" text-[#72B357]"
+            />
+          ) : (
+            <MdOutlineKeyboardArrowUp
+              size={"1.5rem"}
+              className=" text-[#72B357]"
+            />
+          )}
         </button>
+        {/* activity dropdown */}
         <div
-          className={` absolute top-[70px] h-[250px] overflow-y-scroll bg-white  z-[200] border w-full ${bookingType} destination_dropdown px-5 rounded`}
-          onClick={() => {}}
+          className={` absolute top-[72px] h-[250px] overflow-y-scroll bg-white  z-[200] border w-full ${bookingType}  px-5 rounded`}
+          onClick={() => {
+            bookingType === "hidden"
+              ? setBookingType("block")
+              : setBookingType("hidden");
+            setArrowBooking(!arrowBooking);
+          }}
         >
           <div
             className={` text-[16px] mb-2  font-thin ${
@@ -247,6 +299,7 @@ const DropDown = ({ sort, setSort }) => {
           </div>
         </div>
       </div>
+      {/* date */}
       <div className="w-full lg:w-1/5 relative">
         <Menu placement="bottom">
           <MenuHandler>
@@ -268,8 +321,15 @@ const DropDown = ({ sort, setSort }) => {
           </MenuHandler>
         </Menu>
       </div>
+      {/* guests */}
       <div className="w-full lg:w-1/5 relative">
-        <button className=" flex w-full items-center tour-click-btn gap-3 py-2 border-b-2 border-gray-300">
+        {/* guest btn */}
+        <button
+          className=" flex w-full items-center gap-3 py-2 border-b-2 border-gray-300"
+          onClick={() => {
+            date === "hidden" ? setDate("block") : setDate("hidden");
+          }}
+        >
           <BsFillPersonFill size={"3rem"} className="text-[#7bbc60]" />
           <div className=" text-start  text-gray-600">
             <p className=" m-0">Guests</p>
@@ -278,7 +338,10 @@ const DropDown = ({ sort, setSort }) => {
             </h4>
           </div>
         </button>
-        <div className=" w-full destination_dropdown p-3 border rounded-md shadow-lg">
+
+        <div
+          className={`absolute top-[72px] h-[230px]  bg-white  z-[200] border w-full ${date}  px-5 rounded`}
+        >
           <ul className=" w-full text-gray-700 px-2 mb-5">
             <li className="border-b border-gray-400 w-full text-lg flex justify-between py-2">
               <div className=" flex gap-4">
@@ -287,8 +350,7 @@ const DropDown = ({ sort, setSort }) => {
               </div>
               <div className=" flex gap-3">
                 <button
-                  onClick={(e) => {
-                    e.stopPropagation();
+                  onClick={() => {
                     setChildren(children === 0 ? 0 : children - 1);
                   }}
                   className=" bg-orange-400 px-1 rounded-lg shadow-lg"
@@ -296,8 +358,7 @@ const DropDown = ({ sort, setSort }) => {
                   <BiMinus color="white" className=" font-bold" />
                 </button>
                 <button
-                  onClick={(e) => {
-                    e.stopPropagation();
+                  onClick={() => {
                     setChildren(children + 1);
                   }}
                   className=" bg-orange-400 px-1 rounded-lg shadow-lg"
@@ -313,8 +374,7 @@ const DropDown = ({ sort, setSort }) => {
               </div>
               <div className=" flex gap-3">
                 <button
-                  onClick={(e) => {
-                    e.stopPropagation();
+                  onClick={() => {
                     setYouth(youth === 0 ? 0 : youth - 1);
                   }}
                   className=" bg-orange-400 px-1 rounded-lg shadow-lg"
@@ -322,8 +382,7 @@ const DropDown = ({ sort, setSort }) => {
                   <BiMinus color="white" className=" font-bold" />
                 </button>
                 <button
-                  onClick={(e) => {
-                    e.stopPropagation();
+                  onClick={() => {
                     setYouth(youth + 1);
                   }}
                   className=" bg-orange-400 px-1 rounded-lg shadow-lg"
@@ -339,8 +398,7 @@ const DropDown = ({ sort, setSort }) => {
               </div>
               <div className=" flex gap-3">
                 <button
-                  onClick={(e) => {
-                    e.stopPropagation();
+                  onClick={() => {
                     setAdult(adult === 0 ? 0 : adult - 1);
                   }}
                   className=" bg-orange-400 px-1 rounded-lg shadow-lg"
@@ -348,8 +406,7 @@ const DropDown = ({ sort, setSort }) => {
                   <BiMinus color="white" className=" font-bold" />
                 </button>
                 <button
-                  onClick={(e) => {
-                    e.stopPropagation();
+                  onClick={() => {
                     setAdult(adult + 1);
                   }}
                   className=" bg-orange-400 px-1 rounded-lg shadow-lg"
@@ -360,12 +417,18 @@ const DropDown = ({ sort, setSort }) => {
             </li>
           </ul>
           <div className=" text-center">
-            <button className=" bg-[#72B357] text-white px-6 py-2 rounded-md shadow-lg">
+            <button
+              className=" bg-[#72B357] text-white px-6 py-2 rounded-md shadow-lg"
+              onClick={() => {
+                date === "hidden" ? setDate("block") : setDate("hidden");
+              }}
+            >
               Apply
             </button>
           </div>
         </div>
       </div>
+      {/* search */}
       <div className="w-full flex items-center gap-5 lg:w-1/5 ">
         <div className=" items-center hidden  lg:flex">
           <button onClick={() => setSort(!sort)}>
