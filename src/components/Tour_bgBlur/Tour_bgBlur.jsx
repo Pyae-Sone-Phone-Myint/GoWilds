@@ -30,7 +30,7 @@ const Tour_bgBlur = ({ check }) => {
             Ready to travel with real adventure and enjoy natural
           </h2>
           <div className=" cursor-pointer text-white px-5 py-4 rounded-lg duration-150 transition bg-[#7ecc5d] hover:bg-primary relative -bottom-4">
-            <a href="/tours" className=" capitalize font-bold">
+            <a href="/tours-page" className=" capitalize font-bold">
               {check}
             </a>
           </div>
@@ -39,7 +39,7 @@ const Tour_bgBlur = ({ check }) => {
           <div className="tour-card md:flex-[40%] flex-1">
             <div className="drop"></div>
             <div className="flex justify-center">
-              <MdOutlineTour size={"6rem"}/>
+              <MdOutlineTour size={"6rem"} />
             </div>
             <h4 className=" mt-3 relative z-10">
               Wildlife <br />
@@ -49,7 +49,7 @@ const Tour_bgBlur = ({ check }) => {
           <div className="tour-card md:flex-[40%] flex-1">
             <div className="drop"></div>
             <div className="flex justify-center">
-              <MdOutlineParagliding size={'6rem'}/>
+              <MdOutlineParagliding size={"6rem"} />
             </div>
             <h4 className=" mt-3 relative z-10">
               Paragliding <br /> Tours
@@ -58,7 +58,7 @@ const Tour_bgBlur = ({ check }) => {
           <div className="tour-card md:flex-[40%] flex-1">
             <div className="drop"></div>
             <div className="flex justify-center">
-              <GiDetour size={"6rem"}/>
+              <GiDetour size={"6rem"} />
             </div>
             <h4 className=" mt-3 relative z-10">
               Adventure <br /> Tours
