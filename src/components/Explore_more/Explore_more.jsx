@@ -26,7 +26,7 @@ const Explore_more = () => {
         </div>
         <a
           href="/tour"
-          className=" bg-white rounded-md text-base font-bold leading-6 px-8 py-4 cursor-pointer z-10"
+          className=" bg-white hover:bg-gray-200 transition duration-100 rounded-md text-base font-bold leading-6 px-8 py-4 cursor-pointer z-10"
         >
           Explore More
         </a>

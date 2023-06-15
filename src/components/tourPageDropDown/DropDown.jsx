@@ -33,6 +33,7 @@ const DropDown = ({ sort, setSort }) => {
   console.log(location);
   return (
     <>
+
       {/* destination */}
       <div className="w-full  lg:w-1/5 relative">
         {/* destination btn */}
@@ -52,6 +53,50 @@ const DropDown = ({ sort, setSort }) => {
                 className=" "
                 style={{ color: "#63AB45" }}
               />
+
+      <div className="w-full lg:w-1/5 relative">
+        <Menu placement="bottom">
+          <MenuHandler>
+            <button className=" flex w-full justify-between tour-click-btn py-2 border-b-2 border-gray-300">
+              <div
+                className=" w-full flex gap-2 items-center"
+                onClick={() => {
+                  setArrowLocation(!arrowLocation);
+                }}
+              >
+                <div>
+                  <HiOutlineLocationMarker
+                    size={"2.5rem"}
+                    className=" "
+                    style={{ color: "#63AB45" }}
+                  />
+                </div>
+                <div className=" text-start  text-gray-600">
+                  <p className=" m-0">Destinations</p>
+                  <div className="font-bold text-black ">{location}</div>
+                </div>
+              </div>
+              <div className=" " style={{ color: "#63AB45" }}>
+                <MdOutlineKeyboardArrowDown
+                  size={"1.5rem"}
+                  className={`${arrowLocation ? "flex" : "hidden"}`}
+                />
+                <MdOutlineKeyboardArrowUp
+                  size={"1.5rem"}
+                  className={`${arrowLocation ? "hidden" : "flex"}`}
+                />
+              </div>
+            </button>
+          </MenuHandler>
+          <MenuList
+            className=" w-[93%]  lg:w-[18%] dropdown rounded-t-none border h-[280px]"
+            onClick={() => {
+              setArrow(!arrow);
+            }}
+          >
+            <div className=" text-[16px] text-black font-thin">
+              - Locations -
+
             </div>
             <div className=" text-start  text-gray-600">
               <p className=" m-0">Destinations</p>

@@ -42,6 +42,10 @@ import tours from "../../Json/adventure.json";
 import { TfiQuoteRight } from "react-icons/tfi";
 import DropDown from "../../components/tourPageDropDown/DropDown";
 import { Link } from "react-router-dom";
+import Home_page_animation from "../../components/Home_page_animation/Home_page_animation";
+import Reveal from "../../components/Animations/Reveal";
+import RevealUp from "../../components/Animations/RevealUp";
+
 
 const Home = ({name,setName}) => {
   const [displayCheck, setDisplayCheck] = useState(false);
@@ -237,61 +241,39 @@ const Home = ({name,setName}) => {
         className="fixed-bg"
         alt=""
       />
-      <div className="relative md:h-screen">
-        <img
-          src="https://gaviaspreview.com/wp/gowilds/wp-content/uploads/2023/02/slider-1.jpg"
-          className=" h-full w-full absolute object-cover"
-          alt=""
-        />
-        <div className=" 2xl:w-[68%]  w-[100%]  xl:mx-auto relative z-10 flex flex-col justify-center items-start h-full overflow-hidden">
-          <div className=" py-10  px-5">
-            <div className="swipe">
-              <h1 className="swipe-title md:text-[4.625rem] text-[31px] font-semibold lg:leading-[79px] text-white mb-5">
-                Tour Travel & <br /> Adventure Camping
-              </h1>
-            </div>
-            <div className="swipe swipe--delay">
-              <p className="swipe-para  text-white mb-12 md:text-lg text-sm lg:leading-7">
-                Phasellus condimentum Laoreet turpis sodales <br /> in.Integer
-                leo arcu mollis anmet tempor.
-              </p>
-            </div>
-            <a
-              href="/tour"
-              className=" title-btn bg-primary text-white rounded-md md:text-base text-sm font-bold leading-6 md:px-10 px-6 md:py-4 py-2 cursor-pointer z-10"
-            >
-              Let's get started
-            </a>
-          </div>
-        </div>
+      <div className="bg-dark relative">
+        <Home_page_animation />
       </div>
-      <div className=" 2xl:w-[68%]  w-[100%]  xl:mx-auto  ">
-        <div className="  px-8 gap-5 items-center shadow-xl rounded-lg lg:bottom-[0px]  flex flex-col lg:flex-row bg-white py-4">
-          <DropDown sort={false} />
-        </div>
-      </div>
+
       {/* Popular Activities */}
       <div className=" min-h-screen relative bg-white">
         <div className="bg-world-photo"></div>
+
         <div className=" text-center py-32">
-          <div className=" mb-10">
-            <span className=" px-5 py-4 bg-[#64ab4513] text-primary rounded-lg font-semibold">
-              Popular Activities
-            </span>
+          <Reveal>
+            <div className=" mb-10">
+              <span className=" px-5 py-4 bg-[#64ab4513] text-primary rounded-lg font-semibold">
+                Popular Activities
+              </span>
+            </div>
+          </Reveal>
+          <Reveal value={-200}>
+            <h2>
+              <span className=" md:text-[48px] font-bold leading-tight">
+                Explore Real Adventure
+              </span>
+            </h2>
+          </Reveal>
+        </div>
+        <RevealUp >
+          <div className=" 2xl:w-[78%]  w-[100%]  xl:mx-auto px-5 pb-10">
+            <Splides brand={slide} view={4} center="" />
           </div>
-          <h2>
-            <span className=" md:text-[48px] font-bold leading-tight">
-              Explore Real Adventure
-            </span>
-          </h2>
-        </div>
-        <div className=" 2xl:w-[78%]  w-[100%]  xl:mx-auto pb-10">
-          <Splides brand={slide} view={4} center="" />
-        </div>
+        </RevealUp>
       </div>
       {/* About Company */}
       <div className="  relative min-h-screen md:px-20 px-5 py-10 overflow-hidden bg-white">
-        <div className="bg-shape-02"></div>
+        {/* <div className="bg-shape-02"></div> */}
         <div className="2xl:w-[68%]  w-[100%]  xl:mx-auto flex flex-col lg:flex-row justify-center md:justify-between min-h-screen relative z-50 md:py-24 gap-y-10 ">
           <div className=" flex-[50%] flex flex-col px-5 gap-8 md:pr-10 lg:mb-0 mb-5">
             <div className="relative w-fit">
@@ -348,7 +330,7 @@ const Home = ({name,setName}) => {
               </span>
             </div>
             <h2 className=" mb-5">
-              <span className=" md:text-[48px] text-[36px] font-bold leading-tight">
+              <span className=" md:text-[38px] text-[26px] font-bold leading-tight">
                 Great Opportunity For Adventure & Travels
               </span>
             </h2>
@@ -430,7 +412,7 @@ const Home = ({name,setName}) => {
       <div className=" relative bg-white z-10">
         <div className=" mx-5 relative overflow-hidden bg-[#00000035] rounded-3xl">
           <div className="bg-photo"></div>
-          <div className=" 2xl:w-[68%]  w-[100%]  xl:mx-auto relative z-10 md:mx-20 mx-3">
+          <div className=" 2xl:w-[68%]  w-[100%]  xl:mx-auto px-5 relative z-10 md:mx-20 mx-3">
             <div className=" text-center pb-10 md:pt-32 pt-24">
               <div className=" mb-10">
                 <span className=" px-5 py-4 bg-[#64ab4513] text-secondary rounded-lg font-semibold">
@@ -568,7 +550,9 @@ const Home = ({name,setName}) => {
             </div>
           </div>
         </div>
+
         <div className="2xl:w-[68%]  w-[100%]  xl:mx-auto px-5 lg:px-2 rounded-xl overflow-hidden absolute md:-bottom-20 -bottom-36  left-0 right-0 md:mx-20 ">
+
           <Explore_more />
         </div>
       </div>
@@ -602,8 +586,8 @@ const Home = ({name,setName}) => {
                   Best Security
                 </h3>
                 <p className=" leading-7 card-para">
-                  When nothing prevents our to we <br /> like best, every
-                  pleasure to be.
+                  When nothing prevents our to we like best, every pleasure to
+                  be.
                 </p>
               </div>
             </div>
@@ -618,8 +602,8 @@ const Home = ({name,setName}) => {
                   Free Internet
                 </h3>
                 <p className=" leading-7 card-para">
-                  When nothing prevents our to we <br /> like best, every
-                  pleasure to be.
+                  When nothing prevents our to we like best, every pleasure to
+                  be.
                 </p>
               </div>
             </div>
@@ -634,8 +618,8 @@ const Home = ({name,setName}) => {
                   Solar Energy
                 </h3>
                 <p className=" leading-7 card-para">
-                  When nothing prevents our to we <br /> like best, every
-                  pleasure to be.
+                  When nothing prevents our to we like best, every pleasure to
+                  be.
                 </p>
               </div>
             </div>
@@ -650,8 +634,8 @@ const Home = ({name,setName}) => {
                   Mountain Biking
                 </h3>
                 <p className=" leading-7 card-para">
-                  When nothing prevents our to we <br /> like best, every
-                  pleasure to be.
+                  When nothing prevents our to we like best, every pleasure to
+                  be.
                 </p>
               </div>
             </div>
@@ -666,8 +650,8 @@ const Home = ({name,setName}) => {
                   Swimming & Fishing
                 </h3>
                 <p className=" leading-7 card-para">
-                  When nothing prevents our to we <br /> like best, every
-                  pleasure to be.
+                  When nothing prevents our to we like best, every pleasure to
+                  be.
                 </p>
               </div>
             </div>
@@ -682,8 +666,8 @@ const Home = ({name,setName}) => {
                   Gym & Yoga
                 </h3>
                 <p className=" leading-7 card-para">
-                  When nothing prevents our to we <br /> like best, every
-                  pleasure to be.
+                  When nothing prevents our to we like best, every pleasure to
+                  be.
                 </p>
               </div>
             </div>
@@ -869,7 +853,7 @@ const Home = ({name,setName}) => {
                 up to 50% off
               </span>
 
-              <h2 className=" text-white text-[26px] font-bold leading-9">
+              <h2 className=" text-white lg:text-[26px] text-xs font-bold leading-9">
                 Members are <br /> Saving up t 50%
               </h2>
               <a
@@ -983,7 +967,7 @@ const Home = ({name,setName}) => {
             </div>
           </div>
           <div className="md:flex-[50%] flex-1 overflow-hidden w-full">
-            <Splides brand={service} controller={false} />
+            <Splides brand={service} controller={false} center="" view={1} />
           </div>
         </div>
       </div>

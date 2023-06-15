@@ -32,7 +32,7 @@ const Hero_section = ({about}) => {
             isFirstPhoto ? "first-photo" : "second-photo"
           }`}
         ></div>
-        <div className=" text-white md:ml-28 ml-10">
+        <div className=" text-white 2xl:w-[68%]  w-[100%]  xl:mx-auto">
           <h1 className=" text-[30px] md:text-[52px] font-[700]">{about}</h1>
           <p className="text-[18px] md:text-[20px] pt-2">
             People Don't Take, Trips Take People

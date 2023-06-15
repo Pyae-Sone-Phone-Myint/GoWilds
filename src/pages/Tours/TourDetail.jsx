@@ -157,7 +157,7 @@ const TourDetail = ({ name }) => {
             <VscDeviceCameraVideo size={"1.5rem"} />
           </a>
         </div>
-        <div className=" flex justify-between gap-5 lg:gap-0 flex-col lg:flex-row lg:px-5 pt-10 lg:pt-16">
+        <div className=" 2xl:w-[68%]  w-[100%]  xl:mx-auto flex justify-between gap-5 lg:gap-0 flex-col lg:flex-row lg:px-5 pt-10 lg:pt-16">
           <div className="px-3 lg:px-0">
             <h1 className=" text-[25px] p-0 mb-3 font-bold text-black">
               {name}
@@ -203,7 +203,7 @@ const TourDetail = ({ name }) => {
           </div>
         </div>
       </div>
-      <div className="py-4 mb-10 border-b flex flex-col lg:flex-row gap-3 lg:gap-0 items-start lg:items-center justify-between px-3 lg:px-8">
+      <div className=" 2xl:w-[68%]  w-[100%]  xl:mx-auto py-4 mb-10 border-b flex flex-col lg:flex-row gap-3 lg:gap-0 items-start lg:items-center justify-between px-3 lg:px-8">
         <div className=" flex text-gray-600 items-center gap-5">
           <div className=" flex gap-1 text-[#F7921E]">
             <BsStarFill />
@@ -226,7 +226,7 @@ const TourDetail = ({ name }) => {
           </button>
         </div>
       </div>
-      <div className=" w-full mb-20 flex flex-col lg:flex-row gap-10 lg:gap-0">
+      <div className="  2xl:w-[68%]  w-[100%]  xl:mx-auto mb-20 flex flex-col lg:flex-row gap-10 lg:gap-0">
         <div className="w-full lg:w-[65%] h-full ps-4">
           <h1 className=" text-[20px] lg:text-[26px] font-bold mb-4 text-black p-0">
             Explore Tours
