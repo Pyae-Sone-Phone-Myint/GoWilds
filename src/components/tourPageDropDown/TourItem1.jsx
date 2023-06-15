@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { FiHeart } from "react-icons/fi";
 import { HiOutlineCamera, HiOutlineCurrencyDollar,HiOutlineArrowNarrowRight } from "react-icons/hi";
 import {VscDeviceCameraVideo} from "react-icons/vsc"
@@ -6,8 +6,15 @@ import { BsStarFill, BsStarHalf } from "react-icons/bs";
 import { MdLocationOn, MdPeopleOutline } from "react-icons/md";
 import { LuClock3 } from "react-icons/lu";
 import { Link } from "react-router-dom";
+import tours from '../../Json/adventure.json'
+import { ImCross } from "react-icons/im";
+import Lazy_loader from "../Slider/lazyLoader/lazy_loader";
 
 const TourItem1 = ({name,setName}) => {
+  const [displayCheck, setDisplayCheck] = useState(false);
+  const clickHandler = () => {
+    setDisplayCheck(true);
+  };
   return (
     <div className=" w-full px-4 mb-[10px] lg:mb-[120px] flex flex-wrap justify-between">
       <div className=" flex flex-col relative w-full lg:w-[32%] mb-56">
@@ -85,13 +92,15 @@ const TourItem1 = ({name,setName}) => {
           </div>
           <div className=" absolute bg-white flex gap-4 rounded-lg top-[-18px] right-5 shadow-md px-4 py-1">
             <button className="hover:text-[#63ab45] relative">
-              <HiOutlineCamera size={"1.5rem"} />
+              <HiOutlineCamera size={"1.5rem"} onClick={clickHandler} />
               <span className=" text-[10px] absolute top-[-3px] right-[-2px] text-white bg-[#63ab45] rounded-full px-1">
                 5
               </span>
             </button>
             <button className="hover:text-[#63ab45]">
+              <a href="https://www.youtube.com/watch?v=MtCMtC50gwY">
               <VscDeviceCameraVideo size={"1.5rem"} />
+              </a>
             </button>
           </div>
         </div>
@@ -173,13 +182,15 @@ const TourItem1 = ({name,setName}) => {
           </div>
           <div className=" absolute bg-white flex gap-4 rounded-lg top-[-18px] right-5 shadow-md px-4 py-1">
             <button className="hover:text-[#63ab45] relative">
-              <HiOutlineCamera size={"1.5rem"} />
+              <HiOutlineCamera size={"1.5rem"} onClick={clickHandler} />
               <span className=" text-[10px] absolute top-[-3px] right-[-2px] text-white bg-[#63ab45] rounded-full px-1">
                 5
               </span>
             </button>
             <button className="hover:text-[#63ab45]">
+              <a href="https://www.youtube.com/watch?v=MtCMtC50gwY">
               <VscDeviceCameraVideo size={"1.5rem"} />
+              </a>
             </button>
           </div>
         </div>
@@ -261,13 +272,15 @@ const TourItem1 = ({name,setName}) => {
           </div>
           <div className=" absolute bg-white flex gap-4 rounded-lg top-[-18px] right-5 shadow-md px-4 py-1">
             <button className="hover:text-[#63ab45] relative">
-              <HiOutlineCamera size={"1.5rem"} />
+              <HiOutlineCamera size={"1.5rem"} onClick={clickHandler} />
               <span className=" text-[10px] absolute top-[-3px] right-[-2px] text-white bg-[#63ab45] rounded-full px-1">
                 5
               </span>
             </button>
             <button className="hover:text-[#63ab45]">
+              <a href="https://www.youtube.com/watch?v=MtCMtC50gwY">
               <VscDeviceCameraVideo size={"1.5rem"} />
+              </a>
             </button>
           </div>
         </div>
@@ -345,13 +358,15 @@ const TourItem1 = ({name,setName}) => {
           </div>
           <div className=" absolute bg-white flex gap-4 rounded-lg top-[-18px] right-5 shadow-md px-4 py-1">
             <button className="hover:text-[#63ab45] relative">
-              <HiOutlineCamera size={"1.5rem"} />
+              <HiOutlineCamera size={"1.5rem"} onClick={clickHandler} />
               <span className=" text-[10px] absolute top-[-3px] right-[-2px] text-white bg-[#63ab45] rounded-full px-1">
                 5
               </span>
             </button>
             <button className="hover:text-[#63ab45]">
+              <a href="https://www.youtube.com/watch?v=MtCMtC50gwY">
               <VscDeviceCameraVideo size={"1.5rem"} />
+              </a>
             </button>
           </div>
         </div>
@@ -429,13 +444,15 @@ const TourItem1 = ({name,setName}) => {
           </div>
           <div className=" absolute bg-white flex gap-4 rounded-lg top-[-18px] right-5 shadow-md px-4 py-1">
             <button className="hover:text-[#63ab45] relative">
-              <HiOutlineCamera size={"1.5rem"} />
+              <HiOutlineCamera size={"1.5rem"} onClick={clickHandler} />
               <span className=" text-[10px] absolute top-[-3px] right-[-2px] text-white bg-[#63ab45] rounded-full px-1">
                 5
               </span>
             </button>
             <button className="hover:text-[#63ab45]">
+              <a href="https://www.youtube.com/watch?v=MtCMtC50gwY">
               <VscDeviceCameraVideo size={"1.5rem"} />
+              </a>
             </button>
           </div>
         </div>
@@ -502,24 +519,38 @@ const TourItem1 = ({name,setName}) => {
                 10
               </span>
             </div>
-            <Link to={"/tours-page/tour-detail"} onClick={()=>setName("Discovery Island Kayak Tour")}>
-            <button className="flex items-center text-md gap-2 text-black hover:text-[#63ab45]">
-              Explore <HiOutlineArrowNarrowRight size={"1.3rem"} />
-            </button>
+            <Link
+              to={"/tours-page/tour-detail"}
+              onClick={() => setName("Discovery Island Kayak Tour")}
+            >
+              <button className="flex items-center text-md gap-2 text-black hover:text-[#63ab45]">
+                Explore <HiOutlineArrowNarrowRight size={"1.3rem"} />
+              </button>
             </Link>
           </div>
           <div className=" absolute bg-white flex gap-4 rounded-lg top-[-18px] right-5 shadow-md px-4 py-1">
             <button className="hover:text-[#63ab45] relative">
-              <HiOutlineCamera size={"1.5rem"} />
+              <HiOutlineCamera size={"1.5rem"} onClick={clickHandler} />
               <span className=" text-[10px] absolute top-[-3px] right-[-2px] text-white bg-[#63ab45] rounded-full px-1">
                 5
               </span>
             </button>
             <button className="hover:text-[#63ab45]">
+              <a href="https://www.youtube.com/watch?v=MtCMtC50gwY">
               <VscDeviceCameraVideo size={"1.5rem"} />
+              </a>
             </button>
           </div>
         </div>
+      </div>
+      <div className={`lazy-loader ${displayCheck ? "" : "hidden"}`}>
+        <div
+          className=" w-fit absolute right-48 p-5 top-10 cursor-pointer z-20"
+          onClick={() => setDisplayCheck(false)}
+        >
+          <ImCross className="cursor-pointer" />
+        </div>
+        <Lazy_loader detailImage={tours} />
       </div>
     </div>
   );

@@ -20,6 +20,7 @@ import TourItem2 from "../../components/tourPageDropDown/TourItem2";
 import RevealUp from "../../components/Animations/RevealUp";
 
 const Tours = ({name,setName}) => {
+  
   const [value, setValue] = React.useState([109, 619]);
   const [sort, setSort] = useState(false);
   const [pagination,setPagination]=useState(1);
@@ -242,6 +243,7 @@ const Tours = ({name,setName}) => {
           </div>
         </div>
       </div>
+      
     </div>
   );
 };
