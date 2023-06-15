@@ -32,11 +32,15 @@ const Tours = ({name,setName}) => {
     <div className="w-full">
       <div className=" w-full px-5 h-[65vh] relative top-search-banner flex flex-col items-center justify-center ">
         <div className="banner-word  flex flex-col items-center justify-center">
-          <h1 className=" text-[30px] lg:text-[45px]  text-white font-bold">Explore The Worlds</h1>
-          <div className=" text-white text-lg lg:text-xl">People Don’t Take, Trips Take People</div>
+          <h1 className=" text-[30px] lg:text-[45px]  text-white font-bold">
+            Explore The Worlds
+          </h1>
+          <div className=" text-white text-lg lg:text-xl">
+            People Don’t Take, Trips Take People
+          </div>
         </div>
-        <div className=" 2xl:w-[68%]  w-[100%]  xl:mx-auto">
-          <div className=" w-fit lg:w-[97%] px-8 gap-5 items-center shadow-xl rounded-lg bottom-[-380px] lg:bottom-[-40px] absolute flex flex-col lg:flex-row bg-white py-4">
+        <div className=" 2xl:w-[68%]  w-[100%] xl:mx-auto">
+          <div className=" w-full z-[80] lg:w-[97%] px-5 gap-5 left-0 lg:left-5 items-center shadow-xl rounded-lg bottom-[-380px] lg:bottom-[-40px] absolute flex flex-col lg:flex-row bg-white py-4">
             <DropDown sort={sort} setSort={setSort} />
           </div>
         </div>
@@ -148,7 +152,15 @@ const Tours = ({name,setName}) => {
             </div>
           </div>
         </div>
-        {pagination === 1 ? <RevealUp><TourItem1 name={name} setName={setName}/> </RevealUp>: <RevealUp><TourItem2  name={name} setName={setName}/></RevealUp>}
+        {pagination === 1 ? (
+          <RevealUp>
+            <TourItem1 name={name} setName={setName} />{" "}
+          </RevealUp>
+        ) : (
+          <RevealUp>
+            <TourItem2 name={name} setName={setName} />
+          </RevealUp>
+        )}
         <div className=" flex px-5 gap-5">
           <button
             onClick={() => {
@@ -243,7 +255,6 @@ const Tours = ({name,setName}) => {
           </div>
         </div>
       </div>
-      
     </div>
   );
 };
