@@ -233,8 +233,8 @@ const About = () => {
 
       {/* Who we Are */}
       <div className="bg-white">
-        <div className="2xl:w-[68%]  w-[100%]  xl:mx-auto  flex flex-col lg:flex-row justify-between min-h-[calc(100vh-100px)] relative bg-white z-50 pt-24 md:px-20 px-5 gap-y-10">
-          <div className=" flex-[40%]  px-5 pb-0">
+        <div className="2xl:w-[68%]  w-[100%]  xl:mx-auto  flex flex-col lg:flex-row justify-between min-h-[calc(100vh-100px)] relative bg-white z-50 pt-24 px-5 gap-y-10 gap-x-5">
+          <div className=" flex-[50%]  px-5 pb-0">
             <div className=" overflow-hidden h-full top-rounded">
               <img
                 src="https://gaviaspreview.com/wp/gowilds/wp-content/uploads/2022/12/image-07.jpg"
@@ -242,8 +242,8 @@ const About = () => {
               />
             </div>
           </div>
-          <div className=" flex-[60%] flex ">
-            <div className="flex flex-col gap-8 md:px-20 ">
+          <div className=" flex-[50%] flex ">
+            <div className="flex flex-col gap-8 ">
               <div className="">
                 <span className=" px-5 py-4 bg-[#64ab4513] text-primary rounded-lg font-semibold">
                   Who We Are
@@ -259,7 +259,7 @@ const About = () => {
                 volutpat neque fermentum malesuada scelequecy leocras odio
                 blandit rhoncus eues feugiat.
               </div>
-              <div className="bg-white flex md:justify-between justify-center flex-col md:flex-row shadow-xl rounded-lg py-8 px-24 gap-y-5">
+              <div className="bg-white flex md:justify-center justify-center flex-col md:flex-row shadow-xl rounded-lg py-8 gap-y-5 gap-x-10">
                 <div className="relative flex justify-center flex-col items-center">
                   <div className=" relative w-fit">
                     <div class="progress-bar css">
@@ -354,11 +354,11 @@ const About = () => {
               </span>
             </div>
             <h2 className=" mb-10">
-              <span className=" md:text-[48px] text-[36px] font-bold leading-tight">
+              <span className=" md:text-[36px] text-[26px] font-bold leading-tight">
                 Great Opportunity For Adventure & Travels
               </span>
             </h2>
-            <div className="parent gap-14 flex flex-col">
+            <div className="parent gap-8 flex flex-col">
               <div className="child flex items-center md:gap-14 gap-8">
                 <div className=" icon-parent flex items-center md:gap-8 gap-3 ">
                   <BsPatchCheckFill
@@ -372,7 +372,7 @@ const About = () => {
                     />
                   </div>
                 </div>
-                <div className="flex flex-col md:gap-3 gap-1">
+                <div className="flex flex-col gap-1">
                   <h4 className=" text-xl font-semibold">
                     Safety First Always
                   </h4>
@@ -395,7 +395,7 @@ const About = () => {
                     />
                   </div>
                 </div>
-                <div className="flex flex-col md:gap-3 gap-1">
+                <div className="flex flex-col gap-1">
                   <h4 className=" text-xl font-semibold">
                     Low Price & Friendly
                   </h4>
@@ -418,7 +418,7 @@ const About = () => {
                     />
                   </div>
                 </div>
-                <div className="flex flex-col md:gap-3 gap-1">
+                <div className="flex flex-col gap-1">
                   <h4 className=" text-xl font-semibold">
                     Trusted Travel Guide
                   </h4>

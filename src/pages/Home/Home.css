@@ -234,6 +234,7 @@
   transform: scale(1);
   transition: 8s ease-in;
   height: 100%;
+  width: 100%;
 }
 
 .destination-container:hover .destination-img {

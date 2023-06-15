@@ -96,7 +96,7 @@ const News1Detail = () => {
 					<hr className=" " />
 					{/* tags parts */}
 					<div className=" ">
-						<div className=" p-4 flex flex-wrap md:flex-col items-center justify-between">
+						<div className=" p-4 flex flex-col md:flex-row gap-y-5 items-center justify-between">
 							<div className="flex gap-3 items-center">
 								<p>Tags:</p>
 								<div className="flex gap-3 items-center ">
@@ -130,7 +130,7 @@ const News1Detail = () => {
 						</div>
 					</div>
 					{/* admin */}
-					<div className=" flex-col md-flex-row items-center gap-3 p-4 bg-[#f3f8f6]">
+					<div className="flex flex-col md:flex-row items-center gap-3 p-4 bg-[#f3f8f6]">
 						<div className="w-[150px] h-[150px] rounded">
 							<img src="https://secure.gravatar.com/avatar/e64c7d89f26bd1972efa854d13d7dd61?s=190&d=mm&r=g" />
 						</div>
