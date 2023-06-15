@@ -10,6 +10,7 @@ import {
   FaTwitter,
 } from "react-icons/fa";
 import Explore_more from "../../components/Explore_more/Explore_more";
+import Reveal from "../../components/Animations/Reveal";
 
 const Team = () => {
   const slide = slides.map((item) => {
@@ -54,7 +55,8 @@ const Team = () => {
       {/* Welcome Page */}
       <div className=" px-10 min-h-screen py-32">
         <div className="2xl:w-[68%]  w-[100%]  xl:mx-auto  flex flex-col md:flex-row gap-y-10">
-          <div className=" flex-[50%] flex flex-col gap-10 pr-20 relative">
+         {/* <Reveal value={-200}> */}
+         <div className=" flex-[50%] flex flex-col gap-10 pr-20 relative">
             <div className="">
               <span className=" px-5 py-4 bg-[#64ab4513] text-primary rounded-lg font-semibold">
                 Welcome to Gowilds
@@ -104,6 +106,7 @@ const Team = () => {
               <img src={"src/assets/images/arrow-2.png"} alt="" />
             </div>
           </div>
+         {/* </Reveal> */}
           <div className=" flex-[45%] overflow-hidden">
             <div className="relative flex justify-end pl-10 ">
               <a href="/about" className=" team_img">
@@ -116,7 +119,7 @@ const Team = () => {
               </a>
               <div className=" absolute -bottom-20">
                 <a href="/about" className=" team_img">
-                  <div className=" landing rounded-xl overflow-hidden w-[70%]">
+                  <div className="   rounded-xl overflow-hidden w-[70%]">
                     <img src="https://gaviaspreview.com/wp/gowilds/wp-content/uploads/2023/01/tour-2.jpg" alt="" />
                   </div>
                 </a>

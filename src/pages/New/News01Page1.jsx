@@ -8,7 +8,7 @@ const News01Page1 = () => {
 	return (
 		<>
 			
-			<section className=" bg-gray-50">
+			<section className=" ">
 				<div className=" container mx-auto mb-3">
 					<div className=" mt-10 grid grid-flow-row md:grid-cols-2  lg:grid-cols-3  gap-10">
 						<div className="flex flex-col w-fit md:w-96 border shadow-md px-4 py-3 rounded">

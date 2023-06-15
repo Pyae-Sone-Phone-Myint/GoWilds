@@ -42,6 +42,8 @@ import tours from "../../Json/adventure.json";
 import { TfiQuoteRight } from "react-icons/tfi";
 import DropDown from "../../components/tourPageDropDown/DropDown";
 import Home_page_animation from "../../components/Home_page_animation/Home_page_animation";
+import Reveal from "../../components/Animations/Reveal";
+import RevealUp from "../../components/Animations/RevealUp";
 
 const Home = () => {
   const [displayCheck, setDisplayCheck] = useState(false);
@@ -244,21 +246,28 @@ const Home = () => {
       {/* Popular Activities */}
       <div className=" min-h-screen relative bg-white">
         <div className="bg-world-photo"></div>
+
         <div className=" text-center py-32">
-          <div className=" mb-10">
-            <span className=" px-5 py-4 bg-[#64ab4513] text-primary rounded-lg font-semibold">
-              Popular Activities
-            </span>
+          <Reveal>
+            <div className=" mb-10">
+              <span className=" px-5 py-4 bg-[#64ab4513] text-primary rounded-lg font-semibold">
+                Popular Activities
+              </span>
+            </div>
+          </Reveal>
+          <Reveal value={-200}>
+            <h2>
+              <span className=" md:text-[48px] font-bold leading-tight">
+                Explore Real Adventure
+              </span>
+            </h2>
+          </Reveal>
+        </div>
+        <RevealUp >
+          <div className=" 2xl:w-[78%]  w-[100%]  xl:mx-auto px-5 pb-10">
+            <Splides brand={slide} view={4} center="" />
           </div>
-          <h2>
-            <span className=" md:text-[48px] font-bold leading-tight">
-              Explore Real Adventure
-            </span>
-          </h2>
-        </div>
-        <div className=" 2xl:w-[78%]  w-[100%]  xl:mx-auto px-5 pb-10">
-          <Splides brand={slide} view={4} center="" />
-        </div>
+        </RevealUp>
       </div>
       {/* About Company */}
       <div className="  relative min-h-screen md:px-20 px-5 py-10 overflow-hidden bg-white">
@@ -927,7 +936,7 @@ const Home = () => {
             </div>
           </div>
           <div className="md:flex-[50%] flex-1 overflow-hidden w-full">
-            <Splides brand={service} controller={false} center="" view={1}/>
+            <Splides brand={service} controller={false} center="" view={1} />
           </div>
         </div>
       </div>
