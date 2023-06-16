@@ -29,14 +29,14 @@ const TourItem1 = ({ name, setName }) => {
               onClick={() => setName("Cottages In The Middle Of Beach")}
             >
               <img
-                className=" w-full h-[60vh] rounded-t-xl lg:h-[50vh] object-cover"
+                className=" w-full rounded-t-xl  object-cover"
                 src="	https://gaviaspreview.com/wp/gowilds/wp-content/uploads/2023/01/tour-5.jpg"
                 alt=""
               />
             </Link>
             <div className=" absolute z-[10] w-full  p-3 top-0 flex justify-between">
               <div className="gap-2 flex flex-col  ">
-                <p className="  rounded-md px-2 text-sm bg-cyan-600 shadow-lg text-white">
+                <p className="  text-[10px] font-semibold tracking-widest bg-cyan-600 shadow-lg text-white text-center px-2 rounded-md py-1">
                   FEATURED
                 </p>
               </div>
@@ -117,17 +117,17 @@ const TourItem1 = ({ name, setName }) => {
               onClick={() => setName("Man Standing on a Rock")}
             >
               <img
-                className=" w-full h-[60vh] rounded-t-xl lg:h-[50vh] object-cover"
+                className=" w-full rounded-t-xl  object-cover"
                 src="https://gaviaspreview.com/wp/gowilds/wp-content/uploads/2023/01/tour-4.jpg"
                 alt=""
               />
             </Link>
             <div className=" absolute z-[10] w-full  p-3 top-0 flex justify-between">
-              <div className="gap-2 flex flex-col  ">
-                <p className="  rounded-md px-2 text-center text-sm bg-[#F7921E] shadow-lg text-white">
+              <div className="">
+                <p className="rounded-md px-2 py-1 text-center text-[10px] tracking-widest mb-2 font-semibold  bg-[#F7921E] shadow-lg text-white">
                   10% OFF
                 </p>
-                <p className="  rounded-md px-2 text-sm bg-cyan-600 shadow-lg text-white">
+                <p className="  text-[10px] font-semibold tracking-widest bg-cyan-600 shadow-lg text-white text-center px-2 rounded-md py-1">
                   FEATURED
                 </p>
               </div>
@@ -207,17 +207,17 @@ const TourItem1 = ({ name, setName }) => {
               onClick={() => setName("Beautiful Floating Villa")}
             >
               <img
-                className=" w-full h-[60vh] rounded-t-xl lg:h-[50vh] object-cover"
+                className=" w-full rounded-t-xl  object-cover"
                 src="	https://gaviaspreview.com/wp/gowilds/wp-content/uploads/2023/01/tour-6.jpg"
                 alt=""
               />
             </Link>
             <div className=" absolute z-[10] w-full  p-3 top-0 flex justify-between">
-              <div className="gap-2 flex flex-col  ">
-                <p className="  rounded-md px-2 text-center text-sm bg-[#F7921E] shadow-lg text-white">
+              <div className="  ">
+                <p className="  rounded-md px-2 py-1 text-center text-[10px] tracking-widest mb-2 font-semibold  bg-[#F7921E] shadow-lg text-white">
                   10% OFF
                 </p>
-                <p className="  rounded-md px-2 text-sm bg-cyan-600 shadow-lg text-white">
+                <p className="  text-[10px] font-semibold tracking-widest bg-cyan-600 shadow-lg text-white text-center px-2 rounded-md py-1">
                   FEATURED
                 </p>
               </div>
@@ -297,14 +297,14 @@ const TourItem1 = ({ name, setName }) => {
               onClick={() => setName("Walking the Amalfi Coast")}
             >
               <img
-                className=" w-full h-[60vh] rounded-t-xl lg:h-[50vh] object-cover"
+                className=" w-full rounded-t-xl  object-cover"
                 src="https://gaviaspreview.com/wp/gowilds/wp-content/uploads/2023/01/tour-12.jpg"
                 alt=""
               />
             </Link>
             <div className=" absolute z-[10] w-full  p-3 top-0 flex justify-between">
               <div className="gap-2 flex flex-col  ">
-                <p className="  rounded-md px-2 text-sm bg-cyan-600 shadow-lg text-white">
+                <p className="  text-[10px] font-semibold tracking-widest bg-cyan-600 shadow-lg text-white text-center px-2 rounded-md py-1">
                   FEATURED
                 </p>
               </div>
@@ -383,14 +383,14 @@ const TourItem1 = ({ name, setName }) => {
               onClick={() => setName("North Island Adventure Tour")}
             >
               <img
-                className=" w-full h-[60vh] rounded-t-xl lg:h-[50vh] object-cover"
+                className=" w-full rounded-t-xl  object-cover"
                 src="https://gaviaspreview.com/wp/gowilds/wp-content/uploads/2023/01/tour-10.jpg"
                 alt=""
               />
             </Link>
             <div className=" absolute z-[10] w-full  p-3 top-0 flex justify-between">
               <div className="gap-2 flex flex-col  ">
-                <p className="  rounded-md px-2 text-sm bg-cyan-600 shadow-lg text-white">
+                <p className="  text-[10px] font-semibold tracking-widest bg-cyan-600 shadow-lg text-white text-center px-2 rounded-md py-1">
                   FEATURED
                 </p>
               </div>
@@ -469,14 +469,14 @@ const TourItem1 = ({ name, setName }) => {
               onClick={() => setName("Discovery Island Kayak Tour")}
             >
               <img
-                className=" w-full h-[60vh] rounded-t-xl lg:h-[50vh] object-cover"
+                className=" w-full rounded-t-xl  object-cover"
                 src="https://gaviaspreview.com/wp/gowilds/wp-content/uploads/2023/01/tour-8.jpg"
                 alt=""
               />
             </Link>
             <div className=" absolute z-[10] w-full  p-3 top-0 flex justify-between">
               <div className="gap-2 flex flex-col  ">
-                <p className="  rounded-md px-2 text-sm bg-cyan-600 shadow-lg text-white">
+                <p className="  text-[10px] font-semibold tracking-widest bg-cyan-600 shadow-lg text-white text-center px-2 rounded-md py-1">
                   FEATURED
                 </p>
               </div>

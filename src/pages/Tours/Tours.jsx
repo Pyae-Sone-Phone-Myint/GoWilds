@@ -38,7 +38,7 @@ const Tours = ({ name, setName }) => {
             People Don’t Take, Trips Take People
           </div>
         </div>
-        
+
         <div
           className={` w-[95%] ${
             sort ? "null" : "hidden"
@@ -125,8 +125,8 @@ const Tours = ({ name, setName }) => {
         </div>
       </div>
       <div className=" 2xl:w-[66%] mt-[-50px] w-[100%] xl:mx-auto z-[80] lg:w-[97%] px-5 gap-5 items-center shadow-xl rounded-lg  relative flex flex-col lg:flex-row bg-white py-4">
-            <DropDown sort={sort} setSort={setSort} />
-          </div>
+        <DropDown sort={sort} setSort={setSort} />
+      </div>
       <div className="  mt-[430px] lg:mt-[150px] w-full">
         <div className="2xl:w-[68%]  xl:mx-auto flex justify-between px-5 mb-5 text-gray-600">
           <div className=" ">
@@ -200,56 +200,58 @@ const Tours = ({ name, setName }) => {
           </button>
         </div>
       </div>
-      <div className=" w-full flex  flex-col  2xl:w-[68%]  xl:mx-auto gap-10 lg:gap-0 lg:flex-row my-20 px-3 lg:px-5">
-        <div
-          className=" w-full lg:w-[50%] h-[80vh] lg:h-[100vh] relative"
-          style={{
-            backgroundSize: "cover",
-            backgroundImage:
-              "url(https://gaviaspreview.com/wp/gowilds/wp-content/uploads/2023/01/tour-2.jpg)",
-          }}
-        >
-          <div className=" absolute bottom-0 left-0 w-[65%] text-lg font-bold text-white px-4  lg:px-8  py-8 bg-[#72b357]">
-            Gowilds is providing the best solution by our experts
+      <div className="w-full  py-20">
+        <div className=" 2xl:w-[68%]  w-[100%] mx-auto flex flex-col lg:flex-row  px-5 gap-20">
+          <div
+            className=" w-full lg:w-1/2 relative "
+            style={{
+              backgroundPosition:"center",
+              backgroundSize:"cover",
+              backgroundImage:"url("+"https://gaviaspreview.com/wp/gowilds/wp-content/uploads/2023/01/tour-2.jpg"+")"
+            }}
+          >
+            <div className=" absolute bottom-0 left-0 w-[65%] text-lg font-bold text-white px-4  lg:px-8  py-8 bg-[#72b357]">
+              Gowilds is providing the best solution by our experts
+            </div>
           </div>
-        </div>
-        <div className=" w-full lg:w-[50%] h-[80vh] lg:h-[100vh] lg:ps-16 flex flex-col justify-between">
-          <span className=" rounded bg-gray-200 w-[200px] text-center text-[#72b357] font-bold p-2">
-            Company introduction
-          </span>
-          <h1 className=" text-[27px] lg:text-[45px] font-bold leading-[1.2]">
-            Great opportunity for adventure & travels
-          </h1>
-          <h1 className=" text-[21px] text-[#72b357] font-semibold">
-            COMMITTED TO PROVIDING OUR CUSTOMERS WITH EXCEPTIONAL SERVICE.
-          </h1>
-          <p className=" text-gray-500">
-            There are many variations of passages of lorem free market to
-            available, but the majority have alteration in some form, by
-            injected humour, or randomised words
-          </p>
-          <div>
-            <div className="flex justify-between mb-2">
-              <span className=" font-semibold">Saticfied Clients</span>
-              <span className="  text-gray-600">82%</span>
+          <div className="w-full lg:w-1/2">
+            <div className=" rounded mb-2 bg-gray-200 w-[200px] text-center text-[#72b357] font-bold p-2">
+              Company introduction
             </div>
-            <Progress value={82} className="rounded-sm" color="green" />
-          </div>
-          <div className=" flex items-center gap-7">
-            <div className=" border-[5px] p-[5px] rounded-full border-[#72b357]">
-              <img
-                className=" w-[60px] h-[60px] rounded-full"
-                src="https://gaviaspreview.com/wp/gowilds/wp-content/uploads/2022/12/image-03.jpg"
-                alt=""
-              />
+            <h1 className=" text-[27px] my-3 lg:text-[45px] font-bold leading-[1.2]">
+              Great opportunity for adventure & travels
+            </h1>
+            <h1 className=" text-[21px] my-5 text-[#72b357] font-semibold">
+              COMMITTED TO PROVIDING OUR CUSTOMERS WITH EXCEPTIONAL SERVICE.
+            </h1>
+            <p className=" my-4 text-gray-500">
+              There are many variations of passages of lorem free market to
+              available, but the majority have alteration in some form, by
+              injected humour, or randomised words
+            </p>
+            <div className=" my-6">
+              <div className="flex justify-between mb-2">
+                <span className=" font-semibold">Saticfied Clients</span>
+                <span className="  text-gray-600">82%</span>
+              </div>
+              <Progress value={82} className="rounded-sm" color="green" />
             </div>
-            <div>
-              <h1 className=" font-bold text-xl">Aleesha brown</h1>
-              <p className=" text-gray-500">CEO & CO Founder</p>
+            <div className=" flex items-center gap-7">
+              <div className=" border-[5px] p-[5px] rounded-full border-[#72b357]">
+                <img
+                  className=" w-[60px] h-[60px] rounded-full"
+                  src="https://gaviaspreview.com/wp/gowilds/wp-content/uploads/2022/12/image-03.jpg"
+                  alt=""
+                />
+              </div>
+              <div>
+                <h1 className=" font-bold text-xl">Aleesha brown</h1>
+                <p className=" text-gray-500">CEO & CO Founder</p>
+              </div>
+              <button className=" text-white bg-[#72b357] px-5 lg:px-8 py-4 rounded-lg">
+                Discover More
+              </button>
             </div>
-            <button className=" text-white bg-[#72b357] px-5 lg:px-8 py-4 rounded-lg">
-              Discover More
-            </button>
           </div>
         </div>
       </div>
