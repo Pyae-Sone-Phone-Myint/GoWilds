@@ -14,12 +14,12 @@ const Tour_bgBlur = ({ check }) => {
         <div className="flex flex-col items-start md:flex-[55%] text-white">
           <a
             href="https://www.youtube.com/watch?v=-UbYukTFmFU"
-            className=" music-btn hover:scale-95 duration-150 transition relative p-10 bg-primary rounded-full mb-20"
+            className=" music-btn hover:scale-95 duration-150 transition relative p-7 bg-primary rounded-full mb-20"
           >
-            <FaPlay className=" text-white" size={"2rem"} />
+            <FaPlay className=" text-white" size={"1.5rem"} />
             <img
-              src="src/assets/images/arrow-3.png"
-              className=" absolute top-20 left-40"
+              src="https://gaviaspreview.com/wp/gowilds/wp-content/themes/gowilds/assets/images/arrow-3.png"
+              className=" absolute top-20 left-28"
               alt=""
             />
           </a>

@@ -38,11 +38,7 @@ const Tours = ({ name, setName }) => {
             People Don’t Take, Trips Take People
           </div>
         </div>
-        <div className=" 2xl:w-[68%]  w-[100%] xl:mx-auto">
-          <div className=" w-full z-[80] lg:w-[97%] px-5 gap-5 left-0 lg:left-5 items-center shadow-xl rounded-lg bottom-[-380px] lg:bottom-[-40px] absolute flex flex-col lg:flex-row bg-white py-4">
-            <DropDown sort={sort} setSort={setSort} />
-          </div>
-        </div>
+        
         <div
           className={` w-[95%] ${
             sort ? "null" : "hidden"
@@ -128,6 +124,9 @@ const Tours = ({ name, setName }) => {
           </div>
         </div>
       </div>
+      <div className=" 2xl:w-[66%] mt-[-50px] w-[100%] xl:mx-auto z-[80] lg:w-[97%] px-5 gap-5 items-center shadow-xl rounded-lg  relative flex flex-col lg:flex-row bg-white py-4">
+            <DropDown sort={sort} setSort={setSort} />
+          </div>
       <div className="  mt-[430px] lg:mt-[150px] w-full">
         <div className="2xl:w-[68%]  xl:mx-auto flex justify-between px-5 mb-5 text-gray-600">
           <div className=" ">

@@ -9,13 +9,13 @@ const News01Page1 = () => {
 		<>
 			<section className=" ">
 				<div className=" container mx-auto mb-3">
-					<div className=" mt-10 grid grid-flow-row md:grid-cols-2  lg:grid-cols-3  gap-10">
-						<div className="flex flex-col w-fit md:w-96 border shadow-md px-4 py-3 rounded">
+					<div className=" mt-10 grid grid-flow-row md:grid-cols-2  lg:grid-cols-3  gap-5">
+						<div className="flex flex-col w-fit border shadow-md px-4 py-3 rounded-xl ">
 							<div className=" relative">
 								<Link to={"/new1detail"}>
 									<img
 										src="https://gaviaspreview.com/wp/gowilds/wp-content/uploads/2022/12/blog-01-500x360.jpg"
-										className=" rounded w-fit mx-auto"
+										className=" rounded-lg w-fit mx-auto "
 									/>
 								</Link>
 								<Link to={"/newsbutton"}>
@@ -62,12 +62,12 @@ const News01Page1 = () => {
 								</div>
 							</div>
 						</div>
-						<div className="flex flex-col w-fit md:w-96 border shadow-md px-4 py-3 rounded">
+						<div className="flex flex-col w-fit border shadow-md px-4 py-3 rounded-xl ">
 							<div className=" relative">
 								<Link to={"/new1detail"}>
 									<img
 										src="https://gaviaspreview.com/wp/gowilds/wp-content/uploads/2022/12/blog-02-500x360.jpg"
-										className=" rounded w-fit mx-auto"
+										className=" rounded-lg w-fit mx-auto "
 									/>
 								</Link>
 
@@ -113,12 +113,12 @@ const News01Page1 = () => {
 								</div>
 							</div>
 						</div>
-						<div className="flex flex-col w-fit md:w-96 border shadow-md px-4 py-3 rounded">
+						<div className="flex flex-col w-fit border shadow-md px-4 py-3 rounded-xl ">
 							<div className=" relative">
 								<Link to={"/new1detail"}>
 									<img
 										src="https://gaviaspreview.com/wp/gowilds/wp-content/uploads/2022/12/blog-03-500x360.jpg"
-										className=" rounded w-fit mx-auto"
+										className=" rounded-lg w-fit mx-auto "
 									/>
 								</Link>
 								<Link to={"/newsbutton"}>
@@ -163,12 +163,12 @@ const News01Page1 = () => {
 								</div>
 							</div>
 						</div>
-						<div className="flex flex-col w-fit md:w-96 border shadow-md px-4 py-3 rounded">
+						<div className="flex flex-col w-fit border shadow-md px-4 py-3 rounded-xl ">
 							<div className=" relative">
 								<Link to={"/new1detail"}>
 									<img
 										src="https://gaviaspreview.com/wp/gowilds/wp-content/uploads/2022/12/blog-04-500x360.jpg"
-										className=" rounded w-fit mx-auto"
+										className=" rounded-lg w-fit mx-auto "
 									/>
 								</Link>
 								<Link to={"/newsbutton"}>
@@ -213,12 +213,12 @@ const News01Page1 = () => {
 								</div>
 							</div>
 						</div>
-						<div className="flex flex-col w-fit md:w-96 border shadow-md px-4 py-3 rounded">
+						<div className="flex flex-col w-fit border shadow-md px-4 py-3 rounded-xl ">
 							<div className=" relative">
 								<Link to={"/new1detail"}>
 									<img
 										src="https://gaviaspreview.com/wp/gowilds/wp-content/uploads/2022/12/blog-05-500x360.jpg"
-										className=" rounded w-fit mx-auto"
+										className=" rounded-lg w-fit mx-auto "
 									/>
 								</Link>
 								<Link to={"/newsbutton"}>
@@ -263,12 +263,12 @@ const News01Page1 = () => {
 								</div>
 							</div>
 						</div>
-						<div className="flex flex-col w-fit md:w-96 border shadow-md px-4 py-3 rounded">
+						<div className="flex flex-col w-fit border shadow-md px-4 py-3 rounded-xl ">
 							<div className=" relative">
 								<Link to={"/new1detail"}>
 									<img
 										src="https://gaviaspreview.com/wp/gowilds/wp-content/uploads/2022/12/blog-06-500x360.jpg"
-										className=" rounded w-fit mx-auto"
+										className=" rounded-lg w-fit mx-auto "
 									/>
 								</Link>
 								<Link to={"/newsbutton"}>

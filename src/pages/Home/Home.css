@@ -1,3 +1,10 @@
+.home .splide__arrow--prev {
+  left: 0px;
+}
+
+.home .splide__arrow--next {
+  right: 0px;
+}
 
 
 .bg-world-photo {

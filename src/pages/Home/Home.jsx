@@ -243,17 +243,17 @@ const Home = ({name,setName}) => {
         className="fixed-bg"
         alt=""
       />
-      <div className="bg-dark relative">
+      <div className="bg-dark relative home">
         <Home_page_animation />
-        <div className=" 2xl:w-[68%]  w-[100%] xl:mx-auto">
-          <div className=" w-full z-[80] lg:w-[97%] px-5 gap-5 left-0 lg:left-5 items-center shadow-xl rounded-lg bottom-[-380px] lg:bottom-[-40px] absolute flex flex-col lg:flex-row bg-white py-4">
-            <DropDown sort={sort} setSort={setSort} />
-          </div>
-        </div>
+        
       </div>
 
       {/* Popular Activities */}
       <div className=" min-h-screen relative pt-96 lg:pt-20 bg-white">
+     
+          <div className=" 2xl:w-[66%] mt-[-150px] w-[100%] xl:mx-auto z-[80] lg:w-[97%] px-5 gap-5 items-center shadow-xl rounded-lg  relative flex flex-col lg:flex-row bg-white py-4">
+            <DropDown sort={sort} setSort={setSort} />
+          </div>
         <div className="bg-world-photo"></div>
 
         <div className=" text-center py-14">
@@ -548,7 +548,7 @@ const Home = ({name,setName}) => {
               <div className="flex-[33%]">
                 <div className=" rounded-xl overflow-hidden h-full">
                   <img
-                    src="http://localhost:5173/src/assets/images/People/image-06.jpg"
+                    src="https://gaviaspreview.com/wp/gowilds/wp-content/uploads/2022/12/image-06.jpg"
                     className=" h-full object-cover"
                     alt="tent-img"
                   />

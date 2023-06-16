@@ -1,20 +1,14 @@
 import React from "react";
 import "./Explore_more.css";
+import { BiWorld } from "react-icons/bi";
 
-const Explore_more = () => {
+const Explore_more = ({rounded = true}) => {
   return (
-    <div className="relative overflow-hidden  min-h-[200px] bg-primary">
+    <div className={`relative overflow-hidden  max-h-[200px] bg-primary ${rounded && "rounded-xl"}`}>
       <div className="absolute explore"></div>
-      <div className="flex justify-between p-12 h-full items-start lg:items-center flex-col lg:flex-row gap-y-5">
+      <div className={`${rounded && ''} flex justify-between p-12 h-full items-start lg:items-center flex-col lg:flex-row gap-y-5`}>
         <div className="flex items-center gap-10">
-          <div className=" max-w-[90px] md:max-w-[100px]">
-            <img
-              src={
-                "https://gaviaspreview.com/wp/gowilds/wp-content/uploads/2023/01/bg-shape-04.png"
-              }
-              alt=""
-            />
-          </div>
+            <BiWorld size={'3rem'} className=" text-white"/>
           <div className="">
             <h5 className=" text-sm font-medium text-[rgb(236,236,236)] uppercase">
               QUISEQUE VEL ORTOR
