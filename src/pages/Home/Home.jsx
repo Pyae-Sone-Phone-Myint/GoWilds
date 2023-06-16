@@ -293,7 +293,9 @@ const Home = ({ name, setName }) => {
 
       {/* Popular Activities */}
       <div className=" min-h-screen relative pt-96 lg:pt-20 bg-white">
+
         <div className=" 2xl:w-[66%] mt-[-150px] w-[100%] xl:mx-auto z-[80] lg:w-[97%] px-5 gap-5 items-center shadow-xl rounded-lg  relative flex flex-col lg:flex-row bg-white py-4">
+
           <DropDown sort={sort} setSort={setSort} />
         </div>
         <div className="bg-world-photo"></div>
