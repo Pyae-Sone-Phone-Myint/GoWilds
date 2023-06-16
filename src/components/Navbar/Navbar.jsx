@@ -516,8 +516,8 @@ const Navbar = () => {
                   >
                     <LuSearch />
                   </p>
-                  {isSearchBoxVisible && (
-                    <div className="search-box">
+                 
+                    <div className={`search-box duration-200 ease-in ${isSearchBoxVisible ? 'opacity-1': 'opacity-0'}`}>
                       <div className="search-box-pointer"></div>
                       <div className="flex items-center py-2 px-3 border m-4  text-[#82828A] text-base">
                         <input
@@ -530,7 +530,7 @@ const Navbar = () => {
                         </button>
                       </div>
                     </div>
-                  )}
+              
                 </div>
 
                 <span className="user-circle ">
@@ -542,19 +542,18 @@ const Navbar = () => {
                     >
                       <FaRegUserCircle />
                     </p>
-                    {isProfileOpen && (
-                      <div className="profile-box">
-                        <div className="profile-box-pointer"></div>
-                        <div className=" py-5 px-4 flex flex-col gap-3 w-[220px] rounded text-[#82828A] text-base">
-                          <span className=" profile-text    ">
-                            <BsPerson /> Login
-                          </span>
-                          <span className="profile-text   ">
-                            <BsFillPersonPlusFill /> Register
-                          </span>
-                        </div>
+                
+                    <div className={`profile-box duration-200 ease-in ${isProfileOpen ? 'opacity-1 ' : 'opacity-0 '}`}>
+                      <div className="profile-box-pointer"></div>
+                      <div className=" py-5 px-4 flex flex-col gap-3 w-[220px] rounded text-[#82828A] text-base">
+                        <span className=" profile-text    ">
+                          <BsPerson /> Login
+                        </span>
+                        <span className="profile-text   ">
+                          <BsFillPersonPlusFill /> Register
+                        </span>
                       </div>
-                    )}
+                    </div>
                   </div>
                 </span>
               </div>
