@@ -38,7 +38,7 @@ const Adventure_gallery = () => {
     <>
       <div className="flex relative bg-white">
         <div
-          className="   relative  px-5  z-50  -bottom-20    "
+          className=" 2xl:w-[80%]  w-[80%]  xl:mx-auto  relative  px-5  z-50  -bottom-20    "
         >
           <Splides brand={tour} view={5} />
           

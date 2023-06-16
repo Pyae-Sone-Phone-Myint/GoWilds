@@ -6,7 +6,7 @@ const Explore_more = ({rounded = true}) => {
   return (
     <div className={`relative overflow-hidden  max-h-[200px] bg-primary ${rounded && "rounded-xl"}`}>
       <div className="absolute explore"></div>
-      <div className={`${rounded && ''} flex justify-between p-12 h-full items-start lg:items-center flex-col lg:flex-row gap-y-5`}>
+      <div className={`${rounded && ''}  flex justify-between p-12 h-full items-start lg:items-center flex-col lg:flex-row gap-y-5`}>
         <div className="flex items-center gap-10">
             <BiWorld size={'3rem'} className=" text-white"/>
           <div className="">

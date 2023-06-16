@@ -4,6 +4,7 @@ import {
   FaArrowUp,
   FaAward,
   FaCoins,
+  FaComments,
   FaHiking,
   FaStar,
   FaVest,
@@ -12,11 +13,13 @@ import slides from "../../Json/popular_activities.json";
 import Splides from "../../components/Slider/Splides";
 import { SplideSlide } from "@splidejs/react-splide";
 import {
+  BsArrowRight,
   BsCamera,
   BsCameraVideo,
   BsFillChatLeftTextFill,
   BsFillRouterFill,
   BsPatchCheckFill,
+  BsPersonCircle,
 } from "react-icons/bs";
 import {
   GiCampingTent,
@@ -45,9 +48,9 @@ import { Link } from "react-router-dom";
 import Home_page_animation from "../../components/Home_page_animation/Home_page_animation";
 import Reveal from "../../components/Animations/Reveal";
 import RevealUp from "../../components/Animations/RevealUp";
+import recents from "../../Json/recent_news.json";
 
-
-const Home = ({name,setName}) => {
+const Home = ({ name, setName }) => {
   const [displayCheck, setDisplayCheck] = useState(false);
   const [sort, setSort] = useState(false);
   const clickHandler = () => {
@@ -61,7 +64,6 @@ const Home = ({name,setName}) => {
   ];
 
   const slide = slides.map((item) => {
-      
     return (
       <SplideSlide>
         <div className=" relative content-card min-h-[410px] cursor-pointer">
@@ -236,6 +238,48 @@ const Home = ({name,setName}) => {
     );
   });
 
+  const recent = recents.map((item) => {
+    return (
+      <>
+        <SplideSlide className=" pb-20">
+          <div className=" p-5 rounded-lg shadow-lg pb-10">
+            <div className="  relative mb-10">
+              <div className=" absolute right-5 bg-primary text-white flex flex-col items-center justify-center p-4 rounded-es-lg rounded-ee-lg">
+                <span className=" font-bold text-lg">19</span>
+                <span className=" uppercase font-medium text-[0.625rem]">dec</span>
+              </div>
+              <div className="absolute left-5 -bottom-5 bg-secondary px-3 py-1 z-30">
+                <a href="/newsbutton" className="capitalize hover:underline text-white text-[0.938rem] font-medium ">
+                  {item.type}
+                </a>
+              </div>
+              <img src={item.image} alt={item.title} className="rounded-md object-cover w-full"/>
+            </div>
+            <div className="flex items-center gap-3 mb-3">
+              <div className="flex items-center gap-1">
+                <BsPersonCircle size={'1rem'} className=" text-primary"/>
+                <span className=" text-sm font-medium text-[rgb(130,130,130)]">Admin</span>
+              </div>
+              <div className="flex items-center gap-1">
+                <FaComments size={'1rem'} className=" text-primary"/>
+                <span className=" text-sm font-medium text-[rgb(130,130,130)]">0 Comments</span>
+              </div>
+            </div>
+            <a href="/new1detail" className="hover:text-primary transition duration-150 text-xl font-bold text-[rgb(28,35,31)]">{item.title}</a>
+            <p className="text font-medium text-[rgb(130,130,130)] my-3">
+              There are many variations of but the majority have simply free
+              text.
+            </p>
+            <div className="btn cursor-pointer flex items-center gap-1 font-medium text-[rgb(130,130,130)] hover:text-primary transition duration-150">
+              <span className="font-medium text">Read More</span>
+              <BsArrowRight className=" text-bold"/>
+            </div>
+          </div>
+        </SplideSlide>
+      </>
+    );
+  });
+
   return (
     <>
       <img
@@ -243,17 +287,15 @@ const Home = ({name,setName}) => {
         className="fixed-bg"
         alt=""
       />
-      <div className="bg-dark relative home">
+      <div className="bg-dark relative home overflow-hidden">
         <Home_page_animation />
-        
       </div>
 
       {/* Popular Activities */}
       <div className=" min-h-screen relative pt-96 lg:pt-20 bg-white">
-     
-          <div className=" 2xl:w-[66%] mt-[-150px] w-[100%] xl:mx-auto z-[80] lg:w-[97%] px-5 gap-5 items-center shadow-xl rounded-lg  relative flex flex-col lg:flex-row bg-white py-4">
-            <DropDown sort={sort} setSort={setSort} />
-          </div>
+        <div className=" 2xl:w-[66%] mt-[-150px] w-[100%] xl:mx-auto z-[80] lg:w-[97%] px-5 gap-5 items-center shadow-xl rounded-lg  relative flex flex-col lg:flex-row bg-white py-4">
+          <DropDown sort={sort} setSort={setSort} />
+        </div>
         <div className="bg-world-photo"></div>
 
         <div className=" text-center py-14">
@@ -992,6 +1034,35 @@ const Home = ({name,setName}) => {
           </div>
           <div className="md:flex-[50%] flex-1 overflow-hidden w-full">
             <Splides brand={service} controller={false} center="" view={1} />
+          </div>
+        </div>
+      </div>
+
+      <div className="relative bg-white">
+        <div className="2xl:w-[68%]  w-[100%]  xl:mx-auto">
+          <div className=" flex items-center justify-between">
+            <div className=" pt-32">
+              <div className=" mb-10">
+                <span className=" px-4 py-2 bg-[#64ab4513] text-primary rounded-lg font-semibold">
+                  Recent news feed
+                </span>
+              </div>
+              <h2 className="mb-8">
+                <span className=" md:text-[48px] font-bold leading-tight">
+                  What they're talking <br /> about our policy
+                </span>
+              </h2>
+            </div>
+            <a
+              href="/tour"
+              className=" bg-primary text-white rounded-md text-base font-bold leading-6 px-8 py-4 cursor-pointer z-10"
+            >
+             Views More
+            </a>
+          </div>
+          <div className="">
+
+          <Splides brand={recent} view={3} center=""/>
           </div>
         </div>
       </div>

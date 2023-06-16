@@ -55,7 +55,7 @@ const Gallery = () => {
       </div>
 
       {/* Explore More */}
-      <Explore_more />
+      <Explore_more rounded={false}/>
     </>
   );
 };

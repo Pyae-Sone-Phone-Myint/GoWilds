@@ -174,7 +174,7 @@ const News1Detail = () => {
 											placeholder="Your Email *"
 										/>
 									</div>
-									<div className=" flex-col md-flex-row items-center gap-2 mt-4">
+									<div className="flex flex-col md:flex-row items-center gap-2 mt-4">
 										<input class=" p-5" type="checkbox" name="status" />
 										<p className=" text-gray-400 text-[16px] leading-[1.8rem]">
 											Save my name, email, and website in this browser for the
