@@ -180,12 +180,14 @@ const Navbar = () => {
                       <div className="profile-box">
                         <div className="profile-box-pointer"></div>
                         <div className=" py-5 px-4 flex flex-col gap-3 w-[220px] rounded text-[#82828A] text-base">
+                          <Link to={'/login'}>
                           <span className=" profile-text    ">
                             <BsPerson /> Login
-                          </span>
+                          </span></Link>
+                          <Link to={'/register'}>
                           <span className="profile-text   ">
                             <BsFillPersonPlusFill /> Register
-                          </span>
+                          </span></Link>
                         </div>
                       </div>
                     )}
