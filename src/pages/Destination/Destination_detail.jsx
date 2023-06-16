@@ -10,47 +10,49 @@ import Explore_more from "../../components/Explore_more/Explore_more";
 
 const Destination_detail = ({name}) => {
   return (
-    <>
+    <>  
       <div className=" ">
-        <div className=" flex bg-[#F3F8F6] flex-col lg:flex-row py-20 px-5 gap-20 mb-20">
-          <div className="w-full lg:w-1/2  p-5 shadow-lg bg-white rounded-lg">
-            <img
-              className=" rounded-lg w-full"
-              src="https://gaviaspreview.com/wp/gowilds/wp-content/uploads/2023/01/tour-11.jpg"
-              alt=""
-            />
-          </div>
-          <div className="w-full lg:w-1/2">
-            <div>
-              <h1 className=" text-[35px] font-bold">{name}</h1>
-              <hr className=" w-14 border-[1.5px] border-[#63AB45]" />
+        <div className=" w-full bg-[#F3F8F6] mb-20 py-20">
+          <div className="2xl:w-[68%]  w-[100%] mx-auto flex flex-col lg:flex-row  px-5 gap-20 ">
+            <div className="w-full lg:w-1/2 h-full p-5 shadow-lg bg-white rounded-lg">
+              <img
+                className=" rounded-lg w-full"
+                src="https://gaviaspreview.com/wp/gowilds/wp-content/uploads/2023/01/tour-11.jpg"
+                alt=""
+              />
             </div>
-            <p className=" my-4 leading-8 text-gray-500">
-              Lorem ipsum available isn but the majority have suffered alteratin
-              in some or form injected. Lorem Ipsum. Proin gravida nibh vel
-              velit auctor aliqueenean sollicitudin, lorem quis bibendum auctor
-              consequat.
-            </p>
-            <ul className=" w-3/4">
-              <li className=" flex w-full border-b py-3 ">
-                <div className=" w-1/2">Country</div>
-                <div className=" w-1/2 text-gray-500">{name}</div>
-              </li>
-              <li className=" flex w-full border-b py-3 ">
-                <div className=" w-1/2">Languages Spoken</div>
-                <div className="text-gray-500 w-1/2">English</div>
-              </li>
-              <li className=" flex w-full border-b py-3 ">
-                <div className=" w-1/2">Visa Requirements</div>
-                <div className=" w-1/2 text-gray-500">
-                  Personal Documents Requied
-                </div>
-              </li>
-              <li className=" flex w-full py-3 ">
-                <div className=" w-1/2">Area (km2)</div>
-                <div className=" w-1/2 text-gray-500">88.000 km2</div>
-              </li>
-            </ul>
+            <div className="w-full lg:w-1/2">
+              <div>
+                <h1 className="text-[35px] font-bold">{name}</h1>
+                <hr className=" w-14 border-[1.5px] border-[#63AB45]" />
+              </div>
+              <p className=" my-4 leading-7 text-gray-500">
+                Lorem ipsum available isn but the majority have suffered
+                alteratin in some or form injected. Lorem Ipsum. Proin gravida
+                nibh vel velit auctor aliqueenean sollicitudin, lorem quis
+                bibendum auctor consequat.
+              </p>
+              <ul className=" w-full">
+                <li className=" flex w-full border-b lg:py-3 xl:py-2 2xl:py-2 ">
+                  <div className=" w-1/2">Country</div>
+                  <div className=" w-1/2 text-gray-500">{name}</div>
+                </li>
+                <li className=" flex w-full border-b lg:py-3 xl:py-2 2xl:py-2 ">
+                  <div className=" w-1/2">Languages Spoken</div>
+                  <div className="text-gray-500 w-1/2">English</div>
+                </li>
+                <li className=" flex w-full border-b lg:py-3 xl:py-2 2xl:py-2 ">
+                  <div className=" w-1/2">Visa Requirements</div>
+                  <div className=" w-1/2 text-gray-500">
+                    Personal Documents Requied
+                  </div>
+                </li>
+                <li className=" flex w-full lg:py-3 xl:py-2 2xl:py-2 ">
+                  <div className=" w-1/2">Area (km2)</div>
+                  <div className=" w-1/2 text-gray-500">88.000 km2</div>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
         <div className=" px-5">
@@ -338,9 +340,9 @@ const Destination_detail = ({name}) => {
               </div>
             </div>
           </div>
-        <div>
-            <Explore_more/>
-        </div>
+          <div>
+            <Explore_more />
+          </div>
         </div>
       </div>
     </>
