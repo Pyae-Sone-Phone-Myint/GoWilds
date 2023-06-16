@@ -1,9 +1,10 @@
 .home .splide__arrow--prev {
-  left: 0px;
+  left: -10px;
+  box-shadow: 0 0 0 5px black;
 }
 
 .home .splide__arrow--next {
-  right: 0px;
+  right: -10px;
 }
 
 
@@ -322,4 +323,12 @@
   clip-path: polygon(0 0, 0% 100%, 100% 0);
   background-color: #63ab45;
   z-index: 1;
+}
+
+.btn span {
+  transition: 0.3s ease;
+}
+
+.btn:hover span {
+  letter-spacing: 2px;
 }

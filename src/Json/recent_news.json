@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "image": "https://gaviaspreview.com/wp/gowilds/wp-content/uploads/2022/12/blog-03-500x360.jpg",
+    "type": "life style",
+    "title": "Journeys are best measured with friends"
+  },
+  {
+    "id": 2,
+    "image": "https://gaviaspreview.com/wp/gowilds/wp-content/uploads/2022/12/blog-04-500x360.jpg",
+    "type": "life style",
+    "title": "Travel the most beautiful places in the world"
+  },
+  {
+    "id": 3,
+    "image": "https://gaviaspreview.com/wp/gowilds/wp-content/uploads/2022/12/blog-05-500x360.jpg",
+    "type": "wild camping",
+    "title": "Top 10 destinations & adventure travel trips"
+  },
+  {
+    "id": 4,
+    "image": "https://gaviaspreview.com/wp/gowilds/wp-content/uploads/2022/12/blog-06-500x360.jpg",
+    "type": "life style",
+    "title": "The surfing man will adventure your  mind"
+  },
+  {
+    "id": 5,
+    "image": "https://gaviaspreview.com/wp/gowilds/wp-content/uploads/2022/12/blog-01-500x360.jpg",
+    "type": "adventure",
+    "title": "Things to see and do when visiting Japan"
+  },
+  {
+    "id":6,
+    "image": "https://gaviaspreview.com/wp/gowilds/wp-content/uploads/2022/12/blog-02-500x360.jpg",
+    "type": "city tours",
+    "title": "A place where start new life with adventure travel"
+  }
+]

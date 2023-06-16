@@ -34,7 +34,7 @@ const Splides = ({
       <Splide
         options={{
           type: "loop",
-          autoplay: autoplay,
+          // autoplay: autoplay,
           speed: 2000,
           perPage: perPage,
           focus: center,
